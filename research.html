@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <b>Research</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-Publications-content').show();" href="#Publications">Publications</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Interest-content').show();" href="#Interest">Research interests</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Tools-content').show();" href="#Tools">Tools and methods</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Applications-content').show();" href="#Applications">Applications</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Group-content').show();" href="#Group">Research group</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Collaborations-content').show();" href="#Collaborations">Collaborations</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Grants-content').show();" href="#Grants">Research projects</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Industrial-content').show();" href="#Industrial">Industrial partners</a></li>									
+                            </ul>
+						</li>
+						<li class="page-scroll">
+                            <a href="group.html">Research group</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="publis.html">Publications</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>						
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="curriculum.html">Curriculum</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('index.html#tab-contact-content').show();" href="index.html#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+               
+		<!-- Intro Section -->
+        <section>
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+					<h1>Research activities</h1>                     
+				</div>
+				
+				<b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>	
+            </div>
+        </section>
+
+
+		<!-- Publications Section -->
+        <section name="Publications" id="Publications">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Publications-content').toggle();">Publications and communications <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Publications-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Publications and communications</h2>
+						</p>
+						 Complete static list: <a href="publis.html">here</a>. Complete interactive list: <a href="publis_query.html">here</a>.<br/>
+						Other lists: <a href="http://www.irit.fr/Publications,279?code=3770&amp;nom=Dobigeon+Nicolas">IRIT database</a>, <a href="http://scholar.google.com/citations?user=YPQFwDYAAAAJ&amp;hl=en">Google Scholar profile</a>, <a href="https://cv.archives-ouvertes.fr/nicolas-dobigeon">HAL</a>, <a href="http://bibbase.org/show?bib=http%3A%2F%2Fdobigeon.perso.enseeiht.fr%2Fpapers%2Fbibtex_entry_bot.htm">BibBase</a>.
+						<h6>Note: my Erd&otilde;s number is 3. To find a pathway: <a href="http://www.ams.org/mathscinet/collaborationDistance.html?AuthorSourceName=Dobigeon,+Nicolas&amp;group_target=189017">MathSciNet</a>.</h6>
+					</div>
+				</div>
+           </div>
+        </section>
+
+
+		<!-- Interest Section -->
+        <section name="Interest" id="Interest">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Interest-content').toggle();">Research interests <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Interest-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Research interests</h2>
+						</p>
+						<!-- REPLACE HERE -->
+						<ul>
+						<li>Statistical signal and image processing.</li>
+						<li>Inverse problems in signal and image processing.</li>
+						<li>Computational imaging: restoration, fusion, super-resolution.</li>
+						<li>Myopic and blind source separation, matrix factorization.</li>
+						<li><a href="applications/app_BOCA.html" >Dictionary learning</a>, sparse &amp; <a href="applications/app_antisparse.html" >democratic</a> representations, sparse &amp; <a href="applications/app_antisparse.html" >anti-sparse</a> coding.</li>
+						<li><a href="applications/app_MMSD.html" >Subspace estimation</a>, manifold learning.</li>
+						</ul>						
+					</div>
+				</div>
+           </div>
+        </section>
+
+
+		<!-- Preprint Section -->
+        <section name="Tools" id="Tools">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Tools-content').toggle();">(favorite) Tools and methods <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Tools-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>(favorite) Tools and methods</h2>
+						</p>
+						<ul>
+						<li>Bayesian inference [<a href="img/bayesian_evol.png">1</a>] [<a href="doc/bayesian.txt">2</a>], hierarchical models.</li>
+						<li>Latent variable models, hidden Markov models, (Potts) Markov random fields.</li>
+						<li>Bayesian nonparametrics, (hierarchical) Dirichlet processes, Gaussian processes.</li>        
+						<li><a href="applications/app_AXDA.html">Asymptotically exact data augmentation</a> (AXDA), approximate Bayesian computation (ABC).</li>        
+						<li>Markov chain Monte Carlo (MCMC) algorithms: Metropolis-Hastings, (partially collapsed) Gibbs samplers, reversible jump algorithms, Hamiltonian Monte Carlo, proximal-MALA, <a href="applications/app_SPA_Gibbs.html">split-and-augmented Gibbs sampler</a>.</li>
+						<li>Variational Bayesian methods, mean-field approximation.</li>
+						</ul>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+		<!-- Applications Section -->
+        <section name="Applications" id="Applications">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Applications-content').toggle();">Applications <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Applications-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Applications (<a href="img/research_map.pdf">research map</a>)</h2>
+						</p>
+						<h5>For more details (simulation results, Matlab codes, papers...), click on the links when available.</h5>
+						<a href="applications/app_fusion_astro.html"> Hyperspectral and multispectral image fusion for infrared astronomical data</a>
+						   <h4>Multiband image fusion under spectrally variant spatial blurs (see also <a href="applications/app_fusion.html">here</a>).</h4>
+						<a href="applications/app_EELS.html"> STEM-EELS microspectroscopy</a>
+							<h4>Fast reconstruction of EELS images from sparse sampling. Unsupervised identification of material signatures. </h4>
+						<a href="applications/app_logregression.html"> Sparse binary logistic regression</a>             
+							<h4>Classification of handwritten digits, based on the <a href="applications/app_SPA_Gibbs.html">split-and-augmented Gibbs sampler</a>.</h4>
+						<a href="applications/app_CD.html"> Change detection between remote sensing images</a>
+							<h4>Analyzing multi-band images with different spatial and spectral resolutions.</h4>            
+						<a href="applications/app_denoising.html" >TV-L<sub>0</sub> and TV-L<sub>1</sub> denoising of 1D signal</a>
+							<h4>Unsupervised selection of the regularization parameter.</h4>
+						<a href="applications/app_texture.html"> Textured image analysis</a>
+						   <h4>Local regularity based image segmentation, scale-free textures, multifractal analysis.</h4>
+						<a href="applications/app_SR.html"> Image super-resolution</a>
+						   <h4>Fast resolution, L<sub>2</sub>-, L<sub>1</sub>- and TV-regularizations.</h4>
+						<a href="applications/app_antisparse.html"> Anti-sparse coding</a>
+						   <h4>Democratic representations, PAPR reduction.</h4>
+						<a href="applications/app_fusion.html"> Multiband image fusion</a>
+						   <h4>Hyperspectral pansharpening, multispectral/hyperspectral image fusion (see also <a href="applications/app_fusion_astro.html">here</a>).</h4>
+						<a href="applications/app_US.html"> Ultrasound imaging</a>
+						   <h4>Fast acquisition and compressed sensing. Unsupervised classification of skin lesions.</h4>
+						<a href="applications/app_MMSD.html"> Subspace estimation</a>
+						   <h4>Natural metric on the Grassmann manifold, directional statistics.</h4>
+						<a href="applications/app_glitches.html"> Detection of glitches in multiplexed multichannel data streams</a>
+						   <h4>Correction of multi-channel imaging, application to the MADRAS images.</h4>
+						<a href="applications/app_BOCA.html"> Sparse coding of natural images</a>
+						   <h4>Sparse representation and dictionary learning.</h4>
+						<a href="applications/app_BFA.html">Gene expression factor analysis</a>
+						   <h4>Unsupervised identification of disease signature (e.g., <a href="applications/app_PHD_press.html">influenza</a>).</h4>
+						<a href="applications/app_hyper.html">Hyperspectral image unmixing</a>
+						   <h4>Endmember extraction, inversion. Nonlinear mixture detection. Handling spectral variability.</h4>
+						<a href="applications/app_MRFM.html">Magnetic Resonance Force Microscopy (MRFM) imagery</a>
+							<h4>Sparse image reconstruction, myopic (semi-blind) deconvolution.</h4>
+						<a href="applications/app_spectro.html">Spectrochemical analysis</a>
+							<h4>Bayesian blind source separation under constraints.</h4>
+						<a href="applications/app_AR_seg.html">Joint segmentation of autoregressive processes</a>
+							<h4>Segmentation of stereo speech signals. Detection of "arc-tracking" phenomenon.</h4>
+						<a href="applications/app_astro_seg.html" >Joint segmentation of multivariate astronomical time series</a>
+							<h4>Segmentation of real data obtained by the NASA Compton Gamma Ray Observatory's BATSE. <br/>Detection of the changes in the brightness of the gamma-ray burst (GRB) sources.</h4>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+		<!-- Group Section -->
+        <section name="Group" id="Group">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Group-content').toggle();">Research group <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Group-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Research group</h2>
+						</p>
+						List of (current and past) M.Sc./Ph.D. students and post-doctoral fellows <a href="group.html">here</a>.
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+		<!-- Collaborations Section -->
+        <section name="Collaborations" id="Collaborations">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Collaborations-content').toggle();">Collaborations <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Collaborations-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Collaborations</h2>
+						</p>
+						<ul>
+						 <li>  <a href="http://perso.ens-lyon.fr/patrice.abry/" >Patrice ABRY</a>, <span class="emph"> ENS Lyon, Physics Dept., France</span>.</li>
+						 <li>  V&eacute;ronique ACHARD, <span class="emph">ONERA Toulouse, France</span>.</li>
+						 <li>  <a href="http://www.irit.fr/~Adrian.Basarab/">Adrian BASARAB</a>, <span class="emph">University of Toulouse, IRIT, France</span>.</li>
+						 <li>  <a href="http://www.enseeiht.fr/~batatia/" >Hadj BATATIA</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="http://www.eel.ufsc.br/~bermudez/" >Jos&eacute; C. M. BERMUDEZ</a>, <span class="emph">Federal Univ. Santa Catarina, Brazil</span>.</li>
+						 <li>  <a href="https://userpages.irap.omp.eu/~oberne/" >Olivier BERN&Eacute;</a>, <span class="emph">University of Toulouse, IRAP, France</span>.</li>		 
+						 <li>  <a href="http://personnel.isae.fr/olivier-besson/" >Olivier BESSON</a>, <span class="emph">University of Toulouse, ISAE, France</span>.</li>
+						 <li>  <a href="http://www.lx.it.pt/~bioucas/" >Jose M. BIOUCAS-DIAS</a>, <span class="emph">Instituto Superior T&eacute;nico, Portugal</span>.</li>
+						 <li>  <a href="https://www.stem.lps.u-psud.fr/users/brun" >Nathalie BRUN</a>, <span class="emph">University of Paris-Sud 11, LPS Lab., France</span>.</li>
+						 <li>  <a href="https://www.ims-bordeaux.fr/en/annuaire/5125-giremus-audrey" >Fran&ccedil;ois CARON</a>, <span class="emph">University of Oxford, UK</span>.</li>
+						 <li>  C&eacute;dric CARTERET, <span class="emph">University of Nancy, LCPME,  France</span>.</li>
+						 <li>  <a href="http://chabert.perso.enseeiht.fr/">Marie CHABERT</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span></li>
+						 <li>  <a href="http://pierrechainais.ec-lille.fr/">Pierre CHAINAIS</a>, <span class="emph">Ecole Centrale Lille, CRIStAL, France</span></li>
+						 <li>  <a href="http://www.csee.umbc.edu/people/faculty/chein-i-chang/" >Chein-I CHANG</a>, <span class="emph">University of Maryland Baltimore County, USA</span>.</li>
+						 <li>  <a href="http://www.enseeiht.fr/~coulon/" >Martial COULON</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="http://scholar.google.fr/citations?user=u7DE8BoAAAAJ&amp;hl=fr" >Manuel DAVY</a>, <span class="emph">LAGIS, Lille, France</span>.</li>
+						 <li>  <a href="https://sites.google.com/site/mdiarrafall" >Mame Diarra FALL</a>, <span class="emph">University of Orl&eacute;ans, IDP, France</span>.</li>
+						 <li>  <a href="https://www.irit.fr/~Cedric.Fevotte/" >C&eacute;dric F&Eacute;VOTTE</a>, <span class="emph">University of Toulouse, IRIT, France</span>.</li>
+						 <li>  <a href="https://sites.google.com/site/nicolasgillis/" >Nicolas GILLIS</a>, <span class="emph">University of Mons, Belgium</span>.</li>			 
+						 <li>  <a href="http://giovannelli.free.fr/" >Jean-Fran&ccedil;ois GIOVANELLI</a>, <span class="emph">University of Bordeaux, IMS, France</span>.</li>
+						 <li>  <a href="https://www.ims-bordeaux.fr/en/annuaire/5125-giremus-audrey" >Audrey GIREMUS</a>, <span class="emph">University of Bordeaux, IMS, France</span>.</li>
+						 <li>  <a href="http://www.eecs.umich.edu/~hero/" >Alfred O. HERO</a>, <span class="emph">University of Michigan, EECS Dept., USA</span>.</li>
+						 <li>  <a href="http://www.nt.tuwien.ac.at/about-us/staff/franz-hlawatsch/" >Franz HLAWATSCH</a>, <span class="emph">Vienna University of Technology, Austria</span>.</li>
+						 <li>  <a href="http://www.irit.fr/-Annuaire-?code=5473">Denis KOUAM&Eacute;</a>, <span class="emph">University of Toulouse, IRIT, France</span>.</li>
+						 <li>  Henri LANTERI, <span class="emph">University of Nice, Lagrange Lab., France</span>.</li>
+						 <li>  <a href="http://www.math.univ-toulouse.fr/~fmalgouy/" >Fran&ccedil; MALGOUYRES</a>, <span class="emph">University of Toulouse, IMT, France</span>.</li>
+						 <li>  <a href="http://www.enseeiht.fr/~mailhes/" >Corinne MAILHES</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="https://researchportal.hw.ac.uk/en/persons/stephen-mclaughlin" >Steve McLAUGHLIN</a>, <span class="emph">Heriot-Watt University, Edinburgh</span>.</li>
+						 <li>  <a href="http://scholar.google.fr/citations?user=Vkr8yxkAAAAJ&amp;hl=fr" >Sa&iuml;d MOUSSAOUI</a>, <span class="emph">IRCCyN/ECN, France</span>.</li>
+						 <li>  <a href="http://www.stats.bris.ac.uk/~mp12320/" >Marcelo PEREYRA</a>, <span class="emph">University of Bristol, UK</span>.</li>
+						<li>  <a href="http://perso.ens-lyon.fr/nelly.pustelnik/" >Nelly PUSTELNIK</a>, <span class="emph">ENS Lyon, Physics Dept., France</span>.</li>
+						 <li>  <a href="http://www.cedric-richard.fr/" >C&eacute;dric RICHARD</a>, <span class="emph">University of Nice, Lagrange Lab., France</span>.</li>
+						 <li>  <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-rugar" >Daniel RUGAR</a>, <span class="emph">IBM Almaden Research Center, USA</span>.</li>
+						 <li>  <a href="http://www.nasa.gov/centers/ames/research/2007/scargle.html" >Jeffrey D. SCARGLE</a>, <span class="emph">NASA Ames Research Center, USA</span>.</li>
+						 <li>  <a href="http://geosciences.geol.u-psud.fr/spip.php?article209" >Fr&eacute;d&eacute;ric SCHMIDT</a>, <span class="emph">University of Paris-Sud 11, IDES Lab., France</span>.</li>
+						 <li>  <a href="https://scholar.google.com.eg/citations?user=t75KCPAAAAAJ&hl=en" >Walaa SHETA</a>, <span class="emph">Informatics Research Institute, Alexandria, Egypt</span>.</li>
+						 <li>  <a href="http://lm2s.utt.fr/fr/membres/snoussi.html" >Hichem SNOUSSI</a>, <span class="emph">Troyes University of Technology, France</span>.</li>
+						 <li>  <a href="https://www.kuleuven.be/wieiswie/en/person/00050928">Ben SOMERS</a>, <span class="emph">KU Leuven, Belgium</span>.</li>
+						 <li>  <a href="http://www.gtim-univ-tours.fr/tauber/" >Clovis TAUBER</a>, <span class="emph">University of Tours, UMRS INSERM U930, France</span>.</li>
+						 <li>  C&eacute;line THEYS, <span class="emph">University of Nice, Lagrange Lab., France</span>.</li>
+						 <li>  <a href="http://oberlin.perso.enseeiht.fr/" >Thomas OBERLIN</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="http://www.enseeiht.fr/~tourneret/" >Jean-Yves TOURNERET</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="http://www.enseeiht.fr/~wendt/" >Herwig WENDT</a>, <span class="emph">University of Toulouse, IRIT/INP-ENSEEIHT, France</span>.</li>
+						 <li>  <a href="https://naotoyokoya.com/" >Naoto YOKOYA</a>, <span class="emph">University of Tokyo, RIKEN AIP, Japan</span>.</li>		 
+						 </ul>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+		<!-- Grants Section -->
+        <section name="Grants" id="Grants">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Grants-content').toggle();">Research projects <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Grants-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Research projects</h2>
+						</p>
+						<ul>
+						<li>CUBE - Structural brain connectomes assessment using portable low-field MRI</a><br/>
+								<span class="h4">Funded by ANR (French National Research Agency) (2023-2026).<br/>
+								Partners: Toulouse University Hospital, Tonic (INSERM/Univ. Toulouse), Thales	 Services Numériques, CNES.
+								</span></li>						
+						<li>IMAGIN - Active molecular imaging and unmixing</a><br/>
+								<span class="h4">Funded by ANR (French National Research Agency) (2021-2024).<br/>
+								Partners: <a href="https://lasir.cnrs.fr/">LASIRE</a> (CNRS/Univ. Lille), <a href="https://laris.univ-angers.fr/fr/index.html">LARIS</a> (Univ. Angers).
+								</span></li>							
+						<li>AI4IMSKA - Hybrid AI for interference mitigation in SKA data</a><br/>
+								<span class="h4">Funded by CNRS (2021-2024).<br/>
+								Partners: <a href="https://www.lpc2e.cnrs.fr/">LPC2E</a> (Univ. Orl&eacute;ans), <a href="https://lesia.obspm.fr/">LESIA</a> (CNRS/Univ. Paris).
+								</span></li>							
+						<li>AI Research Chair on <a href="aniti/index.html">Fusion-based inference from heterogeneous data</a><br/>
+								<span class="h4">Funded by ANITI (2019-2023).<br/>
+								Partners: Toulouse INP, ISAE-SUPAERO, CNRS, CESBIO, CNES, NXP.
+								</span></li>		
+						<li>ARSIS - Acquisition et reconstruction de spectres-images en mode random scanning<br/>
+								<span class="h4">Funded by CNRS through the Imag'in program (2017).<br/>
+								Partner: <a href="https://www.stem.lps.u-psud.fr/" >STEM group</a> at LPS (CNRS/Univ. of Paris-Sud 11).
+								</span></li>
+						<li>Acquisition de spectres-images en mode random scanning<br/>
+								<span class="h4">Funded by CNRS through the METSA network (2017).
+								</span></li>
+						<li><a href="http://www.ens-lyon.fr/PHYSIQUE/Equipe3/MultiFracs/">MULTIFRACS</a> - Multifractal theory and methods for large size multivariate systems&nbsp;- Applications to scale free analysis of brain dynamics analysis<br/>
+								<span class="h4">Funded by ANR (French National Research Agency) (2017-2020). <br/>
+								Partners: <a href="http://www.ens-lyon.fr/PHYSIQUE">Physics Lab.</a> (CNRS/ENS Lyon), <a href="http://umr-math.univ-mlv.fr/">LAMA</a> (CNRS/UPEC) and <a href="http://i2bm.cea.fr/drf/i2bm/Pages/NeuroSpin.aspx">Neurospin</a> (CEA Saclay).
+								</span></li>
+						<li><a href="http://projectfactory.irit.fr/">FACTORY</a> - New paradigms for latent factor estimation<br/>
+								<span class="h4">Funded by ERC Consolidator Grant (P.I.: <a href="https://www.irit.fr/~Cedric.Fevotte/">C&eacute;dric F&eacute;votte</a>) (2016-2021).<br/>
+								</span></li>
+						<li>DEPICT - From pixelwise unmixing to thematic classification<br/>
+								<span class="h4">Funded by CNES and Occitanie Region (2016-2019). <br/>
+								Partners: <a href="https://cnes.fr/">CNES</a> and <a href="https://dynafor.toulouse.inra.fr/web/">Dynafor</a> (INRA/INP Toulouse).
+								</span></li>
+						<li>MapInvPlnt - Monitoring the Water Hyacinth Using Hyperspectral Imagery<br/>
+								<span class="h4">Funded by EU FP7 through the ERANETMED JC-WATER ANR program (2016-2018).<br/>
+								Partners: <a href="http://www.mucsat.org/">MuCSAT</a> (Alexandria, Egypt), <a href="http://www.narss.sci.eg/">NARSS</a> (Cairo, Egypt), <a href="https://www.it.pt/">IT</a> (Lisboa,  Portugal).
+								</span></li>
+						<li><a href="http://fauvel.mathieu.free.fr/pages/muesli.html">MUESLI</a> - MUltiscale mapping of Ecosystem Services by very high spatial resolution hyperspectraL and LiDAR remote sensing Imagery<br/>
+								<span class="h4">Funded by University of Toulouse through the Thematic Strategic Actions (2015-2017).<br/>
+								Partners: <a href="https://dynafor.toulouse.inra.fr/web/">Dynafor</a> (INRA/INP), <a href="http://www.cesbio.ups-tlse.fr/">CESBIO</a> (CNRS/CNES/IRD/UPS).
+								</span></li>
+						<li><a href="https://project.inria.fr/bnpsi/">BNPSI</a> - Bayesian nonparametric methods for signal and image processing<br/>
+								<span class="h4">Funded by ANR (French National Research Agency) (2013-2017).<br/>
+								Partners: <a href="https://alea.bordeaux.inria.fr/">ALEA group</a> (INRIA), <a href="http://www.ims-bordeaux.fr/IMS/pages/accueil.php">IMS</a> (CNRS/Bordeaux INP),
+								<a href="http://lagis.cnrs.fr/">LAGIS</a> (CNRS/EC Lille), <a href="http://www-list.cea.fr/">CEA LIST</a>.
+								</span></li>
+						<li><a href="http://hypanema.fr/">HYPANEMA</a> - HYPerspectral data ANalysis with NonlinEar unMixing Algorithm<br/>
+								<span class="h4">Funded by ANR (French National Research Agency) (2012-2015).<br/>
+								Partners: <a href="https://lagrange.oca.eu/">Lagrange Lab.</a> (CNRS/UNSA), <a href="http://www.gipsa-lab.inpg.fr/">GIPSA-lab</a> (CNRS/Grenoble INP),
+								<a href="http://icd.utt.fr/">ICD</a> (CNRS/UTT Troyes).
+								</span></li>
+						<li>ESTOMAT - Order estimation  in Matrix factorization models<br/>
+								<span class="h4">Funded by <a href="http://www.cnrs.fr" >CNRS</a> through the PEPS-Rupture program (2011-2012).<br/>
+								Partner: <a href="http://www.unice.fr/cfevotte/">C&eacute;dric F&eacute;votte</a> at LTCI (CNRS/Telecom ParisTech).
+								</span></li>
+						<li>MADONNA - Acquisition of hyperspectral and lidar data with airborne sensors<br/>
+								<span class="h4">Funded by <a href="http://www.inp-toulouse.fr" >INP Toulouse</a> (2010-2011).<br/>
+								Partners: <a href="http://dynafor.toulouse.inra.fr/">DYNAFOR</a> (INRA/INP Toulouse), Purpan Agricult. Eng. School (Toulouse).
+								</span></li>
+						<li>MCMC methods for hyperspectral image analysis<br/>
+								<span class="h4">Funded by <a href="http://gdr-isis.fr/" >GdR-ISIS</a> through the "Young Researcher" program (2007-2008).<br/>
+								Partners: <a href="http://www.irccyn.ec-nantes.fr/spip.php?rubrique84&amp;lang=en">ADTSI Team</a>, IRCCyN (CNRS/ECN, France).
+								</span></li>
+						</ul>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+		<!-- Industrial Section -->
+        <section name="Industrial" id="Industrial">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Industrial-content').toggle();">Industrial partnerships <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Industrial-content">					
+                        <hr class="star-primary">
+						<p class="lead">
+							<h2>Industrial partnerships</h2>
+						</p>
+					<ul>
+					<li>Pansharpening and image fusion (2017-2018)<br/>
+							<span class="h4">Partner: CNES.</span>
+					</li>
+					<li>Hyperpectral image denoising (2016-2017)<br/>
+							<span class="h4">Partner: CNES.</span>
+					</li>
+					<li>Nonlinear mixture detection in hyperspectral images (2013-2014)<br/>
+							<span class="h4">Partner: CNES.</span>
+					</li>
+					<li>Dictionary learning for remote sensing image analysis (2011-2012)<br/>
+							<span class="h4">Partner: CNES.</span>
+					</li>
+					<li>Complementary algorithms for <a href="https://megha-tropiques.cnes.fr/fr/MEGHAT/Fr/lien1_sat.htm">MADRAS</a> data reconstruction (2012)<br/>
+							<span class="h4">Partners: CLS and CNES.</span>
+					</li>
+					<li>Algorithm for <a href="http://smsc.cnes.fr/MEGHAT/GP_madras.htm">MADRAS</a> data reconstruction (2012)<br/>
+							<span class="h4">Partners: CLS and CNES.</span>
+					</li>
+					<li>TDOA and FDOA measurement deinterleaving (2009-2010)<br/>
+							<span class="h4">Partner: CNES.</span>
+					</li>
+					</ul>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		
+
+
+	
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>

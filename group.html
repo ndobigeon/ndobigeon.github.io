@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+               </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="research.html">Research</a>
+                        </li>
+						<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <b>Research group</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-Members-content').show();" href="#Members">Current members</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Alumni-content').show();" href="#Alumni">Past members</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Other-content').show();" href="#Other">Other collaborations</a></li>							
+                            </ul>
+						</li>
+						<li class="page-scroll">
+                            <a href="publis.html">Publications</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>						
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="curriculum.html">Curriculum</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('index.html#tab-contact-content').show();" href="index.html#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+               
+		<!-- Intro Section -->
+        <section>
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+					<h1>Research group</h1>   
+					[aka the "nico-team" <span class="emph"> (not the nicotine...)</span>]					
+				</div>
+				
+				<b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>	
+            </div>
+        </section>
+
+
+		<!-- Members Section -->
+        <section name="Members" id="Members">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Members-content').toggle();">Current members<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Members-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Current members</h2>
+						</p>
+						<!--<h3 id="MembersPostdoc">Post-doctoral Research Fellows</h3>
+
+						<ul>
+						 <li><a href="https://www.researchgate.net/profile/Tatsumi_Uezato">Tatsumi UEZATO</a> (2017-..., IDEX MUESLI funding, co-advisor: <a href="http://fauvel.mathieu.free.fr/" >M. Fauvel</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; Multiscale mapping of ecosystem services</span>
+						 </li>
+						</ul>-->
+
+						<h3 id="MembersPhD">Ph.D. Students</h3>
+						<ul>
+						 <li><a href="" >Vincent ANDRE </a> (2022-..., Toulouse INP, co-advisor: <a href="http://chabert.perso.enseeiht.fr" >M. Chabert</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/">Bayesian inversion with deep learning-driven priors - Application to spectral imaging problems</a></span>
+						 </li>
+						 <li><a href="" >Xiangyi LI </a> (2022-..., Toulouse INP, co-advisor: <a href="https://www.irit.fr/~Henrique.Goulart/" >H. Goulart</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/">Sparse unmixing for active molecular imaging</a></span>
+						 </li>						 
+						<li><a href="" >El-hadji CISS&Eacute; FAYE </a> (2022-..., Univ. of Orl&eacute;ans, co-advisors: <a href="https://sites.google.com/site/mdiarrafall" >M. D. Fall;</a> and <a href="http://aladine-chetouani.com/" >Aladine Chetouani</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/">Bayesian inversion with deep learning-driven priors - Application to spectral imaging problems</a></span>
+						 </li>						 
+						 <li><a href="" >Lina ISSA </a> (2022-..., Univ. of Toulouse, co-advisors: co-advisors: <a href="http://userpages.irap.omp.eu/~oberne/" >O. Bern&eacute;</a> and <a href="https://pagespro.isae-supaero.fr/thomas-oberlin/" >Th. Oberlin</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/">Fusion of astronomical images - Application to the JWST data</a></span>
+						 </li>
+						 <li><a href="" >Xiao ZHANG </a> (2021-..., Univ. of Orl&eacute;ans, co-advisor: <a href="http://wwwperso.lpc2e.cnrs.fr/~icognard/" >I. Cognard</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/s305390">Hybrid AI for interference mitigation in SKA data</a></span>
+						 </li>						
+						 <li><a href="" ><a href="https://florentincdx.github.io/">Florentin COEURDOUX</a></a> (2020-..., INP Toulouse, co-advisor: <a href="http://pierrechainais.ec-lille.fr/" >P. Chainais</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/">Generative models for Monte Carlo sampling</a></span>
+						 </li>				
+						</ul>
+
+						<h3 id="MembersMSc">Visiting students</h3>
+						<ul>						 
+						 <li>Min ZHAO (2021-2022, Ph.D., Northwestern Polytechnical University)</li>
+						</ul>
+<!--						
+						<h3 id="MembersBSc">B.Sc./M.Sc. Students</h3>
+						<ul>
+						 <li>Alessandro GOLDWURM (2021, M.Sc., University of Toulouse, co-advisor: E. Cazelles)</li>
+						 <li>Lorinda HUBACHER (2021, B.Sc., Toulouse INP)</li>
+						 <li>Florian MORIOUSEF (2021, B.Sc., ISAE, co-advisors: C. Guilloteau, Th. Oberlin, O. Bern&eacute;, Th. Contini)</li>						 
+						</ul>
+						-->
+						
+					</div>
+				</div>
+           </div>
+        </section>
+
+		<!-- Alumni Section -->
+        <section name="Alumni" id="Alumni">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Alumni-content').toggle();">Past members<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Alumni-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Past members</h2>
+						</p>
+						<h3 id="AlumniPostdoc">Post-doctoral Research Fellows</h3>
+						<ul>
+						 <li><a href="https://www.geoinformatics2018.com/member/tatsumiuezato/">Tatsumi UEZATO</a> (2017-218, funded by IDEX &amp; ANR MapInvPlnt, co-advisor: <a href="http://fauvel.mathieu.free.fr/" >M. Fauvel</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; Multiscale mapping of ecosystem services<br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Research Scientist at Riken AIP, Tokyo.</span> </span>
+						 </li>
+						 <li><a href="https://scholar.google.com/citations?user=VxGX8tUAAAAJ&amp;hl=en" >Shaheera RASHWAN</a> (2016-2017, funded by Ministry of High Education of Egypt)<br/>
+						  <span class="h4">&nbsp;&nbsp; Split-and-merge approach for hyperspectral band selection<br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Associate Professor at Informatics Research Institute, CSRT, Alexandria.</span></span>
+						 </li>
+						<li><a href="https://sites.google.com/site/abderrahimhalimi/" >Abderrahim HALIMI</a> (2014, funded by ANR HYPANEMA, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; Spectral variability in hyperspectral image unmixing<br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Assistant Professor at University Heriot-Watt, Edinburgh.</span></span>
+						</li>
+						</ul>
+
+						<h3 id="AlumniPhD">Ph.D. Students</h3>
+
+						<ul>
+						 <li><a href="http://guilloteau.perso.enseeiht.fr/" >Claire GUILLOTEAU</a> (2021, INP Toulouse, co-advisors: <a href="http://oberlin.perso.enseeiht.fr" >Th. Oberlin</a> and <a href="http://userpages.irap.omp.eu/~oberne/" >O. Bern&eacute;</a></a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/s209073">Fast fusion of multispectral and hyperspectral images for infrared astronomy</a><br/>
+						  &nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <a href="https://www.inp-toulouse.fr/fr/toulouse-inp/actualites/prix-leopold-escande-2021.html"><span class="emph">Prix L&eacute;opold Escande, 2021</span></a><br/>  
+						  <span class ="emph">&nbsp;&nbsp; Now Assistant Professor at Universit&eacute; du Littoral C&ocirc;te d'Opale, France.</span ></span>
+						 </li>
+						 <li><a href="http://mvono.github.io" >Maxime VONO</a> (2020, INP Toulouse, co-advisor: <a href="http://pierrechainais.ec-lille.fr/" >P. Chainais</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2020INPT0098">Asymptotically exact data augmentation – Models and Monte Carlo sampling with applications to Bayesian inference</a><br/>
+						  &nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <a href="https://www.inp-toulouse.fr/fr/toulouse-inp/actualites/prix-leopold-escande-2020.html"><span class="emph">Prix L&eacute;opold Escande, 2020</span></a><br/>  
+						  <span class ="emph">&nbsp;&nbsp; Now Senior Research Scientist at Criteo AI Lab, Paris, France.</span >
+						 </li>
+						 <li><a href="https://etienne-monier.github.io/" >Etienne MONIER</a> (2020, INP Toulouse, co-advisor: <a href="http://oberlin.perso.enseeiht.fr" >Th. Oberlin</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2020INPT0090">Fast recontruction of partially sampled multiband images for EELS spectromicroscopy</a><br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Engineer at CS Group, Toulouse, France.</span ></span>
+						 </li>
+						 <li><a href="http://lagrange.perso.enseeiht.fr/" >Adrien LAGRANGE</a> (2019, INP Toulouse, co-advisor: <a href="http://fauvel.mathieu.free.fr/" >M. Fauvel</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2019INPT0095">From representation learning to thematic classification - Application to hierarchical analysis of hyperspectral images</a>
+						<br/>&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <a href="https://www.inp-toulouse.fr/fr/toulouse-inp/actualites/prix-leopold-escande-2019.html"><span class="emph">Prix L&eacute;opold Escande, 2019</span></a><br/>  
+						  <span class ="emph">&nbsp;&nbsp; Now Research Engineer at Agenium Group, Toulouse, France.</span >
+						  </span>
+						 </li>
+						 <li><a href="http://cavalcanti.perso.enseeiht.fr/" >Yanna CRUZ CAVALCANTI</a> (2018, INP Toulouse, co-advisors: <a href="http://www.gtim-univ-tours.fr/tauber/" >C. Tauber</a> and <a href="http://oberlin.perso.enseeiht.fr" >Th. Oberlin</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2018INPT0078">Factor analysis of dynamic PET images</a><br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Data Science Specialist at McKinsey &amp; Company, Sao Paulo, Brazil.</span >  </span>
+						 </li>
+						 <li><a href="http://ferraris.perso.enseeiht.fr/" >Vinicius FERRARIS</a> (2018, INP Toulouse, co-advisor: <a href="http://chabert.perso.enseeiht.fr" >M. Chabert</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2018INPT0077">Fusion-based change detection for remote sensing images of
+						different resolutions and modalities</a><br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Data Science Manager at Whirlpool Corp., Sao Paulo, Brazil.</span ></span>
+						 </li>
+						 <li><a href="https://www.irit.fr/spip.php?page=annuaire&amp;code=11307">Jessica SODJO</a> (2018, Univ. Bordeaux, co-ad.: <a href="http://giovannelli.free.fr/" >J.-F. Giovannelli</a>, A. Giremus and <a href="http://www.stats.ox.ac.uk/~caron/" >F. Caron</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2018BORD0152">Nonparametric Bayesian models for joint segmentation of a set of images with shared classes</a><br/>
+						  <span class ="emph">&nbsp;&nbsp; Now Lecturer at University of Guyane, France.</span ></span>
+						 </li>
+						 <li><a href="http://c-elvira.github.io/">Cl&eacute;ment ELVIRA</a> (2017, EC Lille, co-advisor: <a href="http://pierrechainais.ec-lille.fr/" >P. Chainais</a>)<br/>
+							  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2017ECLI0016" >Bayesian models for antisparse representation identification and Bayesian nonparametric principal
+							  component analysis</a><br/>
+								  <span class ="emph">&nbsp;&nbsp; Now Assistant Professor at CentraleSupelec Rennes, France.</span></span>
+								 </li>
+								 <li><a href="https://pthouvenin.github.io/" >Pierre-Antoine THOUVENIN</a> (2017, INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+								  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2017INPT0068">Modeling spatial and temporal variabilities in hyperspectral image unmixing</a> <br/>
+								   &nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <a href="https://fr.calameo.com/read/004771684c16c290a1d45"><span class="emph">Prix L&eacute;opold Escande, 2017</span></a><br/>
+								  <span class ="emph">&nbsp;&nbsp; Now Assistant Professor at Centrale Lille, France.</span></span>
+								 </li>
+								 <li><a href="https://sites.google.com/site/qiweiunivcambridge/" >Qi WEI</a> (2015, INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+								  <span class="h4">&nbsp;&nbsp; <a href="http://www.theses.fr/2015INPT0059">Bayesian fusion of multi-band images: A powerful tool for super-resolution</a><br/>
+								   &nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <span class="emph"><a href="https://fr.calameo.com/read/004771684b05cd51d73fa">Prix L&eacute;opold Escande, 2015</a></span><br/>
+									<span class ="emph">&nbsp;&nbsp; Now Senior Scientist at Uber, NYC, USA.</span>
+								 </span>
+								 </li>
+								 <li><a href="http://yoannaltmann.weebly.com/" >Yoann ALTMANN</a> (2013, INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+								  <span class="h4">
+									&nbsp;&nbsp; <a href="http://ethesis.inp-toulouse.fr/archive/00002593/">Nonlinear spectral unmixing of hyperspectral images</a><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <span class="emph"><a href="http://academie-sciences-lettres-toulouse.fr/remise-des-prix-2014/">Prix de l'Acad&eacute;mie des Sciences, Inscriptions et Belles-Lettres de Toulouse, 2014</a></span><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <span class="emph"><a href="http://www.fete-connaissance.fr/yoann-altmann">Prix Nov&eacute;la, 2014</a></span><br/>
+									&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <span class="emph"><a href="http://ethesis.inp-toulouse.fr/view/prix/Prix_L=E9opold_Escande_2013.html">Prix L&eacute;opold Escande, 2013</a></span>
+								  <br/>
+								  <span class ="emph">&nbsp;&nbsp; Now Assistant Professor at University Heriot-Watt, Edinburgh, UK.</span>
+								  </span>
+								 </li>
+								 <li><a href="http://www.enseeiht.fr/~bazot/" >C&eacute;cile BAZOT</a> (2013, INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+								  <span class="h4">&nbsp;&nbsp; <a href="http://ethesis.inp-toulouse.fr/archive/00002374/">Bayesian methods for gene expression factor analysis</a><br/>
+								  <span class ="emph">&nbsp;&nbsp; Now Head of Dept. of Computational Engineering at ECA Group, Toulouse, France.</span>
+								  </span>
+								 </li>
+								 <li><a href="http://olivier.eches.free.fr/" >Olivier ECHES</a> (2010, INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>)<br/>
+								  <span class="h4">&nbsp;&nbsp; <a href="http://ethesis.inp-toulouse.fr/archive/00001309/">Bayesian methods for hyperspectral image unmixing</a>
+								  <br/>&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/award_icon.png" class="icon" alt="Prize!" /> <a href="http://ethesis.inp-toulouse.fr/view/prix/Prix_L=E9opold_Escande_2010.html"><span class="emph">Prix L&eacute;opold Escande, 2010</span></a><br/>
+								  <span class ="emph">&nbsp;&nbsp; Now Engineer at Capgemini, Toulouse, France.</span></span>
+								 </li>
+								</ul>
+
+							<h3 >Visiting Students</h3>
+							<ul>
+							 <li>Jin-Ju WANG (2021-2022, Ph.D., University of Electronic Science and Technology of China)</li>
+							 <li>Ghada FATHI (2017, Ph.D., City for Scientific research And Technology application).</li>
+							</ul>
+
+
+							<h3 id="AlumniMSc">B.Sc./M.Sc. Students</h3>
+								<ul>
+								<li>Alessandro GOLDWURM (2021, M.Sc., University of Toulouse, co-advisor: E. Cazelles)</li>
+								<li>Lorinda HUBACHER (2021, B.Sc., Toulouse INP)</li>
+								<li>Florian MORIOUSEF (2021, B.Sc., ISAE, co-advisors: C. Guilloteau, Th. Oberlin, O. Bern&eacute;, Th. Contini)</li>									
+								<li>Claire GUILLOTEAU (2018, M.Sc., INSA Rouen, co-advisors: <a href="http://oberlin.perso.enseeiht.fr/" >Th. Oberlin</a> and <a href="http://userpages.irap.omp.eu/~oberne/" >O. Bern&eacute;</a>).</li>
+								 <li>Chih Heng TENG (2017, M.Sc., INP Toulouse, co-advisors: <a href="http://oberlin.perso.enseeiht.fr/" >Th. Oberlin</a> and <a href="http://chabert.perso.enseeiht.fr/" >M. Chabert</a>).</li>
+								 <li>Lisa MICHEL (2016, M.Sc., Univ. Reims, co-advisor: <a href="http://oberlin.perso.enseeiht.fr/" >Th. Oberlin</a>).</li>
+								 <li>Laurent DESMET (2016, B.Sc., INP Toulouse).</li>
+								 <li>Sophia HOURIEZ (2015, B.Sc., INP Toulouse, co-advisor: <a href="http://www.irit.fr/~Herwig.Wendt/" >H. Wendt</a>).</li>
+								 <li>Laurent MARTIN (2015, B.Sc., INP Toulouse).</li>
+								 <li>Abdelghafour HALIMI (2014, M.Sc., INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li><a href="http://thouvenin.perso.enseeiht.fr/" >Pierre-Antoine THOUVENIN</a> (2014, M.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li>Jean-Alain LUCCIARDI (2013, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li>Cambodge BIST (2013, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li>Ahmed Taha ZAARI JABIRI (2012, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li><a href="http://cavalcanti.perso.enseeiht.fr/" >Yanna CRUZ CAVALCANTI</a> (2012, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li><a href="http://yoannaltmann.weebly.com/" >Yoann ALTMANN</a> (2010, M.Sc., INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li><a href="https://sites.google.com/site/abderrahimhalimi/" >Abderrahim HALIMI</a> (2010, M.Sc., INP Toulouse, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li>Ismail FOURARI (2009, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li><a href="http://sites.google.com/site/imeganem/" >In&egrave;s MEGANEM</a> (2008, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								 <li>Kamel BENZA&Iuml;D (2005, B.Sc., ENSEEIHT, co-advisor: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>).</li>
+								</ul>
+
+					</div>
+				</div>
+           </div>
+        </section>
+
+		<!-- Other Section -->
+        <section name="Other" id="Other">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Other-content').toggle();">Other collaborations<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Other-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Other collaborations with Ph.D. students and postdocs</h2>
+						</p>
+						<ul>
+						<li><a href="https://www.cosmostat.org/people/christophe-kervazo" >Christophe KERVAZO</a> (2020, Postdoc, University of Mons, advisor: <a href="https://sites.google.com/site/nicolasgillis/" >N. Gillis</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Blind source separation from bilinear mixtures</span>
+						</li>		
+						<li><a href="http://combrexelle.perso.enseeiht.fr" >S&eacute;bastien COMBREXELLE</a> (2016, INP Toulouse, advisors: <a href="http://www.enseeiht.fr/~wendt/" >H. Wendt</a> and <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Multifractal analysis for multivariate data</span>
+						</li>
+						<li><a href="http://perso.ens-lyon.fr/jordan.frecon/">Jordan FRECON</a> (2016, ENS Lyon, advisors: <a href="http://perso.ens-lyon.fr/patrice.abry/" >P. Abry</a> and <a href="http://perso.ens-lyon.fr/nelly.pustelnik/" >N. Pustelnik</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Proximal minimization for segmentation of signals with local regularity</span>
+						</li>
+						<li><a href="http://chabiron.perso.enseeiht.fr/" >Olivier CHABIRON</a> (2015, INP Toulouse, advisors: <a href="http://www.enseeiht.fr/~tourneret/" >J.-Y. Tourneret</a> and <a href="http://www.math.univ-toulouse.fr/~fmalgouy/">F. Malgouyres</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://thesesups.ups-tlse.fr/2994/">Convolution tree learning for sparse representation</a></span>
+						</li>
+						 <li><a href="http://www.irit.fr/-Annuaire-?code=6928">Zacharie IRACE</a> (2014, INP Toulouse, advisor: <a href="http://www.enseeiht.fr/~batatia/" >H. Batatia</a>)<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://ethesis.inp-toulouse.fr/archive/00002815/01/irace.pdf">Statistical modeling and segmentation of TEP images</a></span>
+						</li>
+						 <li><a href="http://www.kuleuven.be/wieiswie/en/person/00064588" >Laurent TITS</a> (2013, KU Leuven, advisors: <a href="http://www.kuleuven.be/wieiswie/en/person/00016705">P. Coppin</a> and <a href="http://www.kuleuven.be/wieiswie/en/person/00050928">B. Somers</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://www.kuleuven.ac.be/doctoraatsverdediging/cm/3E10/3E100139.htm">Hyperspectral signal unmixing techniques for site specific plant state Monitoring</a></span>
+						</li>
+						 <li>Se Un PARK (2012, University of Michigan, advisor: <a href="http://www.eecs.umich.edu/~hero/" >A. O. Hero</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://web.eecs.umich.edu/~hero/Preprints/Park_thesis_Final.pdf">Reconstruction, classification, and segmentation for computational microscopy</a></span>
+						</li>
+						 <li><a href="https://www.nt.tuwien.ac.at/about-us/alumni/georg-kail/" >Georg KAIL</a> (2012, Vienna University of Technology, advisor: <a href="http://www.nt.tuwien.ac.at/about-us/staff/franz-hlawatsch/" >F. Hlawatsch</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Markov chain Monte Carlo methods for detection and estimation with structural constraints</span>
+						</li>
+						 <li><a href="http://www.stats.bris.ac.uk/~mp12320/" >Marcelo PEREYRA</a> (2012, INP Toulouse, advisor: <a href="http://www.enseeiht.fr/~batatia/" >H. Batatia</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; <a href="http://hal.archives-ouvertes.fr/tel-00787930/">Statistical modeling and processing of high frequency ultrasound images</a></span>
+						</li>
+						<li><a href="http://www-personal.umich.edu/~rmittelm/">Roni MITTELMAN</a> (2012, Postdoc, University of Michigan, advisor: <a href="http://www.eecs.umich.edu/~hero/" >A. O. Hero</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Bayesian nonparametrics for segmentation of hyperspectral images</span>
+						</li>
+						<li>C&eacute;line QUINSAC (2011, Postdoc, IRIT, advisors: <a href="http://www.irit.fr/-Annuaire-?code=5473">D. Kouam&eacute;</a> and <a href="http://www.irit.fr/~Adrian.Basarab/">A. Basarab</a>),<br/>
+						  <span class="h4">&nbsp;&nbsp; Bayesian compressed sensing for ultrasound images</span>
+						</li>
+						</ul>
+					</div>
+				</div>
+           </div>
+        </section>
+
+
+	
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>

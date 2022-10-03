@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="research.html">Research</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="group.html">Research group</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="publis.html">Publications</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>				
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <b>Curriculum</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-Positions-content').show();" href="#Positions">Positions</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-background-content').show();" href="#background">Academic background</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-experiences-content').show();" href="#experiences">Previous experiences</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-skills-content').show();" href="#skills">Other skills</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-commitments-content').show();" href="#commitments">Voluntary commitments</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Miscellaneous-content').show();" href="#Miscellaneous">Miscellaneous</a></li>							
+                            </ul>
+						</li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('index.html#tab-contact-content').show();" href="index.html#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+               
+		<!-- Intro Section -->
+        <section>
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+					<h1>Curriculum vitae</h1> 
+					[<a href="doc/CV_dobigeon.pdf">.pdf version</a>]                    
+				</div>
+				
+				<b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>	
+            </div>
+        </section>
+
+
+		<!-- Positions Section -->
+        <section name="Positions" id="Positions">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Positions-content').toggle();">Positions<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Positions-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Positions</h2>
+						</p>
+						<table>
+						  <tr>
+							<td><span class="tab_entry">2019-...</span><br/></td>
+							<td><span class="tab_entry">AI Research Chair</span><br/>
+								<span class="h4">Artificial and Natural Intelligence Toulouse Institute (ANITI)</span></td>
+						  </tr>				
+						  <tr>
+							<td><span class="tab_entry">2017-2022</span><br/></td>
+							<td><span class="tab_entry">Junior Member</span><br/>
+								<span class="h4">Institut Universitaire de France (IUF)
+								</span></td>
+						  </tr>		
+						  <tr>
+							<td><span class="tab_entry">2016-...</span><br/></td>
+							<td><span class="tab_entry">Professor</span> (<span class="emph">1st class since 2019</span>)<br/>
+								<span class="h4">INP - ENSEEIHT Toulouse, University of Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2008-2016</span><br/></td>
+							<td><span class="tab_entry">Assistant/Associate Professor</span><br/>
+								<span class="h4">INP - ENSEEIHT Toulouse, University of Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2007-2008</span><br/></td>
+							<td><span class="tab_entry">Post-doctoral research associate</span><br/>
+								<span class="h4">Dept. of EECS, University of Michigan (USA)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2004-2007</span><br/></td>
+							<td><span class="tab_entry">Research assistant</span><br/>
+								<span class="h4">IRIT - Institut de Recherche en Informatique de Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2004-2007</span><br/></td>
+							<td><span class="tab_entry">Assistant lecturer</span><br/>
+								<span class="h4">INP - Institut National Polytechnique de Toulouse (France)</span></td>
+						</tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		<!-- background Section -->
+        <section name="background" id="background">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-background-content').toggle();">Academic background<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-background-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Academic background</h2>
+						</p>
+						<table>
+						  <tr>
+							<td><span class="tab_entry">2013</span><br/></td>
+							<td><span class="tab_entry">French "qualifications aux fonctions de professeur des universit&eacute;s"</span><br/>
+								<span class="h4">Section 61 - Computer sciences, Automatic Control and Signal Processing</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2012</span><br/></td>
+							<td><span class="tab_entry"> Habilitation &agrave; Diriger les Recherches</span><br/>
+								<span class="h4">INP - Institut National Polytechnique de Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2008</span><br/></td>
+							<td><span class="tab_entry">French "qualifications aux fonctions de ma&icirc;tre de conf&eacute;rences"</span><br/>
+								<span class="h4">Section 61 - Computer sciences, Automatic Control and Signal Processing<br/>
+								Section 26 - Applied mathematics and mathematical applications</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2007</span><br/></td>
+							<td><span class="tab_entry"> Ph.D. in "Signal, Image, Acoustics"</span><br/>
+								<span class="h4">INP - Institut National Polytechnique de Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2004</span><br/></td>
+							<td><span class="tab_entry">Master of Science in "Signal, Image, Acoustics"</span><br/>
+								<span class="h4">INP - Institut National Polytechnique de Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2004</span><br/></td>
+							<td><span class="tab_entry">Engineer degree in Electronics and Signal Processing</span><br/>
+								<span class="h4">INP - ENSEEIHT Toulouse (France)</span></td>
+						</tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		<!-- experiences Section -->
+        <section name="experiences" id="experiences">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-experiences-content').toggle();">Previous experiences<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-experiences-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Previous experiences</h2>
+						</p>
+						<table>
+						  <tr>
+							<td><span class="tab_entry">2004</span><br/></td>
+							<td><span class="tab_entry">Research training</span><br/>
+								<span class="h4">"Choice and implementation of EEA in hyperspectral imagery"<br/>
+								 ONERA - Office National d'Etudes et de Recherches A&eacute;rospatiales<br/>
+								 CERT - Centre de Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2003</span><br/></td>
+							<td><span class="tab_entry">Research training</span><br/>
+								<span class="h4">"Theoretical approach of cyclo-stationarity - Applications to hydro-climatic series"<br/>
+								T&eacute;SA - T&eacute;l&eacute;communications Spatiales et A&eacute;ronautiques - Toulouse (France)<br/>
+								LMTG - Laboratoire des M&eacute;canismes de Transfert en G&eacute;ologie - Toulouse (France)</span></td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2002</span><br/></td>
+							<td><span class="tab_entry">Personal teacher in mathematics</span><br/>
+								</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		<!-- skills Section -->
+        <section name="skills" id="skills">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-skills-content').toggle();">Other skills<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-skills-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Other skills</h2>
+						</p>
+						<table>
+						  <tr>
+							<td  rowspan="3"><span class="tab_entry">Languages &nbsp;</span></td>
+							<td>French: native</td>
+						  </tr>
+						  <tr >
+							<td>English: fluent</td>
+						  </tr>
+						  <tr >
+							<td>Spanish: fluent</td>
+						  </tr>
+						</table><br/>
+						<table>
+						  <tr>
+							<td  rowspan="3"><span class="tab_entry">Computing</span></td>
+							<td>Signal and image processing: Matlab, IDL, ENVI</td>
+						  </tr>
+						  <tr >
+							<td>Methods and object languages: C++, Java, VHDL, HTML, XML, UML</td>
+						  </tr>
+						  <tr >
+							<td>Word processing packages: WinEdT, LaTeX, MS Office</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		<!-- commitments Section -->
+        <section name="commitments" id="commitments">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-commitments-content').toggle();">Voluntary commitments<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-commitments-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Voluntary commitments</h2>
+						</p>
+						<table>
+						  <tr>
+							<td><span class="tab_entry">2004-2007</span><br/></td>
+							<td>Public writer in prison with AFAC
+							   </td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2001-2004</span><br/></td>
+							<td>Teacher in several prisons with GENEPI<br/>
+								</td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">2001-2004</span><br/></td>
+							<td>Member of association for social rehabilitation of ex-prisoners<br/>
+								</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+		<!-- Miscellaneous Section -->
+        <section name="Miscellaneous" id="Miscellaneous">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Miscellaneous-content').toggle();">Miscellaneous<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Miscellaneous-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Miscellaneous</h2>
+						</p>
+						<table>
+						  <tr>
+							<td><span class="tab_entry">Music</span><br/></td>
+							<td>Guitar player
+							   </td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">Culture</span><br/></td>
+							<td>Movie, photography
+							  [<a href="http://smartlense.blogspot.com/">1</a>]
+							  [<a href="http://nicolas.dobigeon.free.fr/photoblog/">2</a>]
+							  [<a href="http://photos.blogs.liberation.fr/vosphotos/dobigeon_nicolas/index.html">3</a>]
+							  [<a href="http://nicolas.dobigeon.free.fr/photos/libe_photo.html">4</a>], reading, latin calligraphy<br/>
+								</td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry">Sports</span><br/></td>
+							<td>Hiking, running, badminton, table tennis<br/>
+								</td>
+						  </tr>
+						  <tr>
+							<td><span class="tab_entry"><a href="http://picasaweb.google.fr/nicolas.dobigeon/">Travels</a></span><br/></td>
+							<td>Japan, Ghana, Togo, Czech Republic, Portugal, Iceland, Turkey, Republic of China (ROC), Canada, USA, Bosnia and Herzegovina, Croatia, Singapore, Malaysia, Poland, Belgium, Hungary, Egypt, Austria, Germany, Sweden, Switzerland, Italy, Spain, Great-Britain...<br/>
+								</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+           </div>
+        </section>
+	
+
+	
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>

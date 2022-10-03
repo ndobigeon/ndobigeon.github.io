@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="research.html">Research</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="group.html">Research group</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="publis.html">Publications</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>					
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="curriculum.html">Curriculum</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('index.html#tab-contact-content').show();" href="index.html#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+               
+		<!-- Intro Section -->
+        <section>
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+					<h1>Older news &amp; events</h1> 	
+						<p>
+						<span class="label label-danger">Highlights</span>
+						<span class="label label-success">Accepted papers</span>
+						<span class="label label-default">Submitted papers</span>						
+						<span class="label label-warning">Events</span>
+						<span class="label label-info">Other info</span>
+						</p>					
+				</div>
+				
+				<b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>	
+            </div>
+        </section>
+
+
+		<!-- complexe Section -->
+        <section name="Complex" id="complexe">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-complexe-content').toggle();">Older news<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-complexe-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2></h2>
+						</p>
+
+						<ul>
+						<li><span class="label label-default">Feb. 2022</span> New preprint on <a href="https://arxiv.org/">weighted residual NMF for hyperspectral unmixing</a></li>								
+								
+						<li><span class="label label-danger">Dec. 2020</span> Plenary speaker at <a href="https://ipas.ieee.tn/">IEEE IPAS</a> (online)</li>
+								
+						<li><span class="label label-default">Nov. 2020</span> New preprint on <a href="https://arxiv.org/abs/2011.10097/">compartment model-based kinetic analysis of dynamic PET images</a></li>
+															
+						<li><span class="label label-success">Sep. 2020</span> Accepted paper on <a href="papers/Guilloteau_IEEE_Trans_CI_2020.pdf">HS and MS image fusion under spectrally variant blurs</a> @ IEEE TCI</li>
+						<li><span class="label label-success">Sep. 2020</span> Accepted paper on <a href="papers/Vono_JCGS_2020.pdf">asymptotically exact data augmentation (AXDA)</a> @ JCGS</li>
+						<li><span class="label label-success">Sep. 2020</span> Accepted paper on <a href="papers/Ferraris_INFFUS_2020.pdf">robust fusion for change detection</a> @ Information Fusion</li>
+													
+						<li><span class="label label-default">Nov. 2020</span> New preprint on <a href="https://arxiv.org/abs/2011.11966/">blind source separation of linear-quadratic near-separable mixtures</a></li>
+						<li><span class="label label-default">Oct. 2020</span> New preprint on <a href="https://arxiv.org/abs/2010.01510/">high-dimensional Gaussian sampling (review &amp; a unifying approach)</a></li>
+						<li><span class="label label-success">July 2020</span> Accepted paper on <a href="papers/Uezato_MDPI_RS_2020.pdf">hierarchical sparse NMF</a> @ Remote Sensing</li>			
+						<li><span class="label label-success">May 2020</span> Accepted paper on <a href="papers/Guilloteau_AJ_2020.pdf">simulating hyper- &amp; multispectral JWST data</a> @ IEEE TCI</li>			
+						<li><span class="label label-success">May 2020</span> Accepted paper on <a href="papers/Monier_Ultramicroscopy_2020.pdf">fast reconstruction of atomic-scale EELS data</a> @ Ultramicropscy</li>						
+						<li><span class="label label-warning">Jan. 2020</span> <a href="https://dsg2020.wordpress.com/">Data Sciences for Geosciences 2020</a>, Toulouse, France</a></li>			
+						<li><span class="label label-success">Dec. 2019</span> Accepted paper on <a href="papers/Lagrange_IEEE_Trans_GRS_2020.pdf">matrix cofactorization for spatial-spectral unmixing</a> @ IEEE TGRS</li>			
+						<li><span class="label label-success">Dec. 2019</span> Accepted paper on <a href="papers/Lagrange_Neurocomputing_2020.pdf">matrix cofactorization for representation learning &amp; classification</a> @ Neurocomputing</li>			
+						<li><span class="label label-danger">Sep. 2019</span> Appointed as a 3IA <a href="http://aniti.univ-toulouse.fr/index.php/en/">ANITI</a> AI Research Chair</li>
+						<li><span class="label label-warning">Sep. 2019</span> Mini-workshop on "<a href="doc/Event_2019-09_OptimStat_ANITI.txt">Optimization and Statistics</a>", Toulouse, France</li>
+						<li><span class="label label-warning">July 2019</span> Congr&egrave;s <a href="https://sfpt-gh2019.onera.fr/">SFPT-GH 2019</a>, Toulouse, France</li>
+						<li><span class="label label-warning">July 2019</span> <a href="https://www.irit.fr/pfia2019/cap/">CAp 2019</a>, as part of <a href="https://www.irit.fr/pfia2019/">PFIA</a>, Toulouse, France</li>
+						<li><span class="label label-warning">July 2019</span> <a href="https://www.irit.fr/spars2019/">SPARS workshop</a>, Toulouse, France</li>
+						<li><span class="label label-warning">Oct.  2013</span> Journ&eacute;e Doctorants @ GdR-ISIS  "<a href="http://gdr-isis.fr/index.php?page=reunion&idreunion=34">Carri&egrave;res en Signal, Image &amp; Vision</a>"</li>
+						<li><span class="label label-default">Feb. 2019</span> Submitted paper on <a href="https://arxiv.org/abs/1902.05754/">asymptotically exact data augmentation (AXDA)</a></li>
+						<li><span class="label label-default">Feb. 2019</span> Submitted paper on <a href="https://arxiv.org/abs/1902.02597/">matrix cofactorization for joint representation learning &amp; classification</a></li>
+						<li><span class="label label-success">Dec. 2018</span> Accepted paper on <a href="https://arxiv.org/abs/1804.05809/">split-and-augmented Gibbs sampler</a>  @ IEEE TSP</li>
+						<li><span class="label label-success">Aug. 2018</span> Accepted paper on <a href="papers/Monier_IEEE_Trans_CI_2018.pdf">Reconstruction of partially sampled multi-band images</a>  @ IEEE TCI</li>
+						<li><span class="label label-success">July 2018</span> Accepted paper on <a href="papers/Lagrange_ELSEVIER_PR_2019.pdf">hierarchical Bayesian image analysis</a>  @ Pattern Recognition</li>
+						<li><span class="label label-success">July 2018</span> Accepted paper on <a href="papers/Cavalcanti_ELSEVIER_MEDIA_2019.pdf">unmixing dynamic PET image unmixing</a> @ MedIA</li>            
+						<li><span class="label label-default">Apr. 2018</span> Submitted paper on <a href="https://arxiv.org/abs/1804.05809/">split-and-augmented Gibbs sampler</a></li>
+						<li><span class="label label-default">Apr. 2018</span> Submitted paper on <a href="https://arxiv.org/abs/1804.03068/">robust fusion of optical images for change detection</a></li>
+						<li><span class="label label-success">Apr. 2018</span> Accepted paper on <a href="http://arxiv.org/abs/1712.07862/">LiDAR data-aided hyperspectral unmixing</a> @ IEEE TGRS</li>
+						<li><span class="label label-default">Apr. 2018</span> Submitted paper on <a href="http://arxiv.org/abs/1802.10066/">Reconstruction of partially sampled multi-band images</a></li>
+						<li><span class="label label-danger">Jan. 2018</span> Elected member @ IEEE SPS <a href="https://signalprocessingsociety.org/get-involved/signal-processing-theory-and-methods">SPTM Technical Committee</a></li>
+						<li><span class="label label-default">Dec. 2017</span> Submitted paper on <a href="http://arxiv.org/abs/1712.07862/">hierarchical Bayesian image analysis</a></li>            
+						<li><span class="label label-default">Dec. 2017</span> Submitted paper on <a href="http://arxiv.org/abs/1712.07862/">LiDAR data-aided hyperspectral unmixing</a></li>
+						<li><span class="label label-danger">Oct. 2017</span> Invited @ <a href="http://www.dagstuhl.de/17411">HMM imaging</a> Schloss Dagstuhl Seminar, Germany</li>
+						<li><span class="label label-danger">Oct. 2017</span> Nominated @ <a href="http://www.iufrance.fr">IUF</a> as a junior member</li>            
+						<li><span class="label label-success">June 2017</span> Two <a href="../publis.html#Conference">accepted papers</a> @ EUSIPCO, Kos, Greece</li>
+						<li><span class="label label-success">May 2017</span> Accepted paper on <a href="../papers/Rashwan_IEEE_GRS_Letters_2017.pdf">hyperspectral band selection</a> @ IEEE GRSL</li>
+						<li><span class="label label-success">May 2017</span> Accepted paper on <a href="../papers/Frecon_IEEE_Trans_SP_2017.pdf">a Bayesian formulation of TV-l<sub>0</sub> denoising</a> @ IEEE TSP</li>
+						<li><span class="label label-success">Mar. 2017</span> Five <a href="../publis.html#Conference">accepted papers</a> @ IEEE ICASSP, New Orleans, USA</li>
+						<li><span class="label label-success">Dec. 2016</span> Accepted paper on <a href="../papers/Elvira_IEEE_Trans_SP_2017.pdf">Bayesian anti-sparse coding</a> @ IEEE TSP</li>
+						<li><span class="label label-success">Nov. 2016</span> Accepted paper on <a href="papers/Halimi_IEEE_Trans_TCI_2017.pdf">fast hyperspectral unmixing</a> @ IEEE TCI</li>
+						<li><span class="label label-danger">Nov. 2016</span> Invited talk @ "<a href="https://chemima.sciencesconf.org/">Chemometrics &amp; Statistics in Image Analysis</a>", IHP, Paris</li>
+						<li><span class="label label-default">Sep. 2016</span> Submitted paper on <a href="http://arxiv.org/abs/1609.06074/">a Bayesian formulation of TV-l<sub>0</sub> denoising problems</li>
+						<li><span class="label label-default">Sep. 2016</span> Two submitted papers on change detection between multi-band images [<a href="http://arxiv.org/abs/1609.06074/">1</a>][<a href="http://arxiv.org/abs/1609.06076//">2</a>]</li>
+						<li><span class="label label-default">July 2016</span> Submitted paper on <a href="http://arxiv.org/abs/1607.05336/">fast hyperspectral unmixing</a></li>
+						<li><span class="label label-success">July 2016</span> Accepted paper on <a href="http://arxiv.org/abs/1504.05776/">local regularity-based image segmentation</a> @ IEEE TCI</li>
+						<li><span class="label label-success">June 2016</span> Accepted paper on <a href="papers/Thouvenin_IEEE_Trans_IP_2016.pdf">online unmixing of multitemporal hyperspectral images</a> @ IEEE TIP</li>
+						<li><span class="label label-success">May 2016</span> Accepted paper on <a href="papers/Zhao_IEEE_Trans_IP_2016.pdf">fast single-image super-resolution</a> @ IEEE TIP</li>
+						<li><span class="label label-warning">Apr. 2016</span> 1-day GdR-ISIS and CCT-TSI CNES joint meeting "<a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=302">Imagerie hyperspectrale</a>"</li>
+						<li><span class="label label-default">Dec. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1512.06086">Bayesian anti-sparse coding</a></li>
+						<li><span class="label label-default">Oct. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1510.05893">online unmixing of multitemporal hyperspectral images</a></li>
+						<li><span class="label label-warning">Nov. 2015</span> Journ&eacute;e Doctorants @ GdR-ISIS  "<a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=32">Carri&egrave;res en Signal, Image &amp; Vision</a>"</li>
+						<li><span class="label label-success">Sep. 2015</span> Accepted paper on <a href="papers/Fevotte_IEEE_Trans_IP_2015.pdf">robust-NMF for nonlinear unmixing</a> @ IEEE TIP</li>
+						<li><span class="label label-success">Sep. 2015</span> Two accepted papers [<a href="papers/Thouvenin_IEEE_Trans_SP_2016.pdf">1</a> @ IEEE TSP] [<a href="papers/Halimi_IEEE_Trans_IP_2015.pdf">2</a> @ IEEE TIP] on unmixing with spectral variability</li>
+						<li><span class="label label-success">June 2015</span> Accepted paper on <a href="papers/Wei_IEEE_Trans_IP_2015.pdf">fast multi-band image fusion</a> @ IEEE TIP</li>
+						<li><span class="label label-warning">June 2015</span> Special session on hyperspectral pansharpening at <a href="http://www.ieee-whispers.com/">IEEE WHISPERS</a>, Tokyo, Japan</li>
+						<li><span class="label label-default">May 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1505.01740/">fast spectral unmixing</a></li>
+						<li><span class="label label-success">May 2015</span> Accepted overview paper on <a href="papers/Loncan_IEEE_GRS_Mag_2015.pdf">hyperspectral pansharpening</a> @ IEEE GRSM</li>
+						<li><span class="label label-default">Apr. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1504.05776/">local regularity-based image segmentation</a></li>
+						<li><span class="label label-default">Apr. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1504.04531/">submitted overwiew paper</a> on hyperspectral pansharpening</a></li>
+						<li><span class="label label-warning">Feb. 2015</span> Winter Shool <a href="http://www.gipsa-lab.fr/summerschool/VillardWinterSchool/">Search for Latent Variables: ICA, Tensors, and NMF</a></li>
+						<li><span class="label label-default">Feb. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1502.03121/">fast multi-band image fusion</a></li>
+						<li><span class="label label-default">Feb. 2015</span> Submitted paper on <a href="http://arxiv.org/abs/1502.01260/">unmixing with spectral variability</a></li>
+					    <li><span class="label label-info">Nov.  2014</span> <a href="https://project.inria.fr/bnpsi/">ANR BNPSI Project </a>meeting in Bordeaux</li>
+						<li><span class="label label-danger">Dec.   2014</span> <a href="http://www.yoannaltmann.weebly.com/">Yoann Altmann</a> received the <a href="http://academie-sciences-lettres-toulouse.fr/remise-des-prix-2014/">Acad&eacute;mie des Sciences of Toulouse</a> Ph.D. award</li>
+						<li><span class="label label-warning">Nov. 2014</span> 1-day meeting @ GdR-ISIS on <a href="http://www.gdr-isis.fr/index.php?page=reunion&amp;idreunion=260">inverse problems</a></li>
+						<li><span class="label label-default">Oct. 2014</span> Submitted paper on <a href="http://arxiv.org/abs/1410.4871/">multifractality parameter estimation</a></li>
+						<li><span class="label label-default">Sep. 2014</span> Submitted paper on <a href="http://arxiv.org/abs/1409.5729/">hyperspectral image fusion</a></li>
+						<li><span class="label label-success">Sep. 2014</span> Accepted paper on <a href="http://dobigeon.perso.enseeiht.fr/papers/Chabiron_IJCV_2014.pdf">fast transform learning</a> @ IJCV</li>
+						<li><span class="label label-info">June  2014</span> <a href="http://www.materials360online.com/newsDetails/46873;jsessionid=4C2E97BF78569D830FA3A79750A7EEF9">Materials360 Online</a> reports the use of our BLU algorithm in an experiment</li>
+						<li><span class="label label-default">June 2014</span> Submitted paper on <a href="http://arxiv.org/">unmixing with spectral variability</a></li>
+						<li><span class="label label-success">June 2014</span> Accepted paper on <a href="http://dobigeon.perso.enseeiht.fr/papers/Dobigeon_IEEE_JSTARS_2014.pdf">validation of nonlinear mixing models</a> @ IEEE JSTARS</li>
+						<li><span class="label label-info">June  2014</span> <a href="http://hypanema.fr/">ANR Hypanema Project </a>meeting in Nice</li>
+						<li><span class="label label-info">June  2014</span> <a href="https://project.inria.fr/bnpsi/">ANR BNPSI Project </a>Meeting in Toulouse</li>
+						<li><span class="label label-danger">Apr. 2014</span> Invited talk @ SHIRE <a href="http://www.sheffield.ac.uk/kroto/news/event_hyperspectral_imaging">Symposium on Hyperspectral Imaging in Research and Engineering</a> Univ. Sheffield, U.K.</li>
+						<li><span class="label label-info">Feb. 2014</span> Kick-off of the   ANR <a href="https://project.inria.fr/bnpsi/">BNPSI Project</a></li>
+						<li><span class="label label-default">Jan. 2014</span> Submitted paper on <a href="http://arxiv.org/abs/1401.5649/">robust-NMF for nonlinear unmixing</a></li>
+						<li><span class="label label-success">Dec. 2013</span> Accepted paper on <a href="/papers/Besson_IEEE_SP_Letters_2014.pdf">close subspace estimation</a> @ IEEE SPL</li>
+						<li><span class="label label-default">Dec. 2013</span> Submitted paper on <a href="http://arxiv.org/abs/1312.1270/">validation of nonlinear mixing models</a></li>
+						<li><span class="label label-default">Nov. 2013</span> Submitted paper on <a href="http://hal.archives-ouvertes.fr/hal-00862903/">fast transform learning</a></li>
+						<li><span class="label label-warning">Sep. 2013</span> Special session @ EUSIPCO  "<a href="http://www.eusipco2013.org/program.html#S1569473183">Recent advances in spectral unmixing for hyperspectral imagery</a>"</li>
+						<li><span class="label label-warning">Oct.  2013</span> Journ&eacute;e Doctorants @ GdR-ISIS  "<a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=31">Carri&egrave;res en Signal, Image &amp; Vision</a>"</li>
+						<li><span class="label label-warning">Oct. 2013</span> MAHI workshop: "<a href="http://www-n.oca.eu/aferrari/MAHI">Methodological Aspects of Hyperspectral Imaging</a>"</li>
+						<li><span class="label label-warning">June 2013</span> <a href="http://www.cimi.univ-toulouse.fr/imagetrimester/workshop.html">CIMI Workshop on "Optimization and Statistics in Image Processing"</a></li>
+						<li><span class="label label-info">Jan. 2013</span> Kick-off the ANR <a href="http://hypanema.fr/">HYPANEMA Project</a></li>
+						<li><span class="label label-warning">May-July 2013</span> <a href="http://www.cimi.univ-toulouse.fr/imagetrimester/">CIMI Thematic Trimester on Image Processing</a></li>
+						</ul>
+					</div>
+				</div>
+           </div>
+        </section>
+		
+
+		
+
+
+	
+        <hr class="star-danger">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
