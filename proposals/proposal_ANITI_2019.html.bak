@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="../style_sc.css" media="screen,projection" title="style_sc"/>
+    <link rel="alternate stylesheet" type="text/css" href="../print.css" media="screen,projection,print" title="style_print"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script type='text/javascript' src='../leftfloat.js'></script>
+</head>
+
+<body>
+<div id="wrap">
+
+<table>
+    <tr>
+        <th>
+            <div id="header">
+                <h1><a href="../index.html">Nicolas Dobigeon</a></h1>
+                <h2>
+                Professor at <a href="http://www.irit.fr/">IRIT</a>/<a href="http://www.inp-toulouse.fr/">INP</a>-<a href="http://www.enseeiht.fr/">ENSEEIHT</a>, <a href="http://www.univ-toulouse.fr/">University of Toulouse</a><br/>
+                Junior Member of <a href="http://www.iufrance.fr/">Institut Universitaire de France</a> (IUF, 2017-2022)</a>
+                </h2>
+            </div>
+        </th>
+        <td><a href="http://www.iufrance.fr/"><img src="../img/logo_IUF_crop.png" width="190" alt="" /></a></td>
+    </tr>
+</table>
+
+    <img id="frontphoto" src="../img/IRIT_band.png" width="760" height="135" alt="" />
+
+    <div id="leftside">
+        <h2 class="hide">Menu:</h2>
+
+        <ul class="avmenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../activities.html">Activities</a></li>
+            <li><a href="../publis.html">Publications</a></li>
+            <li><a href="../teaching.html">Teaching</a></li>
+            <li><a href="../curriculum.html">Curriculum</a></li>
+        </ul>
+        <p class="textright">Version fran&ccedil;aise &raquo;</p>
+
+    </div>
+
+    <div id="contentwide">
+
+        <h2>Note to prospective students/fellows</h2>
+
+        <p>If you are considering our group to pursue an internship or summer project, or to conduct research as a M.Sc./Ph.D. student or a Postdoctoral Research Associate, please read the following recommendations carefully.</p>
+
+        <p>Our research group activities mainly deal with statistical signal/image processing &amp; machine learning, with various applications such as remote sensing, microscopy and biomedical engineering. Please consult the <a href="../research.html">Research</a> page to get some details regarding our activities.</p>
+
+        <p>If you have a strong mathematical background (probability &amp; statistics, algebra, matrix computation, optimization, etc.), scientific programming skills (e.g., in MATLAB) and particular interests in signal/image processing (inversion, restoration, detection, segmentation, etc.), machine learning and artificial intelligence (supervised learning, clustering, data mining, large scale inference, etc.), your profile may fit our expectations.</p>
+
+        <h5>To apply for an internship, a Master or Ph.D. thesis </h5>
+        To complete your application, you are invited to provide (as pdf files)
+        <ul>
+            <li>a detailed curriculum,</li>
+            <li>up to three recommendation letters stating your ability for research,</li>
+            <li>official transcripts from each institution you have attended (in French or English).</li>
+        </ul>
+
+        <h5>To apply for a post-doctoral position </h5>
+        To complete your application, you are invited to provide (as pdf files)
+        <ul>
+            <li>a detailed curriculum, including a list of publications,</li>
+            <li>up to three recommendation letters stating your ability for research,</li>
+            <li>a short research statement.</li>
+        </ul>
+
+
+        <p>Applications from highly motivated students or post-doctoral fellows are always welcome since extra financial supports can be found for outstanding profiles.</p>
+
+        <p>Given the large number of applications I receive, I am unable to individually respond to all emails from prospective students/fellows who wish to join our research group. If we are interested in your candidacy, we will contact you promptly. If you do not receive any response, no need to send several reminders.</p>
+
+        <p>Thank you.</p>
+
+
+    </div>
+
+    <div id="footer">
+        <p><span>&copy; 2016 <a href="#">Nicolas Dobigeon</a></span> <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a><br/>
+        <a href="http://andreasviklund.com/templates/" title="Original CSS template design">Original design</a> by <a href="http://andreasviklund.com/" title="Andreas Viklund">Andreas Viklund</a></p>
+    </div>
+
+</div>
+</body>
+</html>

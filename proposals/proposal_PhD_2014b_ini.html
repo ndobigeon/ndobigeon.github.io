@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="index.html">Home</a> / <a href="research.html">Research</a> /
+
+       <br/>
+        <h1>Modeling spectral and temporal variabilities in hyperspectral image unmixing</h1>
+        <h2>M.Sc. and Ph.D. positions in statistical signal/image processing</h2>
+        The <a href="http://sc.enseeiht.fr">Signal and Communication Group</a> at IRIT Laboratory, Toulouse, France is currently offering M.Sc. and Ph.D. positions in statistical signal/image processing. <br/><br/>
+        Interested students are invited
+        <ol>
+            <li>to read the following <a href="note_students.html">important note</a></li>
+            <li>to contact:
+                <ul>
+                <li><a href="http://www.enseeiht.fr/~tourneret">Jean-Yves Tourneret</a> : jean-yves [dot] tourneret [at] enseeiht [dot] fr
+                <li><a href="index.html">Nicolas Dobigeon</a> : nicolas [dot] dobigeon [at] enseeiht [dot] fr
+                </li>
+                </ul>
+            </li>
+        </ol>
+                
+        A pdf version of the proposal is available <a href="doc/Proposal_PhD_2014b.pdf">here</a>.
+
+        <h3>Abstract</h3>
+        <p>Over the last several decades, new techniques of imagery have appeared which measure more than the 3 usual Red-Green-Blue wavelengths (see Fig. 1). As soon as the number of wavelengths becomes large (e.g., more than 10 spectral bands), the resulting images are referred to as hyperspectral images. As a consequence, each pixel is associated with a spectrum which may count up to thousands of wavelengths. Such detailed measurements are useful in many areas such as remote sensing (e.g., to recognize and classify cultivated areas) [1] or dermatology (e.g., to diagnose the state of melanomas) [2]. </p>
+
+        <img alt="Illustration of nonlinear mixing" src="demos/fig_hyper_1.png" class="img_app_bis"/><br/>
+        <span class="caption">Fig. 1. An hyperspectral data cube.</span><br/><br/>
+
+        Much research has been devoted to spectral unmixing, which is an efficient
+            way to solve standard problems encountered in hyperspectral imagery. These problems include pixel
+            classification, material quantification and subpixel detection. Spectral unmixing aims at decomposing a
+            pixel spectrum into a collection of elementary material spectra, usually referred to as endmembers, and at estimating the
+            corresponding proportions or abundances [3]. To describe the mixture, the most frequently encountered model is
+            the macroscopic model which assumes that the observed pixel spectrum is a weighted linear combination of
+            the endmember spectra. Efficient supervised or unsupervised algorithms based on this linear model have
+            been proposed in the literature to solve the unmixing problem, which can be considered as a matrix factorization task. In particular, some approaches developed in the Signal &amp; Communication group at IRIT Laboratory rely on parametric Bayesian estimation techniques [4].</p>
+
+
+         <p>Most of the works in the literature assume that a single spectral signature is sufficient to characterize an endmember. Unfortunately this strong assumption  leads to neglect any spectral variability of these components that is present in the acquired images [5]. We propose in this work to implement statistical estimation strategies to account for the variability inherent to the representativeness of a pure material (see for instance [6]). In addition, future missions of Earth observation will acquire multiple multi-band images acquired over the same scene at several time instants, with periods ranging to several years. In this case, it is legitimate to consider that the spectral signature of a component is also changing over time. The second objective of this thesis is to extend standard spectral unmixing techniques for time series images to extract multi-band spectral profiles of macroscopic components that evolve over time.</p>
+
+        <h3>References</h3>
+
+        <table>
+            <tr>
+            <td>[1]</td>
+            <td>J. Bioucas-Dias, A. Plazza, G. Camps-Valls, P. Scheunders, N. Nasrabadi, and J. Chanussot "Hyperspectral Remote Sensing Data Analysis and Future Challenges", <span class="emph">IEEE Geoscience and Remote Sensing Magazine</span>, vol. 1, no. 2, 2013.
+            </td>
+            </tr>
+
+            <tr>
+            <td>[2]</td>
+            <td>P. A. A. De Beule et al., "A hyperspectral fluorescence lifetime probe for skin cancer diagnosis", <span class="emph">Rev. Sci. Instrum</span>, vol. 78, no. 12, Dec. 2007.
+            </td>
+            </tr>
+
+            <tr>
+            <td>[3]</td>
+            <td>J. M. Bioucas-Dias, A. Plaza, N. Dobigeon, M. Parente, Q. Du, P. Gader and J. Chanussot, "Hyperspectral unmixing overview: geometrical, statistical, and sparse regression-based approaches," <span class="emph">IEEE J. Sel. Topics Applied Earth Observations and Remote Sensing</span>, vol. 5, no. 2, pp. 354-379, April 2012.</a>
+            </td>
+            </tr>
+
+
+            <tr>
+            <td>[4]</td>
+            <td>N. Dobigeon, S. Moussaoui, M. Coulon, J.-Y. Tourneret and A. O. Hero, "Joint Bayesian endmember extraction and linear unmixing for hyperspectral imagery," <span class="emph">IEEE Trans. Signal Processing</span>, vol. 57, no. 11, pp. 4355-4368, Nov. 2009.</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>[5]</td>
+            <td>A. Zare and K. C. Ho, "Endmember variability in hyperspectral analysis," <span class="emph">IEEE Signal Processing Mag.</span>, Jan. 2014, to appear.</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>[6]</td>
+            <td>O. Eches, N. Dobigeon and J.-Y. Tourneret, "Bayesian estimation of linear mixtures using the normal compositional model. Application to hyperspectral imagery," <span class="emph">IEEE Trans. Image Processing</span>, vol. 19, no. 6, pp. 1403-1413, June 2010.</a>
+            </td>
+            </tr>
+
+        </table>
+
+        <h3>Keywords</h3>
+        <p>Hyperspectral imagery, spectral unmixing, endmember variability, multi-temporal data analysis, Bayesian methods, Markov chain Monte Carlo algorithms.</p>
+
+        <h3>Requirements</h3>
+        <p>The knowledge needed for this work includes statistical signal processing, estimation, and
+        detection. Knowledge of multivariate statistics and signal analysis will be appreciated.</p>
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/>
+</div>
+</body>
+</html>

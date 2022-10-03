@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="index.html">Home</a> / <a href="research.html">Research</a> /
+
+       <br/>
+        <h1>Nonparametric Bayesian methods for hyperspectral image unmixing</h1>
+        <h2>M.Sc. and Ph.D. positions in statistical signal/image processing</h2>
+        The <a href="http://lagis.cnrs.fr/Equipe-SI,173">Signal and Image Group</a> at LAGIS Laboratory, Lille, France, and the <a href="http://sc.enseeiht.fr">Signal and Communication Group</a> at IRIT Laboratory, Toulouse, France, are currently offering M.Sc. and Ph.D. positions in statistical signal/image processing. <br/><br/>
+                Interested students are invited
+        <ol>
+            <li>to read the following <a href="note_students.html">important note</a></li>
+            <li>to contact:       
+                <ul>
+                <li><a href="http://pierrechainais.ec-lille.fr/">Pierre Chainais</a>, LAGIS, Lille : pierre [dot] chainais [at] ec-lille [dot] fr</a>
+                <li><a href="http://emmanuelduflos.ec-lille.fr/">Emmanuel Duflos</a>, LAGIS, Lille : emmanuel [dot] duflos [at] ec-lille [dot] fr</a>
+                <li><a href="http://www.telecom-lille1.eu/people/septier/">Fran&ccedil;ois Septier</a>, LAGIS, Lille : francois [dot] septier [at] telecom-lille [dot] fr</a>
+                <li><a href="http://www.enseeiht.fr/~tourneret">Jean-Yves Tourneret</a>, IRIT, Toulouse : jean-yves [dot] tourneret [at] enseeiht [dot] fr
+                <li><a href="index.html">Nicolas Dobigeon</a>, IRIT, Toulouse : nicolas [dot] dobigeon [at] enseeiht [dot] fr
+                </li>
+                </ul>
+            </li>
+        </ol>
+        A pdf version of the proposal is available <a href="doc/Proposal_PhD_2014a.pdf">here</a>.
+
+        <h3>Abstract</h3>
+        <p>Over the last several decades, new techniques of imagery have appeared which measure more than the 3 usual Red-Green-Blue wavelengths (see Fig. 1). As soon as the number of wavelengths becomes large (e.g., more than 10 spectral bands), the resulting images are referred to as hyperspectral images. As a consequence, each pixel is associated with a spectrum which may count up to thousands of wavelengths. Such detailed measurements are useful in many areas such as remote sensing (e.g., to recognize and classify cultivated areas) [1] or dermatology (e.g., to diagnose the state of melanomas) [2].</p>
+        <p>
+        <img alt="Illustration of nonlinear mixing" src="demos/fig_hyper_1.png" class="img_app_bis"/><br/>
+        <span class="caption">Fig. 1. An hyperspectral data cube.</span><br/>
+
+        <p>Much research has been devoted to spectral unmixing, which is an efficient
+            way to solve standard problems encountered in hyperspectral imagery. These problems include pixel
+            classification, material quantification and subpixel detection. Spectral unmixing aims at decomposing a
+            pixel spectrum into a collection of elementary material spectra, usually referred to as endmembers, and at estimating the
+            corresponding proportions or abundances [3]. To describe the mixture, the most frequently encountered model is
+            the macroscopic model which assumes that the observed pixel spectrum is a weighted linear combination of
+            the endmember spectra. Efficient supervised or unsupervised algorithms based on this linear model have
+            been proposed in the literature to solve the unmixing problem, which can be considered as a matrix factorization task. In particular, some approaches developed in the Signal &amp; Communication
+             group at IRIT Laboratory rely on parametric Bayesian estimation techniques [4].</p>
+
+
+        <p>
+         Most of the works in the literature assume that the number of macroscopic components that are present in the observed scene is a priori known or estimated using
+         empirical methods that may be very sensitive with respect to the noise level or other nuisance parameters. Meanwhile, very few attempts have proposed
+         relevant and reliable methods to estimate this number (see for instance [5]). In this work, we propose to take advantage of the flexibility and the power of Bayesian nonparametric approaches to include the estimation of the number of materials within a Bayesian unmixing algorithm [6]. This problem of model selection is very challenging since the number of components, their spectral signatures and the proportions of these materials in each image pixel need to be estimated jointly in a fully unsupervised framework. This problem is closely related to a dictionary learning task, which can also be solved using a nonparametric Bayesian framework [7].</p>
+
+        <h3>References</h3>
+
+        <table>
+            <tr>
+            <td>[1]</td>
+            <td>J. Bioucas-Dias, A. Plazza, G. Camps-Valls, P. Scheunders, N. Nasrabadi, and J. Chanussot "Hyperspectral Remote Sensing Data Analysis and Future Challenges", <span class="emph">IEEE Geoscience and Remote Sensing Magazine</span>, vol. 1, no. 2, 2013.
+            </td>
+            </tr>
+
+            <tr>
+            <td>[2]</td>
+            <td>P. A. A. De Beule et al., "A hyperspectral fluorescence lifetime probe for skin cancer diagnosis", <span class="emph">Rev. Sci. Instrum</span>, vol. 78, no. 12, Dec. 2007.
+            </td>
+            </tr>
+
+            <tr>
+            <td>[3]</td>
+            <td>J. M. Bioucas-Dias, A. Plaza, N. Dobigeon, M. Parente, Q. Du, P. Gader and J. Chanussot, "Hyperspectral unmixing overview: geometrical, statistical, and sparse regression-based approaches," <span class="emph">IEEE J. Sel. Topics Applied Earth Observations and Remote Sensing</span>, vol. 5, no. 2, pp. 354-379, April 2012.</a>
+            </td>
+            </tr>
+
+
+            <tr>
+            <td>[4]</td>
+            <td>N. Dobigeon, S. Moussaoui, M. Coulon, J.-Y. Tourneret and A. O. Hero, "Joint Bayesian endmember extraction and linear unmixing for hyperspectral imagery," <span class="emph">IEEE Trans. Signal Processing</span>, vol. 57, no. 11, pp. 4355-4368, Nov. 2009.</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>[5]</td>
+            <td>O. Eches, N. Dobigeon and J.-Y. Tourneret, "Estimating the number of endmembers in hyperspectral images using the normal compositional model and a hierarchical Bayesian algorithm," <span class="emph">IEEE J. Sel. Topics Signal Processing</span>, vol. 3, no. 3, pp. 582-591, June 2010.</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>[6]</td>
+            <td>T. Griffiths and Z. Ghahramani, "The indian buffet process: An introduction and review," <span class="emph">Journal of Machine Learning Research</a>, vol. 12, pp. 1185-1224, 2011.</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>[7]</td>
+            <td>Z. Xing, M. Zhou, A. Castrodad, G. Sapiro and L. Carin, "Dictionary Learning for Noisy and Incomplete Hyperspectral Images", <span class="emph">SIAM J. Imaging Sciences</span>, vol. 5, no.1, pp. 33-56, 2011.</a>
+            </td>
+            </tr>
+
+        </table>
+
+        <h3>Keywords</h3>
+        <p>Hyperspectral imagery, spectral unmixing, nonparametric Bayesian methods, Markov chain Monte Carlo algorithms, matrix factorization, dictionary learning.</p>
+
+        <h3>Requirements</h3>
+        <p>The knowledge needed for this work includes statistical signal/image processing, estimation, and
+        detection. Knowledge of Bayesian statistics will be appreciated.</p>
+
+        <h3>Funding</h3>
+        <p>This work is funded by the ANR BNPSI (2014-2018)</p>
+
+
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/>
+</div>
+</body>
+</html>
