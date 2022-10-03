@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Fusion of hyperspectral and multispectral images under spectrally variant spatial blurs - Application to James Webb Space Telescope (JWST) data</h1>
+		
+		<p class="emph">(see also <a href="app_fusion.html">here</a>)</p>
+        <p>Hyperspectral imaging has become a significant source of valuable data for astronomers over the past decades. 
+		Current instrumental and observing time constraints allow direct acquisition of multispectral images, 
+		with high spatial but low spectral resolution, and hyperspectral images, with low spatial but high spectral resolution. 
+		To enhance scientific interpretation of the data, we propose a data fusion method which combines the benefits of each image 
+		to recover a high spatio-spectral resolution datacube. 
+		</p>
+
+               <img alt="Multi-band image fusion" src="../demos/fig_JWST_fusion_process_horizontale_en.png" class="img_app"/><br/>
+        <span class="caption">Fig. 1. Fusion process.</span><br/><br/>
+
+		<h2>Simulated JWST datasets</h2>
+        <p>In the particular applicative context of the JWST, a first contribution consists in proposing a generic framework to model a synthetic scene of high spatial
+and spectral resolutions and the corresponding multispectral and hyperspectral images that would be observed by two specific instruments, namely NIRCam and NIRSpec (IFU).
+Some results are depicted in Fig. 2.</p>
+
+ <img alt="Synthetic scene and observed multispectral and hyperspectral image" src="../demos/fig_JWST_generation.png" class="img_app"/><br/>
+        <span class="caption">Fig. 2. Synthetic scene and observed multispectral and hyperspectral image.</span><br/><br/>
+
+		<p> This framework has been described in the paper published in the Astrophysical Journal:</p>
+        <ul>
+        <li><a href="../papers/Guilloteau_AJ_2020.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>
+        </li>
+        </ul>
+		
+		<h2>Fast fusion of multiband images</h2>
+		
+		
+        <p>The fusion task is formulated as an inverse problem which accounts for the specificities of astronomical instruments, such as spectrally variant blurs, as depicted in Fig. 3.</p>
+		
+<img alt="PSF" src="../demos/fig_JWST_psf.png" class="img_app"/><br/>
+        <span class="caption">Fig. 3. PSFs of the NIRCam Imager (top) and NIRSpec IFU (bottom) calculated with webbpsf for two particular wavelengths (logarithmic
+scale).</span><br/><br/>
+		
+		
+		<p>We provide a fast implementation by solving the problem in the frequency domain and in a low-dimensional subspace 
+		to efficiently handle the convolution operators as well as the high dimensionality of the data. Some results are depicted in Fig. 4.</p>
+
+ <img alt="Synthetic scene and observed multispectral and hyperspectral image" src="../demos/fig_JWST_results.png" class="img_app"/><br/>
+        <span class="caption">Fig. 4. From top to bottom: RGB compositions of fused images reconstructed
+by the baseline, Brovey, R-FUSE, HS-only, MS-only and proposed method.</span><br/><br/>
+
+
+        <p>The algorithm is detailed in the paper published in IEEE Trans. Computational Imaging:
+        </p>
+        <ul>
+        <li><a href="../papers/Guilloteau_IEEE_Trans_CI_2020.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>
+        </li>
+        </ul>
+        <p>
+            The corresponding codes are available below.
+        </p>
+        <ul>
+        <li><a href="https://github.com/cguilloteau/Fast-fusion-of-astronomical-images">Python codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a> [GitHub].
+        </li>
+        </ul>
+
+    
+    <p><br/></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

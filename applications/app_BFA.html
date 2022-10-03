@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+
+       <br/>
+        <h1>Bayesian methods for gene expression factor analysis</h1>
+
+        <h3>Summary</h3>
+        <p>In the past few years, genomics has received growing interest, particularly since the map of the human genome was completed in early 2000's. Currently, medical teams are facing a new challenge: processing the signals issued by DNA chips. These signals, often of voluminous size, allow one to discover the level of a gene expression in a given tissue at any time. For example, to detect or prevent a disease in a group of observed patients based on gene expression levels innovative methods are needed to analyze the information provided by these chips.</p>
+
+        <p>One important problem is the identification of the specific temporal gene expression profiles of host response to a pathogen. In this problem, sensitive methods are needed that can reveal subtle and elusive expression patterns. One particularly promising approach are dimensionality reduction methods that decompose these signals into elementary patterns according to a linear mixing model. For example, PCA, ICA and manifold learning are such approaches. We propose to develop Bayesian decomposition algorithms to identify relevant biomarkers and estimate their levels of expression. The work is based on the experience of the SC team on Bayesian statistical modeling, as well as the use of stochastic simulation methods, which have already been demonstrated for other applications (including hyperspectral imaging). Moreover, when analyzing DNA data, a crucial issue is the reduction of dimensionality of the signals to be processed. Consequently, a particular interest is devoted to developing appropriate methods for sparse analysis and variable selection.
+        </p>
+
+        <img alt="Mixing coefficients" src="../demos/fig_PHD_PLoS.png" class="img_app"/><br/>
+        <span class="caption">Fig. 1.: From [<a href="../papers/Huang_PLoS_Genetics_2011.pdf">Huang et al., 2011</a>].</span><br/><br/>
+
+        <h3>Collaborations</h3>
+        <p>
+        This work is carried out in collaboration with the team of Prof. Alfred O. Hero (University of Michigan, USA). The quality of the research conducted by Prof. Hero in biostatistics is a significant support. The methods developed are evaluated on real signals, collected during a recent viral challenge study (2008) conducted on volunteers.
+        </p>
+        <p>
+        Prof. Hero's activities are in part funded by the DARPA program <a href="http://www.genome.duke.edu/research/genomic-medicine/areas/infectious-disease/">Predicting Health and Disease (PHD)</a>. The collaborators involved in this projet are :
+        </p>
+        <ul>
+        <li><a href="http://www.eecs.umich.edu/~hero/">Prof. Alfred O. Hero</a> (Department of EECS, University of Michigan),</li>
+        <li><a href="http://infectiousdiseases.medicine.duke.edu/faculty/details/0278273">Dr. Aimee K. Zaas</a> (Duke Division of Infectious Diseases, Duke University),</li>
+        <li><a href="http://www.genome.duke.edu/people/faculty/ginsburg/">Dr. Geoffrey S. Ginsburg</a> (Duke Institute for Genome Sciences and Policy, Duke University).</li>
+        </ul>
+
+
+      <h3>Main results</h3>
+    <p>
+    The Bayesian factor analysis algorithm, called BLU, initially proposed in [<a href="../papers/Dobigeon_IEEE_Trans_SP_2009.pdf">Dobigeon et al., 2009</a>] to analyze hyperspectral data,  is described in the paper
+    published in BMC Bioinformatics:</p>
+    <ul>
+            <li><a href="../papers/Bazot_BMC_Bioinfo_2013.pdf" >article: <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+            <li><a href="../papers/Bazot_BMC_Bioinfo_2013_AddFile.pdf" >supplementary materials: <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+    </ul>
+
+    <p>The Matlab code is available here:</p>
+    <ul>
+            <li><a href="../soft/uBLU.zip" >matlab codes <img src="../img/zip_icon.png" alt="Download the document" class="icon" /></a> [ .zip - 17 ko ].</li>
+    </ul>
+
+
+    <p>It has been successfully used during
+    the study whose results are reported in the paper published in PLoS Genetics (Aug. 2011):</p>
+    <ul>
+            <li><a href="../papers/Huang_PLoS_Genetics_2011.pdf" >article: <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+    </ul>
+    <p>Check also the "reproductible research" webpage associated with the PLoS Genetics paper:</p>
+        <ul>
+            <li><a href="http://tbayes.eecs.umich.edu/atibaup/temporal_dynamics_plos" >reproductible resarch webpage: <img src="../img/html_icon.png" alt="reproductible research webpage" class="icon" /></a>.</li>
+    </ul>
+
+
+    <p>Press releases and a press review regarding this work are available online:</p>
+    <ul>
+            <li><a href="app_PHD_press.html" >press releases and review: <img src="../img/html_icon.png" alt="Download the document" class="icon" /></a>.</li>
+    </ul>
+
+    <p>Some extensions/developments of BLU have been proposed in 2 conference papers:</p>
+    <ul>
+            <li><a href="../papers/Bazot_IEEE_Asilomar_2010.pdf" >article: <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+            <li><a href="../papers/Bazot_IEEE_ICASSP_2011.pdf" >article: <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+    </ul>
+
+
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

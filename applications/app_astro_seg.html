@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Joint segmentation of multivariate astronomical data</h1>
+
+        <p>Astronomy and other sciences often face the problem of detecting and characterizing structure in two or more related time series. This work approaches such problems using Bayesian priors to represent relationships between signals with various degrees of certainty, and not just rigid constraints. The segmentation is conducted by using a hierarchical Bayesian approach to a piecewise constant Poisson rate model. A Gibbs sampling strategy allows joint estimation of the unknown parameters and hyperparameters.
+        </p>
+        <p>
+            The joint segmentation procedure and the main results are detailed in a paper published in IEEE Trans. Signal Processing in 2007.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2007a.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 687Ko ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/astro_joint_seg.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 30Ko ].
+        </li>
+        </ul>
+
+        <h3>Synthetic data</h3>
+
+        <p>
+        The accuracy of the proposed abundance estimation procedure is illustrated by segmenting jointly two time series. The animation (175 frames) available below illustrates the convergence assessment of the proposed algorithm. It represents the successive MMSE estimates of the posterior distributions of the changepoint locations provided by the procedure during the segmentation of the data used in a  paper presented at EUSIPCO'06 as functions of time.
+        </p>
+        <ul>
+        <li><a href="../demos/mpg_astro_seg.mpg">mpg file <img src="../img/avi_icon.png" alt="Download the animation" class="icon"/></a> [ .mpg - 367Ko ].
+        </li>
+        </ul>
+        <object type="../application/x-mplayer2" data="../demos/mpg_astro_seg.mpg" class="anim">
+            <param name="filename" value="../demos/mpg_astro_seg.mpg" />
+            <param name="autoplay" value="false" />
+            <param name="controller" value="true" />
+        </object><br/>
+        Posterior probability of rupture as function of the number of MCMC iterations.
+
+
+        <h3>Real data: NASA Compton Gamma Ray Observatory's BATSE</h3>
+
+        <p>
+        Times of arrival of the photons are recorded by the BATSE sensor (Fig. 2) embedded on the Gamma Ray Observatory (GRO) from NASA (Fig. 1.). By the nature of this photon-counting experiment, the time series can be accurately modeled as Poisson processes. The Poisson rate parameter varies as determined by the actual changes in brightness of the gamma-ray burst (GRB) source. The intensity of the GRB as a function of time often consists of a series of short-time-scale structures, called pulses. The goal of the analysis is to determine parameters such as the rise and decay times of the pulses, and other quantities that can be derived from a piecewise-constant representation.<br/>
+        <img alt="BATSE" src="../demos/fig_astro_2.png" class="img_app_bis"/><br/>
+        Fig. 1. BATSE module.<br/>
+        <img alt="GRO" src="../demos/fig_astro_1.png" class="img_app_bis"/><br/>
+        Fig. 2. GRO observatory.
+        </p>
+
+        <p>
+        The hierarchical method presented  has been applied to a real astronomical data set. The results depicted in Fig.3 and Fig. 4 are provided by the 1-D and joint segmentation procedures respectively. These results has been reported in the paper published in IEEE Transactions on Signal Processing.<br/>
+        <img alt="Results" src="../demos/fig_astro_3.png" class="img_app"/><br/>
+        Fig. 3. Posterior distribution of the change-point locations (1-D astronomical data).<br/>
+        <img alt="Results" src="../demos/fig_astro_4.png" class="img_app"/><br/>
+        Fig. 4. Block representation of the segmented time series (4-D astronomical data).
+        </p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

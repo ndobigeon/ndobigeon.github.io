@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Minimum mean square distance estimation of a subspace</h1>
+
+        <p>We consider the problem of subspace estimation in a Bayesian
+    setting. Since we are operating in the Grassmann manifold, the usual
+    approach which consists of minimizing the mean square error (MSE)
+    between the true subspace U and its estimate may not
+    be adequate as the MSE is not the natural metric in the Grassmann
+    manifold. As an alternative, we propose to carry out subspace
+    estimation by minimizing the mean square distance (MSD) between U
+    and its estimate, where the considered distance is a natural metric
+    in the Grassmann manifold, viz. the distance between the projection
+    matrices. We show that the resulting estimator is no longer the
+    posterior mean of U but entails computing the principal
+    eigenvectors of the posterior mean of U U^{T}.</p>
+
+    <h3>Bingham/von Mises Fisher prior-based estimator</h3>
+    <p>
+    First, derivation of the MMSD estimator is carried out in a few illustrative examples
+    including a linear Gaussian model for the data and a Bingham or von
+    Mises Fisher prior distribution for U. In all scenarios,
+    posterior distributions are derived and the MMSD estimator is
+    obtained either analytically or implemented via a Markov chain Monte
+    Carlo simulation method. The method is shown to provide accurate
+    estimates even when the number of samples is lower than the
+    dimension of U. An application to hyperspectral imagery is
+    finally investigated.</p>
+        <p>
+            The Bayesian subspace estimation algorithm and the main results have been published in IEEE Trans. Signal Processing:
+        </p>
+        <ul>
+        <li><a href="../papers/Besson_IEEE_Trans_SP_2011.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+        <p>
+            An extended version of this paper (with additional proofs and algorithms) is available as a technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Besson_TechReport_2011.pdf">technical report <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+    <h3>CS decomposition-based estimator</h3>
+    <p>
+    The main idea consists of using the CS decomposition of the semi-orthogonal matrix
+    H whose columns span the subspace of interest. This parametrization is intuitively appealing and
+    allows for non informative prior distributions of the matrices involved in the CS decomposition
+    and very mild assumptions about the angles between the actual subspace and the prior subspace.
+    The posterior distributions are derived and a Gibbs sampling scheme is presented to obtain the
+    minimum mean-square distance estimator of the subspace of interest. Numerical simulations and
+    an application to real hyperspectral data assess the validity and the performances of the estimator.
+    </p>
+        <p>
+            The CS decomposition based estimator is described in the following paper published in IEEE Trans. Signal Processing:
+        </p>
+        <ul>
+        <li><a href="../papers/Besson_IEEE_Trans_SP_2012.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            Additional results are available in the related technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Besson_TechReport_2012.pdf">technical report <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+
+
+        <h3>Application to hyperspectral imagery</h3>
+        <ul>
+        <li><a href="../demos/result_Moffett_Field.mpg">mpg file <img src="../img/avi_icon.png" alt="Download the animation" class="icon"/></a> [ .mpg - 2124Ko ].
+        </li>
+        </ul>
+
+        <object type="../application/x-mplayer2" data="../demos/result_Moffett_Field.mpg" class="anim" width="130" height="4300">
+            <param name="filename" value="../demos/result_Moffett_Field.mpg" />
+            <param name="autoplay" value="false" />
+            <param name="controller" value="true" />
+        </object><br/>
+        <br/>
+        <br/>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

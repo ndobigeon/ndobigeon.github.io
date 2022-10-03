@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Hyperspectral unmixing</h1>
+        <br/>
+        <p>Our activities deal with spectral unmixing of hyperspectral data.</p>
+
+        <p>For these models...</p>
+        <ul>
+        <li>LMM : Linear Mixing Model<br/>
+        &nbsp;&nbsp; (<span class="emph">the most popular model</span>)</li>
+        <li>GBM : Generalized Bilinear Model<br/>
+        &nbsp;&nbsp; (<span class="emph">a nonlinear model to address multiple scattering effects</span>)</li>
+        <li>PPNMM : Polynomial Post-Nonlinear Mixing Model<br/>
+        &nbsp;&nbsp; (<span class="emph">a flexible nonlinear model</span>)</li>
+        <li>RLMM : Robust Linear Mixing Model<br/>
+        &nbsp;&nbsp; (<span class="emph">a group-sparse model generalizing the LMM</span>)</li>
+        <li>NCM : Normal Compositional Model<br/>
+        &nbsp;&nbsp; (<span class="emph">statistical model to address spectral variability</span>)</li>
+        <li>PLMM : Perturbed Linear Mixing Model<br/>
+        &nbsp;&nbsp; (<span class="emph">deterministic model to address spectral variability</span>)</li>
+        </ul>
+        <p>under these scenarios...</p>
+        <ul>
+        <li>supervised : inversion step (spectral signatures are known)</li>
+        <li>unsupervised : joint estimation of spectral signatures and abundances</li>
+        </ul>
+        <p>and these contexts</p>
+        <ul>
+        <li>online (on-the-fly processing)</li>
+        <li>off-line (batch processing)</li>
+        <li>partially asynchronous distributed processing</li>
+        </ul>
+        <p>using these methods...</p>
+        <ul>
+        <li>Bayesian estimation and MCMC sampling</li>
+        <li>(scaled) gradient optimization</li>
+        <li>block coordinate descent algorithm (with majorization-minimization steps)</li>
+        <li>ADMM algorithm</li>
+        <li>PALM algorithm</li>
+        </ul>
+
+        <p>The considered applicative context mainly deals with remote sensing. However, the proposed algorithms/methodologies have been also applied
+        for</p>
+       <ul>
+        <li>spectrochemical analysis : <a href="app_spectro.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</li>
+        <li>gene expression factor analysis : <a href="app_BFA.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</li>
+        <li>electron energy-loss spectroscopy (EELS) analysis : <a href="app_EELS.html"><img src="../img/html_icon.png" alt="Download the document" class="icon"></a>.</li>
+        </ul>
+
+        <p>
+            A review paper on spectral unmixing has been published in IEEE J. Sel. Topics Topics Applied Earth Observations and Remote Sensing in 2012:
+        </p>
+        <ul>
+        <li><a href="../papers/Bioucas_IEEE_JSTARS_2012.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 3.7Mo ].
+        </li>
+        </ul>
+
+        <p>
+            A tutorial paper on nonlinear unmixing has been published in IEEE Signal Processing Magazine in 2014:
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_SP_Mag_2014.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 3.8Mo ].
+        </li>
+        </ul>
+
+        <p>
+            A preliminary study to validate nonlinear unmixing models in vegetated areas has been published in the IEEE J. Sel. Topics Appl. Earth Observations Remote Sensing. More information is available here:
+        </p>
+        <ul>
+        <li><a href="app_hyper_NLMM_validation.html">nonlinear mixing model validation <img src="../img/html_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <h3>MCMC algorithm for unsupervised LMM-based unmixing: <a href="app_hyper_SMA.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <p>New! A beta version of a Matlab GUI for the Bayesian Linear Unmixing (BLU) algorithm:</p>
+        <ul>
+        <li><a href="../soft/BLU_Toolbox_vbeta.zip">Matlab GUI BLU code <img src="../img/zip_icon.png" alt="Download the document" class="icon" /></a> [ .zip - 2.2Mo ]</li>
+        </ul>
+
+
+        <h3>MCMC algorithm for supervised LMM-based unmixing: <a href="app_hyper_LMM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>MCMC algorithm for supervised NCM-based unmixing: <a href="app_hyper_NCM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>MCMC algorithm for unsupervised NCM-based unmixing: <a href="app_hyper_GNCM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Gradient algorithm for supervised LMM-based unmixing: <a href="app_hyper_SGM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Robust NMF for unsupervised RLMM-based unmixing: <a href="app_hyper_rLMM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+		
+		<h3>Weighted NMF for unsupervised unmixing: <a href="app_hyper_WRNMF.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+		
+		<h3>Multiscale regularization for fast sparse unmixing: <a href="app_hyper_FastUn.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>ADMM for unsupervised PLMM-based unmixing: <a href="app_hyper_PLMM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Online PLMM-based unmixing of multi-temporal images: <a href="app_hyper_PLMM_online.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+        
+        <h3>Partially asynchronous distributed unmixing: <a href="app_hyper_distributed.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Gradient algorithm for supervised GBM-based unmixing: <a href="app_hyper_GBM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Gradient algorithm for supervised PPNMM-based unmixing: <a href="app_hyper_PPNM.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Detection of non-linear mixtures using PPNMM-based unmixing: <a href="app_hyper_PPNM_detection.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+        <h3>Detection of non-linear mixtures using subspace estimation: <a href="app_MMSD.html"><img src="../img/html_icon.png" alt="here" class="icon"></a>.</h3>
+
+    <br/></br></br>
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

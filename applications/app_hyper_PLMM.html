@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>Perturbed linear mixing model (PLMM)</h1>
+        <p>
+        Given a mixed hyperspectral data set, linear unmixing
+aims at estimating the reference spectral signatures
+composing the data - referred to as endmembers - their abundance
+fractions and their number. In practice, the identified
+endmembers can vary spectrally within a given image and can
+thus be construed as variable instances of reference endmembers.
+Ignoring this variability induces estimation errors that
+are propagated into the unmixing procedure. To address this
+issue, endmember variability estimation consists of estimating
+the reference spectral signatures from which the estimated
+endmembers have been derived as well as their variability with
+respect to these references. This paper introduces a new linear
+mixing model that explicitly accounts for spatial and spectral
+endmember variabilities. The parameters of this model can
+be estimated using an optimization algorithm based on the
+alternating direction method of multipliers. The performance of
+the proposed unmixing method is evaluated on synthetic and real
+data. A comparison with state-of-the-art algorithms designed to
+model and estimate endmember variability allows the interest of
+the proposed unmixing solution to be appreciated.
+
+        <br/>
+        <img alt="PLMM-based unmixing results" src="../demos/fig_PLMM_results.png" class="img_app_ter"/><br/>
+        Fig. 1. Endmembers estimated by the PLMM-based unmixing algorithm (Moffett scene). The
+ estimated endmembers (red lines) are plotted with the VCA endmembers (blue lines) for comparison, and typical examples of the estimated variability are given in cyan dotted lines.<br/>
+
+        </p>
+        <p>
+            The PLMM as well as the associated unmixing algorithm are described in the paper published in IEEE Trans. Signal Processing in 2016:
+        </p>
+        <ul>
+        <li><a href="../papers/Thouvenin_IEEE_Trans_SP_2016.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 6.4Mo ].
+        </li>
+        </ul>
+
+        <p>
+        The PLMM-based unmixing algorithm is available as a MATLAB code:
+        </p>
+        <ul>
+                <li><a href="../soft/PLMMv2.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 2.3Mo ].
+        </li>
+        </ul>
+<br/>
+<br/>
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

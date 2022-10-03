@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Change detection between multi-band images with different spatial and spectral resolutions</h1>
+        <p>
+        Archetypal scenarios for change detection generally consider two images acquired through sensors of the same modality. 
+		However, in some specific cases such as emergency situations, the only images available may be those acquired through different kinds of sensors. 
+		More precisely, we addresses the problem of detecting changes between two multi-band optical images characterized by different spatial and spectral resolutions. 
+		This sensor dissimilarity introduces additional issues in the context of operational change detection. 
+		To alleviate these issues, classical change detection methods are applied after independent preprocessing steps (e.g., resampling) 
+		used to get the same spatial and spectral resolutions for the pair of observed images. Nevertheless, these preprocessing steps tend to throw away relevant information.
+        <br/>
+        <img alt="The democratic pdf" src="../demos/fig_CD_RF.png" class="img_app_ter"/><br/>
+        Fig. 1. Change detection for high-resolution multispectral (HR-MS) and low-resolution hyperspectral (LR-HS) images: (a) HR-MS observed image, (b) LR-HS observed image, (c) actual change mask change, change mask estimated by the proposed robust fusion-based approach.<br/>
+        </p>
+
+        <h3>Change detection as a 3-step procedure</h3>
+
+        <p>The proposed strategy consists of a 3-step procedure: <br/>
+		&nbsp;&nbsp; - [Fusion] inferring a high spatial and spectral resolution image by fusing the two observed images characterized one by a low spatial resolution and the other by a low spectral resolution, <br/>
+		&nbsp;&nbsp; - [Prediction] predicting two images with respectively the same spatial and spectral resolutions as the observed images by degradation of the fused one,<br/>
+		&nbsp;&nbsp; - [Detection] implementing a decision rule to each pair of observed and predicted images characterized by the same spatial and spectral resolutions to identify changes. <br/>
+		The overall pipeline is depicted in Fig. 2.
+		<br/>
+		<img alt=" " src="../demos/fig_CD_pipeline.png" class="img_app"/><br/>
+        Fig. 2. Overview of fusion-based change detection framework.<br/>
+		<br/>
+		The proposed fusion-based change detection approach is detailed in the paper published in IEEE Trans. Geosci. Remote Sensing:
+        </p>
+        <ul>
+        <li><a href="../papers/Ferraris_IEEE_Trans_GRS_2018.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+		<p> It is worth noting that the 1st step of the pipeline (fusion) can be fully tailored by the end-user, by choosing any of the fusion algorithms proposed in the literature. A comparative study of the CD
+		performance w.r.t. various fusion algorithms has been conducted in the Proc. IEEE Int. Geosci. Remote Sens. Symp. (IGARSS):
+        </p>
+        <ul>
+        <li><a href="../papers/Ferraris_IEEE_IGARSS_2018.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+		<p> Similarly, the last step (detection) of the proposed framework can be conducted by any CD technique designed to handle images of the same spatial and spectral resolution. In the above papers, this step is achieved
+		by change vector analysis but any other technique could be applied, which makes the framework highly customizable.
+		</p>
+
+        <h3>Change detection as a robust fusion problem</h3>
+        <p>We propose a method that more effectively uses the available information by modeling the two observed images as spatial and spectral versions of two (unobserved) 
+		latent images characterized by the same high spatial and high spectral resolutions. As they cover the same scene, these latent images are expected to be globally 
+		similar except for possible changes in sparse spatial locations. Thus, the change detection task is envisioned through a robust multi-band image fusion method which 
+		enforces the differences between the estimated latent images to be spatially sparse. This robust fusion problem is formulated as an inverse problem which is iteratively 
+		solved using an efficient block-coordinate descent algorithm. The proposed method is applied to real panchormatic/multispectral and hyperspectral images with simulated 
+		realistic changes. A comparison with state-of-the-art change detection methods evidences the accuracy of the proposed strategy. Some results are depicted in Fig. 3.
+		<br/>
+		<img alt=" " src="../demos/fig_CD_RF_results.png" class="img_app"/><br/>
+        Fig. 3. Illustrative results of the robust fusion-based change detection framework on real images.<br/>
+		<br/>
+		
+		
+        </p>
+        <p>
+            For the particular scenario of handling a high spatial-low spectral resolution image and a low spatial-high spectral resolution image, 
+			the proposed robust fusion-based change detection approach is detailed in the paper published in IEEE Trans. Computational Imaging:
+        </p>
+        <ul>
+        <li><a href="../papers/Ferraris_IEEE_Trans_CI_2017.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+		
+		<p> This particular case can be extended to a much more general framework, able to tackle any of the scenarios defined by two images of the same or different spatial and/or spectral resolutions. The
+			10 distincts scenarios are reported in Table 1 below.<br/>
+			
+		<img alt=" " src="../demos/fig_CD_RF_scenarios.png" class="img_app_ter"/><br/>
+        Table 1. Overview of the spectral and spatial degradations w.r.t. to experimental scenarios. The symbol "−" stands for "no degradation"<br/>
+		<br/>			
+		The corresponding robust fusion-based CD algorithms are introduced and discussed in the paper published in Information Fusion:
+		</p>
+        <ul>
+        <li><a href="../papers/Ferraris_INFFUS_2020.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+		
+		</p>
+		
+        <p><br/><br/></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>LMM-based unsupervised Bayesian algorithms for spectral mixture analysis</h1>
+        <p>
+        We propose a Bayesian algorithm that can be used to conduct unsupervised linear spectral mixture analysis (LSMA).
+        </p>
+        <p>Each observed vector (e.g., hyperspectral pixel or measured spectrum) is decomposed as a linear combination of
+            pure spectra (e.g., endmembers) following the linear mixing model. This model accounts for standard non-negativity and full-additivity (sum-to-one) constraints
+            on the mixing coefficients and non-negativity constraints on the spectral signatures. The central premise of this paper is to propose an algorithm that estimates the spectra and
+            their respective proportions jointly in a single step. This approach casts LSMA as a blind source separation (BSS) problem. The proposed joint LSMA approach is able to solve the spectrum estimation problem directly on a lower dimensional space. Indeed, we propose to estimate the projections of the spectra in an appropriate subspace.
+        </p>
+        <p>
+            The abundance estimation procedure and the main results are detailed in a paper published in IEEE Trans. Signal Processing in 2009.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2009.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.3Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Bayes_SMA.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 110Ko ].
+        </li>
+        </ul>
+
+        <p>New! A beta version of a Matlab GUI for the Bayesian Linear Unmixing (BLU) algorithm:</p>
+        <ul>
+        <li><a href="../soft/BLU_Toolbox_vbeta.zip">Matlab GUI BLU code <img src="../img/zip_icon.png" alt="Download the document" class="icon" /></a> [ .zip - 2.2Mo ]</li>
+        </ul>
+
+        <h3>Application to hyperspectral imagery : synthetic data</h3>
+
+        <p>
+        To illustrate the accuracy of the proposed algorithm, simulations are conducted on a 100x100 synthetic
+        image. This hyperspectral image is composed of three different regions with R = 3 pure materials
+        representative of a suburban scene: construction concrete, green grass and red brick. The spectra of
+        these endmembers are represented in Fig. 1 (top, black lines). The reflectances are observed in L = 413 spectral
+        bands.<br/>
+
+        <img alt="Actual and estimated spectra" src="../demos/fig_SMA_spectra.png" class="img_app_bis"/><br/>
+        Fig. 1. Actual endmembers (black lines), endmembers estimated by N-FINDR (blue lines), endmembers estimated by VCA
+        (green lines) and endmembers estimated by proposed approach (red lines).<br/>
+
+        </p>
+
+        <p>
+        These R = 3 components have been mixed with proportions that have been randomly generated over the simplex defined by the constraints.
+        The generated abundance maps have been depicted in Fig. 2 (top) in gray scale where
+        a white (resp. black) pixel stands for the presence (resp. absence) of the material. The signal-to-noise
+        ratio has been tuned to SNR = 15dB.<br/>
+
+        <img alt="Actual and estimated spectra" src="../demos/fig_SMA_abundances.png" class="img_app_bis"/><br/>
+        Fig. 2. Top: actual endmember abundance maps. Bottom: estimated endmember abundance maps.<br/>
+
+        </p>
+
+        <h3>Application to hyperspectral imagery : real data</h3>
+
+        <p>
+        The picture above (Fig. 3) was acquired in 1997 over Moffett Field (CA, USA) by the Airborne Visible Infrared Imaging Spectrometer <a href="http://aviris.jpl.nasa.gov/">AVIRIS</a> of the JPL laboratory (NASA). <br/>
+        <img alt="Moffett Field, CA, USA" src="../demos/fig_hyper_1.png" class="img_app_bis"/><br/>
+        Fig. 3. Hyperspectral image acquired over Moffett Field (CA, USA). The top of the cube represents the observed scene shown in true colors.<br/>
+        </p>
+        <p>
+        The R = 3 endmembers recovered by the proposed joint Bayesian LSMA algorithm
+        are depicted in Fig. 4 (top). These endmember spectra are represented in L = 189 spectral bands after
+        removing the water absorption bands4. These endmembers are characteristic of the coastal area that
+        appears in the image: vegetation, water and soil.<br/>
+
+        <img alt="Result (Moffett Field, CA, USA)" src="../demos/fig_SMA_moffett.png" class="img_app_bis"/><br/>
+        Fig. 4. Top: the R = 3 endmember spectra estimated by the algorithm in the Moffett Field scene. Bottom: the corresponding
+abundance maps (black (respectively, white) means absence (respectively, presence) of the material).
+        </p>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Fast single-image super-resolution</h1>
+        <p>
+        This work addresses the problem of single image super-resolution (SR), which consists of recovering a high resolution image from its blurred, decimated and noisy version. The existing algorithms for single image SR use different strategies to handle the decimation and blurring operators. In addition to the traditional first-order gradient methods, recent techniques investigate splitting-based methods dividing the SR problem into up-sampling and deconvolution steps that can be easily solved. Instead of following this splitting strategy, we propose to deal with the decimation and blurring operators simultaneously by taking advantage of their particular properties in the frequency domain, leading to a new fast SR approach. Specifically, an analytical solution can be obtained and implemented efficiently for the Gaussian prior or any other regularization that can be formulated into an l2-regularized quadratic model. Furthermore, the flexibility of the proposed SR scheme is shown through the use of various priors/regularizations, ranging from generic image priors to learning-based approaches. In the case of non-Gaussian priors, we show how the analytical solution derived from the Gaussian case can be embedded into traditional splitting frameworks, allowing the computation cost of existing algorithms to be decreased significantly. Simulation results conducted on several images with different priors illustrate the effectiveness of our fast SR approach compared with the existing techniques.
+        <br/>
+        <img alt="SR results" src="../demos/fig_SR_results.png" class="img_app"/><br/>
+        Fig. 1. SR results with TV regularization. First column: observed LR images, second column: target HR images, third column: bicubic interpolation, fourth column: ADMM algorithm, fifth column: proposed algorithm.<br/>
+        </p>
+
+        <p>
+            The derivation of the fast solution and various SR algorithms are detailed in the submitted paper
+        </p>
+        <ul>
+        <li><a href="http://arxiv.org/abs/1510.00143/">article <img src="../img/arxiv_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/FSR-ADMM2015_Lab_V1.0.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 220Ko ].
+        </li>
+        </ul>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

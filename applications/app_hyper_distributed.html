@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>Partially asynchronous distributed unmixing of hyperspectral images</h1>
+        <p>
+        So far, the problem of unmixing large or multitemporal hyperspectral dataset has been specifically addressed in the remote sensing literature only by a few dedicated strategies. Among them, some attempts have been made within a distributed estimation framework, in particular relying on the alternating direction method of multipliers (ADMM). In this paper, we propose to study the interest of a partially asynchronous distributed unmixing procedure based on a recently proposed asynchronous algorithm. The distribution architecture is depicted in Fig. 2.
+
+        <br/>
+        <img alt="fig_hyper_distributed_archi.png" src="../demos/fig_hyper_distributed_archi.png" class="img_app_ter"/><br/>
+        Fig. 1. Illustration of the master-slave architecture considered for the unmixing problem with  3 workers (the function and variables available at each node are given in light gray rectangles).<br/>
+
+        <br/>
+        Under relatively standard conditions, the proposed approach inherits from the convergence guarantees previously studied in the literature, and from those of the traditional PALM algorithm for its synchronous counterpart. Evaluated on synthetic and real data, the proposed approach provides competitive estimation results, while significantly reducing the computation time to reach convergence. More precisely, comparisons with a distributed synchronous counterpart of the proposed unmixing procedure allow its interest to be assessed on synthetic and real data (see Fig. 2). Besides, thanks to its genericity and flexibility, the procedure investigated in this work can be implemented to address various matrix factorization problems.
+        <br/>
+        <a href="../demos/fig_hyper_distributed_results.png"><img alt="fig_hyper_distributed_archi_ter.png" src="../demos/fig_hyper_distributed_results.png" class="img_app_ter"/></a><br/>
+        Fig. 2. Evolution of the objective function for the synthetic datasets, obtained for the proposed algorithm and its synchronous version until convergence.<br/>
+
+        </p>
+
+        <p>
+            The associated unmixing algorithm is described in the submitted paper:
+        </p>
+        <ul>
+        <li><a href="http://arxiv.org/abs/1710.02574/">article <img src="../img/arxiv_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+        The Julia implementation of the proposed asynchronous distributed algorithm is available below:
+        </p>
+        <ul>
+                <li><a href="ASYNC_GRETSIv1.zip">Julia codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 147.4Mo ].
+        </li>
+        </ul>
+<br/>
+<br/>
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

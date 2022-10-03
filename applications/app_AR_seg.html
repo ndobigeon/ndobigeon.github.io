@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Joint segmentation of&nbsp;autoregressive processes</h1>
+
+        <p>We propose a joint segmentation algorithm for piecewise constant
+        autoregressive (AR) processes recorded by several independent sensors.
+        The algorithm is based on a hierarchical Bayesian model. Appropriate
+        priors allow to introduce correlations between the change locations of
+        the observed signals. Numerical problems inherent to Bayesian inference
+        are solved by a Gibbs sampling strategy. The proposed joint
+        segmentation methodology yields improved segmentation results when
+        compared to parallel and independent individual signal segmentations.
+        The initial algorithm is derived for piecewise constant AR processes
+        whose orders are fixed on each segment. However, an extension to models
+        with unknown model orders is also discussed.
+        </p>
+        <p>
+            The joint segmentation procedure and the main results are detailed in a
+            paper published in IEEE Trans. Signal Processing in 2007.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2007b.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.1Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/AR_joint_seg.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 120Ko ].
+        </li>
+        </ul>
+
+        <h3>Synthetic data</h3>
+
+        <p>
+        The accuracy of the proposed abundance estimation procedure is illustrated by segmenting jointly two synthetic time series. The animation (100 frames) available below illustrates the convergence assessment of the algorithm. It represents the successive MMSE estimates of the posterior distributions of the changepoint locations provided by the procedure during the segmentation of the data used in the paper.
+        </p>
+        <ul>
+        <li><a href="../demos/mpg_AR_seg.mpg">mpg file <img src="../img/avi_icon.png" alt="Download the animation" class="icon"/></a> [ .mpg - 250Ko ].
+        </li>
+        </ul>
+        <object type="../application/x-mplayer2" data="../demos/mpg_AR_seg.mpg" class="anim">
+            <param name="filename" value="../demos/mpg_AR_seg.mpg" />
+            <param name="autoplay" value="false" />
+            <param name="controller" value="true" />
+        </object><br/>
+        Posterior probability of rupture as function of the number of MCMC iterations.
+
+
+        <h3>Real data: detection of "arc-tracking phenomenon"</h3>
+
+        <p>
+        We present here the segmentation of real aeronautical data. In order to prevent the aircraft fires provoked by the arc-tracking phenomenon, the algorithm detect the changes that can occur in the signals, modeled here as autoregressive processes. The triphased signals, whose fundamental frequency has been removed (Fig. 1), are jointly segmented. The results (Fig. 2) have been reported in the paper published in IEEE Trans. Signal Processing.<br/>
+        <img alt="Signals" src="../demos/fig_AR_1.png" class="img_app"/><br/>
+        Fig. 1. Real signals to be segmented (with and without fundamental).<br/>
+        <img alt="Results" src="../demos/fig_AR_2.png" class="img_app"/><br/>
+        Fig. 2.&nbsp;Segmented signals.
+        </p>
+
+        <h3>Real data: segmentation of stereo speech signals</h3>
+
+        <p>
+        The results provided by joint and 1D segmentations are illustrated with a speech signal that has been often processed in the literature. These results have been reported in the paper published in IEEE Trans. Signal Processing.<br/>
+        <img alt="Results" src="../demos/fig_AR_3.png" class="img_app"/><br/>
+        Fig. 3. Segmented signals: 1D segmentation (top), 2D segmentation (middle and bottom).<br/>
+        </p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

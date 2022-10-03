@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Bayesian orthogonal component analysis for sparse representation</h1>
+        <p>
+        We address the problem of identifying a
+        lower dimensional space where observed data can be sparsely
+        represented. This undercomplete dictionary learning task can
+        be formulated as a blind separation problem of sparse sources
+        linearly mixed with an unknown orthogonal mixing matrix. This
+        issue is formulated in a Bayesian framework.
+        <br/>
+        <img alt="Actual/estimated sources" src="../demos/fig_BOCA_synth.png" class="img_app_bis"/><br/>
+        Fig. 1. Actual sources (circles, red) and corresponding MAP estimates (stars, blue).<br/>
+        </p>
+
+        <h3>Application to natural image processing</h3>
+
+        <p>An application to sparse coding on undercomplete dictionary is proposed. A fraction of the well-known Barbara natural
+        image is analyzed by BOCA. This 256x256-pixel image, depicted
+        in Fig. 2 (column 1), is decomposed into T = 16x16 block
+        patches of size 16x16 pixels. The proposed Bayesian strategy and the K-SVD algorithm are applied on these observations
+        for different values of the number of sources (i.e., different
+        numbers of dictionary atoms). The images reconstructed
+        by the algorithms after estimating the source and mixing matrices
+        are depicted in Fig. 2 (columns 2 to 5) for different values
+        of ranging N from N=4 to N=3.
+
+        <br/>
+        <img alt="Sparse coding of the Barbara image" src="../demos/fig_BOCA_barbara.png" class="img_app_bis"/><br/>
+        Fig. 2. Sparse coding of the Barbara image obtained by BOCA (first row) and K-SVD (second row) with different values of N. Corresponding RMSEs and
+        sparsity levels (expressed as percentage) are indicated above each image.<br/>
+        </p>
+
+        <p>
+        The MAP estimate of the
+        dictionary atoms (i.e., the mixing matrix), formatted as block
+        patches of size 16x16, are represented in Fig. 3 (left) for the
+        corresponding values of the number of sources. As an illustration,
+        the dictionary atoms estimated by K-SVD have been also
+        depicted in Fig. 3 (right).
+
+
+        <br/>
+        <img alt="Sparse coding of the Barbara image" src="../demos/fig_BOCA_barbara_dictionary.png" class="img_app"/><br/>
+        Fig. 3. Estimated dictionary atoms by BOCA (left) and K-SVD (right) for
+        different values of the number of dictionary atoms N.<br/>
+        </p>
+        <p>
+            The BOCA algorithm and the main results are detailed in a paper published in IEEE Trans. Signal Processing in 2010.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2010.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.4Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/BOCA.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 6Ko ].
+        </li>
+        </ul>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

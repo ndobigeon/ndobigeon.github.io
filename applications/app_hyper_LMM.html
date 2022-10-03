@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>LMM-based supervised and semi-supervised Bayesian algorithms for hyperspectral image unmixing</h1>
+        <p>
+        We propose Bayesian algorithms that can be used for hyperspectral image unmixing.
+        </p>
+        <p>The model assumes that the pixel reflectances result from linear combinations of known pure component spectra contaminated by an additive Gaussian noise, as formulated by
+        the linear mixing model (LMM). The abundance parameters to be estimated satisfy positivity and additivity constraints. These constraints are naturally expressed in a Bayesian context by using appropriate abundance prior distributions. The posterior distributions of the unknown model parameters are then derived. A Gibbs sampler allows one to draw samples distributed according to the posteriors of interest and to estimate the unknown abundances.
+        </p>
+        <p>
+            The abundance estimation procedure and the main results are detailed in a paper published in IEEE Trans. Signal Processing in 2008.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2008.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.3Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Bayes_unmix.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 110Ko ].</li>
+        <li><a href="../soft/toolbox_unmixing.zip">new matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> (for analyzing a single pixel using ASCII files) [ .zip - 31Ko ].
+        </li>
+        </ul>
+
+        <h3>Synthetic data</h3>
+
+        <p>
+        The accuracy of the proposed abundance estimation procedure is illustrated by unmixing a synthetic pixel resulting from the combination of three pure components representative of a urban or suburban environment: construction concrete, green grass and dark yellowish brown micaceous loam. The proportions of these components are 0.3, 0.6 and 0.1 respectively. The observations have been corrupted by an additive Gaussian noise.
+        </p>
+        <p>
+        You can visualize the posterior distributions of the estimated abundances as functions of the SNR in the video available below.
+        </p>
+        <ul>
+        <li><a href="../demos/mpg_hyper_abundance.mpg">mpg file <img src="../img/avi_icon.png" alt="Download the animation" class="icon"/></a> [ .mpg - 194Ko ].
+        </li>
+        </ul>
+        <object type="../application/x-mplayer2" data="../demos/mpg_hyper_abundance.mpg" class="anim">
+            <param name="filename" value="../demos/mpg_hyper_abundance.mpg" />
+            <param name="autoplay" value="false" />
+            <param name="controller" value="true" />
+        </object>
+        Posterior distributions of the estimated abundances as functions of the SNR level.
+
+
+        <h3>Real data: Moffett Field image</h3>
+
+        <p>
+        The picture above (Fig. 1) was acquired in 1997 over Moffett Field (CA, USA) by the Airborne Visible Infrared Imaging Spectrometer <a href="http://aviris.jpl.nasa.gov/">AVIRIS</a> of the JPL laboratory (NASA). After an endmember extraction procedure based on the N-FINDR algorithm, each pixel is unmixed by our algorithm. Then, fraction maps are obtained for the three resulting endmembers (red = 100%, blue = 0%) that are represented in the analyzed portion of the image (Fig. 2).<br/>
+        <img alt="Moffett Field, CA, USA" src="../demos/fig_hyper_1.png" class="img_app_bis"/><br/>
+        Fig. 1. Hyperspectral image acquired over Moffett Field (CA, USA). The top of the cube represents the observed scene shown in true colors.<br/>
+        <img alt="Result (Moffett Field, CA, USA)" src="../demos/fig_hyper_2.png" class="img_app_bis"/><br/>
+        Fig. 2. Top: the R = 3 endmember spectra obtained by the N-FINDR algorithm. Bottom: the fraction maps of the corresponding endmember in the scene (blue (resp. red) means absence (resp. presence) of the material).<br/><br/>
+        </p>
+
+        <h3>Extension to semi-supervised Bayesian unmixing</h3>
+
+        <p>An extension of the algorithm is also studied for mixtures with an unknown number R of spectral components. We assume here that the endmember spectra belong to a known library. However, the number of components R as well as the corresponding spectra and abundance coefficients are unknown. The previous hierarchical Bayesian model allows to define appropriate prior regarding the new unknown parameters. Finally, a reversible jump MCMC strategy is required for estimating all the unknown parameters (number of components, spectra involved in the mixture and their respective abundance coefficients).
+        </p>
+        <p>
+            The abundance estimation procedure and the main results are detailed in a paper published in IEEE Trans. Signal Processing in 2008.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_IEEE_Trans_SP_2008.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.3Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Bayes_semi_unmix.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 110Ko ].</li>
+        <li><a href="../soft/toolbox_unmixing_semi.zip">new matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> (for analyzing a single pixel using ASCII files) [ .zip - 35Ko ].
+
+        </li>
+        </ul>
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

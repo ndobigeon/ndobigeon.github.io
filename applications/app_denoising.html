@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Unsupervised selection of the regularization parameters in TV-L<sub>0</sub> and TV-L<sub>1</sub> denoising problems</h1>
+        <p>
+        Piecewise constant denoising can be solved either by deterministic optimization approaches, based on total variation (TV), or by stochastic Bayesian procedures. The former lead to low computational time but requires the selection of a regularization parameter, whose value significantly impacts the achieved solution, and whose automated selection remains an involved and challenging problem. Conversely, fully Bayesian formalisms encapsulate the regularization parameter selection into hierarchical models, at the price of large computational costs. This contribution proposes an operational strategy that combines hierarchical Bayesian and TVl0 formulations, with the double aim of automatically tuning the regularization parameter and of maintaining computational efficiency. The proposed procedure relies on formally connecting a Bayesian framework to a TVl0 minimization formulation. Behaviors and performance for the proposed piecewise constant denoising and regularization parameter tuning techniques are studied qualitatively and assessed quantitatively, and shown to compare favorably against those of a fully Bayesian hierarchical procedure, both in accuracy and in computational load.
+        </p>
+
+        <p>
+        The accuracy of the proposed procedure is illustrated by segmenting a synthetic signal. The animation shows the proposed criterion and the corresponding denoised solutions.
+
+        <center><video width="500" controls src="../demos/video_TVL0_demoVideo.webm"?></video??></center>
+<!--        <object type="../application/x-mplayer2" data="../demos/video_TVL0_demoVideo.webm" class="anim">
+            <param name="filename" value="../demos/video_TVL0_demoVideo.webm" />
+            <param name="autoplay" value="false" />
+            <param name="controller" value="true" />
+        </object><br/>
+-->
+        </p>
+        <p>
+            The proposed strategy is detailed in the paper published in IEEE Trans. Signal Processing:
+        </p>
+        <ul>
+        <li><a href="../papers/Frecon_IEEE_Trans_SP_2017.pdf">article <img src="../img/arxiv_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        
+<p>
+        The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/toolbox_TVL0.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 447Ko ].
+        </li>
+        </ul>        
+        
+        <p><br/><br/></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

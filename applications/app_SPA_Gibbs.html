@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Split-and-augmented Gibbs sampler</h1>
+        <p>
+        Recently, a new class of Markov chain Monte Carlo (MCMC) algorithms took advantage of convex optimization to build efficient and fast sampling schemes from high-dimensional distributions. Variable splitting methods have become classical in optimization to divide difficult problems into simpler ones and have proven their efficiency in solving high-dimensional inference problems encountered in machine learning and signal processing. We derive two new optimization-driven sampling schemes inspired from variable splitting and data augmentation. In particular, the formulation of one of the proposed approaches is closely related to the alternating direction method of multipliers (ADMM) main steps. The proposed framework enables to derive faster and more efficient sampling schemes than the current state-of-the-art methods and can embed the latter. By sampling efficiently the parameter to infer as well as the hyperparameters of the problem, the generated samples can be used to approximate maximum a posteriori (MAP) and minimum mean square error (MMSE) estimators of the parameters to infer. Additionally, the proposed approach brings credibility intervals at a low cost contrary to optimization methods. Simulations on two often-studied signal processing problems illustrate the performance of the two proposed samplers. All results are compared to those obtained by recent state-of-the-art optimization and MCMC algorithms used to solve these problems.
+        <br/>
+        <img alt="DAG associated with the SPA distribution" src="../demos/fig_SPA_DAG.png" class="img_app"/><br/>
+        Fig. 1. Directed acyclic graph associated with the usual and proposed hierarchical Bayesian models.<br/>
+        </p>
+
+        <p>
+            The proposed split-and-augmented Gibbs sampler is detailed in the paper published in IEEE Trans. Signal Processing:
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_IEEE_Trans_SP_2019.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+		<li><a href="https://github.com/mvono/2019-TSP-split-Gibbs-sampler">matlab codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.</li>
+        </ul>
+
+		<h2>Asymptotically exact data augmentation</h2>
+        <p>
+        Actually, the SPA Gibbs sampler targets a probability density derived from an asymptotically exact data augmentation (AXDA). 
+		This framework is described <a href="app_AXDA.html">here</a> and in the paper published in the Journal of Computational and Graphical Statistics:
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_JCGS_2020.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+
+        <h2>Application to sparse logistic regression</h2>
+
+        <p>
+        As an illustration, the proposed split-and-augmented Gibbs sampler has been implemented to conduct sparse Bayesian logistic regression. The results are reported in the paper presented at IEEE Workshop on Machine Learning for Signal Processing (MLSP 2018):
+        </p>
+        <ul>
+            <li><a href="../papers/Vono_IEEE_MLSP_2018.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+            </li>
+			<li><a href="https://github.com/mvono/2018-MLSP-sparse-bayesian-logistic-regression">matlab codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+            </li>
+        </ul>
+        <p>
+            More results are also available <a href="app_logregression.html">here</a>. 
+        </p>
+
+
+
+        <h2>Application to image restoration under Poisson noise and log-concave prior</h2>
+        <p>
+            Another instance of the the proposed split-and-augmented Gibbs sampler has been implemented to conduct Bayesian image restoration under Poisson noise 
+			with a log-concave prior (e.g., TV regularization or sparse frame-based synthesis regularization).  
+			The results are reported in the paper presented at IEEE Int. Conf. Acoust., Speech, and Signal Processing (ICASSP 2019):
+        </p>
+        <ul>
+            <li><a href="../papers/Vono_IEEE_ICASSP_2019b.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+            </li>
+        </ul>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Asymptotically exact data augmentation (AXDA)</h1>
+        <p>
+        Data augmentation, by the introduction of auxiliary variables, has become an ubiquitous technique to improve mixing/convergence properties, simplify the implementation or reduce the computational time of inference methods such as Markov chain Monte Carlo. Nonetheless, introducing appropriate auxiliary variables while preserving the initial target probability distribution cannot be conducted in a systematic way but highly depends on the considered problem. To deal with such issues, we draw a unified framework, namely asymptotically exact data augmentation (AXDA), which encompasses several well-established but also more recent approximate augmented models. Benefiting from a much more general perspective, we deliver some additional qualitative and quantitative insights concerning these schemes. In particular, general properties of AXDA along with non-asymptotic theoretical results on the approximation that is made are stated. Close connections to existing Bayesian methods (e.g. mixture modeling, robust Bayesian models and approximate Bayesian computation) are also drawn. All the results are illustrated with examples and applied to standard statistical learning problems.
+        </p>
+
+        <p>
+            The AXDA framework, its properties and connections to existing models and algorithms (optimization, expectation-maximization, Monte Carlo sampling and variational Bayes) 
+			are detailed in the paper published in Journal of Computational and Graphical Statistics, granted with a Jupyter notebook to reproduce the results of this paper 
+			available on Maxime Vono's GitHub.
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_JCGS_2020.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+		<li><a href="https://github.com/mvono/2020-JCGS-AXDA">Jupyter notebook <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.</li>
+        </ul>
+
+
+		<h2>Split (and augmented) Gibbs sampler</h2>
+        <p>
+            In particular, Monte Carlo sampling from AXDA leads to the <a href="app_SPA_Gibbs.html">split-and-augmented Gibbs sampler</a> (SPA) detailed in the paper 
+			published in IEEE Trans. Signal Processing, with the associated Matlab code:
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_IEEE_Trans_SP_2019.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+		<li><a href="https://github.com/mvono/2019-TSP-split-Gibbs-sampler">matlab codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.</li>
+        </ul>
+
+       
+
+
+
+        <h2>Application to sparse logistic regression</h2>
+
+        <p>
+        As an illustration, an AXDA-based model and the corresponding split-and-augmented Gibbs sampler has been used to conduct sparse Bayesian logistic regression efficiently. The results are reported in the paper presented at IEEE Workshop on Machine Learning for Signal Processing (MLSP 2018):
+        </p>
+        <ul>
+            <li><a href="../papers/Vono_IEEE_MLSP_2018.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+			<li><a href="https://github.com/mvono/2018-MLSP-sparse-bayesian-logistic-regression">matlab codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.</li>
+        </ul>
+        <p>
+            More results are also available <a href="app_logregression.html">here</a>. 
+        </p>
+
+
+        <h2>Application to image restoration under Poisson noise and log-concave prior</h2>
+        <p>
+            Another instance of the the proposed AXDA and split-and-augmented Gibbs sampler have been implemented to conduct Bayesian image restoration under Poisson noise with a log-concave prior (e.g., TV regularization or sparse frame-based synthesis regularization).  The results are reported in the paper presented at IEEE Int. Conf. Acoust., Speech, and Signal Processing (ICASSP 2019):
+        </p>
+        <ul>
+            <li><a href="../papers/Vono_IEEE_ICASSP_2019b.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.</li>
+        </ul>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

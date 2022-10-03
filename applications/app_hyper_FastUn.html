@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>Fast hyperspectral unmixing using a multiscale sparse regularization</h1>
+        <p>
+        We propose 
+		a simple, fast yet efficient sparse hyperspectral unmixing algorithm. The proposed method consists of three main steps. First, a coarse approximation of the hyperspectral image is built using a off-the-shelf segmentation algorithm. Then, a low-resolution approximation of the abundance map is estimated by solving a weighted $\ell_{1}$-regularized problem on this coarse approximation of the hyperspectral data. 
+Finally, this low-resolution abundance map is subsequently used to design a sparsity-promoting penalization which acts as a spatial regularization informed by the coarse abundance map. It is incorporated into another weighted $\ell_{1}$-regularized problem whose solution is a higher resolution abundance map. The computational efficiency of the two last steps is ensured by solving the two underlying optimization problems using an alternating direction method of multipliers. Extensive  experiments conducted on simulated and real data show the effectiveness of the proposed method.</p>
+        <p>
+            The 3-step algorithm is described in the submitted paper:
+        </p>
+        <ul>
+        <li><a href="../papers/Ince_2022bsub.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 1.6Mo - upon request ].
+        </li>
+        </ul>
+
+        <p>
+        The MATLAB code is available online:
+        </p>
+        <ul>
+                <li><a href="../soft/demo_FastUn.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 14.6Mo ].
+        </li>
+        </ul>
+<br/>
+<br/>
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

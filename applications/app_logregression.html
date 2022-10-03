@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Sparse binary logistic regression</h1>
+        <p>
+        Logistic regression has been extensively used to perform classification in machine learning and signal/image processing. Bayesian formulations of this model with sparsity-inducing priors are particularly relevant when one is interested in drawing credibility intervals with few active coefficients. Along these lines, the derivation of efficient simulation-based methods is still an active research area because of the analytically challenging form of the binomial likelihood. This paper tackles the sparse Bayesian binary logistic regression problem by relying on the recent <a href="app_SPA_Gibbs.html">split-and-augmented Gibbs sampler</a> (SPA). Contrary to usual data augmentation strategies, this Markov chain Monte Carlo (MCMC) algorithm scales in high dimension and divides the initial sampling problem into simpler ones. These sampling steps are then addressed with efficient state-of-the-art methods, namely proximal MCMC algorithms that can benefit from the recent closed-form expression of the proximal operator of the logistic cost function. SPA appears to be faster than efficient proximal MCMC algorithms and presents a reasonable computational cost compared to optimization-based methods with the advantage of producing credibility intervals. Experiments on handwritten digits classification problems illustrate the performances of the proposed approach.
+        <br/>
+        <img alt="Log-regression" src="../demos/fig_logregression.png" class="img_app"/><br/>
+        Fig. 1: MNIST one-vs-all experiment: Example of 8 handwritten digits identified as possibly misclassified by SPA (under 90% credibility intervals). The true label (black), the predicted one (green for correct decisions and orange for wrong ones), the second and third most probable labels (blue) and their respective weight (blue) are depicted at the bottom of each sub-figure.<br/>
+        </p>
+
+        <p>
+        The results are reported in the paper presented at IEEE Workshop on Machine Learning for Signal Processing (MLSP 2018):
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_IEEE_MLSP_2018.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+        At the core of the proposed approach, the split-and-augmented (SPA) Gibbs sampler is presented <a href="app_SPA_Gibbs.html">here</a> and in paper published in IEEE Trans. Signal Processing :
+        </p>
+        <ul>
+        <li><a href="../papers/Vono_IEEE_Trans_SP_2019.pdf">paper <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+		<p>
+        Actually, the SPA Gibbs sampler targets a probability density derived from an asymptotically exact data augmentation. This framework is described <a href="app_AXDA.html">here</a> and in the submitted paper:
+        </p>
+        <ul>
+        <li><a href="https://arxiv.org/abs/1902.05754/">paper <img src="../img/arxiv_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+        <p>
+            The corresponding Matlab codes are available on Maxime Vono's GitHub.
+        </p>
+        <ul>
+        <li>matlab codes <a href="https://github.com/mvono/2018-MLSP-sparse-bayesian-logistic-regression"><img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+        </li>
+        </ul>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

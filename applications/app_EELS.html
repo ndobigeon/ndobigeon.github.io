@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>STEM-EELS spectromicroscopy</h1>
+
+		<h2 id="reconstruction">Fast reconstruction of EELS images from sparse sampling</h2>
+		
+		<p>Electron microscopy has shown to be a very powerful tool to map the chemical nature of samples at various scales down
+		to atomic resolution. However, many samples can not be analyzed with an acceptable signal-to-noise ratio because of the radiation
+damage induced by the electron beam. This is particularly crucial for electron energy loss spectroscopy (EELS), which acquires
+spectral-spatial data and requires high beam intensity. Since scanning transmission electron microscopes (STEM) are able to acquire
+data cubes by scanning the electron probe over the sample and recording a spectrum for each spatial position, it is possible
+to design the scan pattern and to sample only specific pixels. As a consequence, partial acquisition schemes are now conceivable,
+provided a reconstruction of the full data cube is conducted as a postprocessing step.</p>
+
+	<p>We propose fast and accurate reconstruction algorithms for STEM-EELS imaging. Similarly to the interpolation methods,
+they should be fast enough to visualize the reconstructed image along the acquisition. Meanwhile, they
+should also achieve better reconstruction performances than those reached by interpolation, close to those
+of dictionary learning-based methods. To that end, regularized least square methods are proposed in the
+context of spatially smooth samples or of periodic crystalline samples.</p>
+
+		<h3>Reconstruction of patially smooth images</h3>
+	<p>First, we propose two reconstruction algorithms, referred to as S2N and 3S,
+for multiband images acquired by STEM-EELS which
+exploits the spectral structure and the spatial smoothness of the image.
+The performance of the proposed schemes is illustrated thanks
+to experiments conducted on a realistic phantom dataset as well as
+real EELS spectrum-images.</p>
+
+<p>
+            The algorithms and the main results are
+            detailed in the paper published in IEEE Trans. Computational Imaging in 2018.
+        </p>
+        <ul>
+        <li><a href="../papers/Monier_IEEE_Trans_CI_2018.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+          A python library is available online here
+        </p>
+        <ul>
+        <li><a href="https://github.com/etienne-monier/inpystem">inpystem python library <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+        </li>
+        </ul>
+
+		
+		<h3>Reconstruction of periodic crystalline structures</h3>
+
+		<p>Then we propose a fast and accurate reconstruction method, CLS, suited for atomic-scale EELS with periodic structures. As for S2N and 3S, CLS relies on a least-square formulation of the 
+		reconstruction problem. To exploit the spatial periodicity of the images to be reconstructed, we design a group-sparsity regularization which promotes a jointly sparse representation accross the bands
+		in a DCT basis. Some reconstruction results are depicted in Fig. 1.</p>
+
+		<p>
+        <img alt="CLS results" src="../demos/fig_EELS_CLS_results.png" class="img_app"/><br/>
+        Fig. 1. The images show the sum of 5 bands around 3 particular edges (O-K, La-M4,5 and Nd-M4,5). The reference corresponds to the
+real, possibly noisy, image R2. 
+These results confirm the performance gap between NN whose images are not smooth enough and DL-based methods which are close to the reference with an
+additional denoising effect. CLS performs clearly better than NN and 3S and its results are close to DL-based methods.<br/>
+</p>
+
+<p>
+            The algorithm and the main results are
+            detailed in the paper published in Ultramiscropscopy in 2020.
+        </p>
+        <ul>
+        <li><a href="../papers/Monier_Ultramicroscopy_2020.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+          Results can be reproduced using the Github repository
+        </p>
+        <ul>
+        <li><a href="https://github.com/etienne-monier/2020-Ultramicro-fast">Python codes <img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+        </li>
+        </ul>
+		<br/><br/>
+		<br/>
+
+
+
+
+
+
+		<h2 id="mixture">Spectral mixture analysis of EELS spectrum-images</h2>
+        <p>When processing spectrum-images, microscopists usually try to map elemental, physical and chemical state information of a given material. This paper reports how a spectral unmixing (SU) algorithm dedicated to remote sensing hyperspectral images can be successfully applied to analyze spectrum-image resulting from electron energy-loss spectroscopy (EELS). SU generally overcomes standard limitations inherent to other multivariate statistical analysis methods, such as principal component analysis (PCA) or independent component analysis (ICA), that have been previously used to analyze EELS maps. Indeed, ICA and PCA may perform poorly for linear spectral mixture analysis due to the strong dependence between the abundances of the different materials. One example is presented here to demonstrate the potential of this technique for EELS analysis.
+        </p>
+        <p>
+            The Bayesian linear unmixing (BLU) algorithm and the main results are
+            detailed in the paper published in Ultramicroscopy in 2012.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_Ultramicroscopy_2012.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+          The Matlab codes of the BLU algorithm used in this study is available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Bayes_SMA.tar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .tar - 110Ko ].
+        </li>
+        </ul>
+
+        <p>New! A beta version of a Matlab friendly-interface (GUI) for the BLU algorithm:</p>
+        <ul>
+        <li><a href="../soft/BLU_Toolbox_vbeta.zip">Matlab GUI BLU code <img src="../img/zip_icon.png" alt="Download the document" class="icon" /></a> [ .zip - 2.2Mo ]</li>
+        </ul>
+
+        <h3>Results on a real EELS spectrum-image</h3>
+
+        <p>
+        The analyzed dataset consists of a 64x64 pixel spectrum-image acquired in 1340 energy channels over a region composed of several nanocages in a boron-nitride nanotubes (BNNT) sample. Note that nanocages are supported by a holey carbon film for TEM analysis. These data have been extensively analyzed in a previous paper and a high angle dark field image of the region of interest
+        is depicted in Fig. 2.<br/>
+
+
+        <img alt="high angle dark field image" src="../demos/fig_EELS_HADF.png" class="img_app_bis"/><br/>
+        Fig. 2. HADF image corresponding to a 64x64 spectrum-image recorded in an area rich in nanoparticles containing boron (pure boron, boron oxide or h-BN).<br/>
+
+        </p>
+        <p>The proposed algorithm has been applied on this real data set. The extracted spectral signatures are depicted in Fig. 3 and the corresponding abundance maps of the materials are depicted in Fig. 4.<br/>
+        <img alt="Spectral components estimated by BLU" src="../demos/fig_EELS_endmembers.png" class="img_app_ter"/><br/>
+        Fig. 3. Spectral components estimated by BLU. The recovered endmembers properly correspond to EELS spectra.<br/>
+        <img alt="Maps of the spectral components" src="../demos/fig_EELS_abundances.png" class="img_app_ter"/><br/>
+        Fig. 4. Maps of the spectral components.<br/>
+
+        </p>
+
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

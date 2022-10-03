@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Ultrasound imaging</h1>
+
+        <h3>Fast acquisition and compressed sensing</h3>
+
+        <p>Because it can be implemented easily in real time, ultrasound imaging (UI) has became one of the most popular imaging modalities.
+            However, the volume of data acquired during an examination can limit real time implementations and lead to storage issues. Compressed sensing (CS) is based on the idea of sampling a signal directly into its compressed form. This work proposes to exploit the image sparsity in the frequency domain within a Bayesian approach. This Bayesian approach allows
+            the image sparsity level in the spectral domain to be estimated. Results obtained with a simulated ultrasound image and an in vivo image of a human thyroid gland show a reconstruction performance similar to a classical compressed sensing algorithm from half of spatial samples while estimating the sparsity level during reconstruction.
+        <br/>
+        <img alt="Reconstruction of an image of a human thyroid gland" src="../demos/fig_US_CS_results_invivo.png" class="img_app_bis"/><br/>
+        Fig. 1. Top, left: Original in vivo image of a human thyroid gland. Top, right: 50% of spatial samples kept for the reconstruction.
+        Bottom, left: image reconstructed by l1 minimization. Bottom, right: image reconstructed by the proposed Bayesian approach.<br/>
+        </p>
+
+        <p>
+            The algorithm and the main results are detailed in an article presented at IEEE CAMSAP Conf. in 2011.
+        </p>
+        <ul>
+        <li><a href="../papers/Quinsac_IEEE_CAMSAP_2011.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 270ko ].
+        </li>
+        </ul>
+        <p>An extension has been proposed to exploit the spatial correlations between the image pixels in the frequency domain. A new Bayesian model based on a correlated Bernoulli Gaussian model is proposed for that purpose. The parameters of this model can be estimated by sampling the corresponding posterior distribution using an MCMC method. The resulting algorithm provides very low reconstruction errors even when reducing significantly the number of measurements via random sampling.</p>
+
+        <p>
+            The algorithm and the main results related to this extension are detailed in an article presented at EUSIPCO in 2012.
+        </p>
+        <ul>
+        <li><a href="../papers/Dobigeon_EUSIPCO_2012.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 151ko ].
+        </li>
+        </ul>
+
+        <br/>
+        <h3>Unsupervised classification of skin lesions</h3>
+        <p>
+        This work addresses the problem of jointly estimating the statistical distribution and segmenting lesions in multiple-tissue high-frequency skin ultrasound images. The distribution of multiple-tissue images is modeled as a spatially coherent finite mixture of heavy-tailed Rayleigh distributions. Spatial coherence inherent to biological tissues is modeled by enforcing local dependence between the mixture components. An original Bayesian algorithm combined with a Markov chain Monte Carlo method is then proposed to jointly estimate the mixture parameters and a label-vector associating each voxel to a tissue. The method is then successfully applied to the segmentation of in-vivo skin tumors in high frequency 2D and 3D ultrasound images.
+
+        <br/>
+        <img alt="Reconstruction of an image of a human thyroid gland" src="../demos/fig_US_Segm_results_dermis.png" class="img_app_bis"/><br/>
+        Fig. 2. (a) Log-compressed US images of skin melanoma tumor and the region of interest. (b) Coarse expert annotations. (c) Regular shape of the contour obtained by the level set method (red) and the proposed method (green).<br/>
+
+        </p>
+
+        <p>
+            The algorithm and the main results are detailed in an article published in IEEE Trans. Medical Imaging.
+        </p>
+        <ul>
+        <li><a href="../papers/Pereyra_IEEE_Trans_MI_2012.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 2.4Mo ].
+        </li>
+        </ul>
+        <br/>
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>Weighted residual NMF with spatial regularization for hyperspectral unmixing</h1>
+        <p>
+        We propose a weighted residual nonnegative matrix factorization (NMF) with spatial regularization to unmix hyperspectral data. NMF decomposes a matrix into the product of two nonnegative matrices. However, NMF is known to be generally sensitive to noise, which makes difficult to retrieve the global minimum of the underlying objective function. To overcome this limitation, we include a residual weighting mechanism in the conventional NMF formulation. This strategy treats each row of the residual based on the weighting factor. In this manner, residuals with large values are  penalized less and residuals with small values are penalized more to make NMF based unmixing problem more robust. Furthermore, we include a weight term in the form of an $\ell_{1}$ norm regularizer to provide spatial information of the abundance matrix.
+        </p>
+        <p>
+            The model is described in the paper published in IEEE Geoscience Remote Sensing Letters:
+        </p>
+        <ul>
+        <li><a href="../papers/Ince_IEEE_GRS_Letters_2022.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 2.0Mo ].
+        </li>
+        </ul>
+
+        <p>
+        The MATLAB code is available online:
+        </p>
+        <ul>
+                <li><a href="../soft/WRNMF_unmixing.rar">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 628Ko ].
+        </li>
+        </ul>
+<br/>
+<br/>
+<br/>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Matrix Cofactorization for Joint Spatial-Spectral Unmixing of Hyperspectral Images</h1>
+		
+        <p>
+        Hyperspectral unmixing aims at identifying a set of elementary spectra and the corresponding mixture coefficients for each pixel of an image. As the elementary spectra correspond
+to the reflectance spectra of real materials, they are often very correlated, thus yielding an ill-conditioned problem. To enrich the model and reduce ambiguity due to the high correlation,
+it is common to introduce spatial information to complement the spectral information. The most common way to introduce spatial information is to rely on a spatial regularization of the
+abundance maps. In this article, instead of considering a simple but limited regularization process, spatial information is directly incorporated through the newly proposed context of spatial
+unmixing. Contextual features are extracted for each pixel, and this additional set of observations is decomposed according to a linear model. Finally, the spatial and spectral observations are
+unmixed jointly through a cofactorization model. In particular, this model introduces a coupling term used to identify clusters of shared spatial and spectral signatures. An evaluation of the
+proposed method is conducted on synthetic and real data and shows that results are accurate and also very meaningful since they describe both spatially and spectrally the various areas of
+the scene. Some results of the clustering steps are depicted in Fig. 1.		
+		<br/>
+        <img alt="results" src="../demos/fig_hyper_SP2U_results.png" class="img_app_bis"/><br/>
+		Fig. 1. AVIRIS image. Five particular clusters described by their (Left)
+spatial positioning, (Middle) mean spatial signature, and (Right) mean spectral
+signature.<br/>
+        </p>
+
+        <p>
+        The model and the algorithms are detailed in the paper published in IEEE Trans. Geosci. Remote Sensing (2020):
+        </p>
+        <ul>
+        <li><a href="../papers/Lagrange_IEEE_Trans_GRS_2020.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        
+        <p>
+            The corresponding Python codes are available on Adrian Lagrange's GitHub.
+        </p>
+        <ul>
+        <li>Python codes <a href="https://github.com/Laadr/"><img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+        </li>
+        </ul>
+		<br/><br/>
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

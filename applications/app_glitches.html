@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Detection and correction of glitches in a multiplexed multichannel data stream</h1>
+        <p>
+        Born from a close collaboration between the Indian and French space agencies (namely, ISRO and CNES, respectively), the MEGHA-Tropiques mission aims at developing a monitoring system dedicated to the study of the tropical atmosphere. The scientific data acquired by the MADRAS instrument embedded in the MEGHA-Tropiques satellite take the form of a multichannel image, as depicted in Fig. 1 using an arbitrary composition color.
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_image.png"><img alt="fig_glitches_image" src="../demos/fig_glitches_image.png" class="img_app_ter"/></a><br/>
+        Fig. 1. Original image acquired by MADRAS.
+        </p>
+        <p>
+        This image, composed of M = 11 individual channels, consists of a set of P contiguous scans, where one given scan corresponds to a unique column of this image. After sampling correction, each scan is composed of T multivalued pixels, called frames. Each frame is thus a vector of M individual samples and corresponds to a given pixel observed in the M channels. The number T of frames depends on the type of acquired data: Earth data, which are considered in this paper, are composed of T = 526 frames. A typical example of a scan is depicted in Fig. 2, where the signals recorded in the M channels are depicted in distinct colors.
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_scan.png"><img alt="fig_glitches_scan" src="../demos/fig_glitches_scan.png" class="img_app_ter"/></a><br/>
+        Fig. 2. Original image acquired by MADRAS.
+        </p>
+        <p>
+        After a few weeks in orbit, an anomaly in the communication chain between two electronic devices was detected. This anomaly leads to a mixing of the channels that compose the images provided by MADRAS. More precisely, additional data can be randomly inserted into the main data streams associated with each column of the MADRAS images. A typical example of a scan corrupted by several glitches is depicted in Fig. 3.
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_scan_corrupted.png"><img alt="fig_glitches_scan_corrupted" src="../demos/fig_glitches_scan_corrupted.png" class="img_app_ter"/></a><br/>
+        Fig. 3. Example of Earth data corrupted by several anomalies.
+        </p>
+        <p>
+        A schematic view of the corruption affecting a scan is depicted in Fig. 2, where, for conciseness, only M = 4 channels have been considered and the data flow is split into T = 3 successive frames.
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_datastream.png"><img alt="fig_glitches_datastream" src="../demos/fig_glitches_datastream.png" class="img_app_ter"/></a><br/>
+        Fig. 3. Schematic view of anomaly in the data stream. The symbol "G" is used to represent the glitch that has appeared in channel #3.
+        </p>
+        <p>
+        This work presents a new strategy to correct the Earth data corrupted by spurious samples that are randomly included in the multiplexed data stream provided by the MADRAS instrument. The proposed strategy relies on the construction of a trellis associated with each scan of the multichannel image, modeling the possible occurrences of these erroneous data. A specific weight that promotes the smooth behavior of the signals recorded in each channel is assigned to each transition between trellis states. The design of the trellis is illustrated in Fig. 4 on a toy example with a data stream composed of 12 samples, including 1 glitch and 11 valid measurements, distributed into T=3 frames of M = 4 channels (the toy example corresponds to that shown in Fig. 2), using a trellis of S=5 possible states with constant and artificial branch weights. The trellis is depicted at the instant of reception of the tenth sample x(10).
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_trellis.png"><img alt="fig_glitches_trellis" src="../demos/fig_glitches_trellis.png" class="img_app"/></a><br/>
+        Fig. 4. Illustration of the Viterbi algorithm on a toy example with frames consisting of M=4 channels, using a trellis with S=5 states (0 to 4 glitches). The blue disks correspond to the nodes of the trellis (from left to right, the first column is the initial node before receiving data, and the last two columns have not yet received data)..
+        </p>
+        <p>
+        The joint detection and correction of the erroneous data are conducted using a dynamic programming algorithm for minimizing the overall cost function throughout the trellis. Simulation results obtained on synthetic and real MADRAS data demonstrate the effectiveness of the proposed solution and are illustrated
+        </p>
+        <p>
+        <a href="../demos/fig_glitches_image_corrupted_corrected.png"><img alt="fig_glitches_image_corrupted_corrected" src="../demos/fig_glitches_image_corrupted_corrected.png" class="img_app_ter"/></a><br/>
+        Fig. 5. First panel: Original image. Second panel: Corrupted image. Third panel: Corrected image.
+        </p>
+
+        <p>
+            The proposed strategy is detailed in the paper published in IEEE Trans. Geosci. Remote Sens.:
+        </p>
+        <ul>
+        <li><a href="../papers/Wendt_IEEE_Trans_GRS_2016.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+         Complementary results and supporting materials are available in the related technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Wendt_TechReport_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+        <p><br/><br/></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

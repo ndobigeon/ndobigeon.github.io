@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> / <a href="app_hyper.html">Hyperspectral imagery</a> /
+        <br/>
+        <h1>NCM-based supervised and semi-supervised Bayesian algorithms for hyperspectral image unmixing</h1>
+        <p>
+        We propose Bayesian algorithms that can be used for hyperspectral image unmixing. These algorithms are based on the normal compositional model (NCM),
+        contrary to most of the unmixing strategies that rely on the classical linear mixing model (LMM). Indeed, the LMM has some limitations when applied to real images.
+        In particular, the endmember extraction procedures based on the LMM can be inefficient when the image does not contain enough pure pixels. The NCM allows one
+        to alleviate the problems mentioned above by assuming that
+        the pixels of the hyperspectral image are linear combinations
+        of random endmembers (as opposed to deterministic for the
+        LMM) with known means (e.g., resulting from the N-FINDR
+        or VCA algorithms). This model allows more flexibility regarding
+        the observed pixels and the endmembers. In particular,
+        the endmembers are allowed to be further from the observed
+        pixels which is clearly an interesting property for the problem
+        illustrated in Fig. 1.
+        <br/>
+        <img alt="NCM vs. LMM" src="../demos/fig_hyper_NCM.png" class="img_app"/><br/>
+        Fig. 1. Scatterplot of dual-band correct (red) and incorrect (blue) results of the N-FINDR algorithm.<br/>
+        </p>
+        <p>The abundance parameters to be estimated satisfy positivity and additivity constraints. These constraints are naturally expressed in a Bayesian context by using appropriate abundance prior distributions. The posterior distributions of the unknown model parameters are then derived. A Gibbs sampler allows one to draw samples distributed according to the posteriors of interest and to estimate the unknown abundances.
+        </p>
+        <p>
+            The abundance estimation procedure and the main results are detailed in a paper published in IEEE Trans. Image Processing in 2010.
+        </p>
+        <ul>
+        <li><a href="../papers/Eches_IEEE_Trans_IP_2010.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 4.5Mo ].
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab codes are available below.
+        </p>
+        <ul>
+        <li><a href="../soft/NCM_Bayes_unmix.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> [ .zip - 23.5Ko ].
+        </li>
+        </ul>
+
+        <h3>Extension to semi-supervised Bayesian unmixing</h3>
+
+        <p>An extension of the algorithm is also studied for mixtures with an unknown number R of spectral components. We assume here that the endmember spectra belong to a known library. However, the number of components R as well as the corresponding spectra and abundance coefficients are unknown. The previous hierarchical Bayesian model allows to define appropriate prior regarding the new unknown parameters. Finally, a reversible jump MCMC strategy is required for estimating all the unknown parameters (number of components, spectra involved in the mixture and their respective abundance coefficients).
+        </p>
+        <p>
+            The abundance estimation procedure and the main results are detailed in a paper published in IEEE J. Selected Topics in Signal Processing in 2010.
+        </p>
+        <ul>
+        <li><a href="../papers/Eches_IEEE_JSTSP_2010.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a> [ .pdf - 2.6Mo ].
+        </li>
+        </ul>
+
+        <h3>Extension to unsupervised Bayesian unmixing</h3>
+
+        <p>See <a href="app_hyper_GNCM.html">here</a></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="exhibit/data" href="http://dobigeon.perso.enseeiht.fr/doc/all_ref_with_strings.bib"  type="../application/x-bibtex" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app_biblio.css" media="screen,projection" title="style_sc"/>
+        <script type="text/javascript" src="http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js"></script>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+
+    <style  type="text/css">
+
+        #leftside .exhibit-flowingFacet-value {display:block; font-size:0.9em; text-decoration:none;font-weight:400; }
+        #leftside .exhibit-flowingFacet-value {display:block; margin:0 0 0 15px; padding:0 0 5px; width:125px; background-color:#f4f4f4; border-left:4px solid #ccc; color:#505050; float:left; margin-bottom:5px; padding:5px 1px 5px 5px; width:113px;}
+        #leftside .exhibit-flowingFacet-value-selected {font-size:0.9em; text-decoration:none; background-color:#eaeaea; border-left:4px solid #286ea0; color:#505050;}
+        #leftside .exhibit-flowingFacet-value-link {text-decoration:none; color:#505050;}
+        #leftside .exhibit-flowingFacet-value-link a {text-decoration:none; color:#505050;}
+        #leftside .exhibit-flowingFacet-body div.exhibit-flowingFacet-value:hover {background-color:#eaeaea; border-left:4px solid #286ea0; color:#505050;}
+
+        #content h1,#contentwide h1,#contentwide2 h1 {font-size:1.3em; margin:25px 0px 8px 0px;}
+
+        #content h2,#contentwide h2,#contentwide2 h2 {font-size:1.0em; margin:0 0 10px;}
+        #content h3,#contentwide h3,#contentwide2 h3 {font-size:1.0em; margin:0 0 10px; font-weight:normal; font-style:italic;}
+        #content h4,#contentwide h4,#contentwide2 h4 {font-size:1.6em; margin:0 0 10px;}
+        .exhibit-item   {text-decoration:none; color:#505050;}
+    </style>
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="leftside">
+            <span ex:role="facet" ex:scroll="false" ex:expression=".pub-type" ex:facetLabel="<a href=''></a>" ex:fixedOrder="Article;Conference;Incollection;Hdrthesis;Phdthesis;Mastersthesis;Techreport"></span>
+
+      <span ex:role="facet" ex:scoll="yes" ex:expression=".year" ex:facetLabel="<a href=''></a>" ex:sortDirection="reverse"></span>
+
+      <span ex:role="facet" ex:scoll="yes" ex:expression=".author" ex:facetLabel="<a href=''></a>"></span>
+
+    </div>
+
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Bibliography</h1>
+        <br/>
+
+
+
+      <script type="text/javascript">
+        var url='http://dobigeon.perso.enseeiht.fr/doc/all_ref_with_strings.bib';
+        function open_win() { window.open(url,"_blank","toolbar=yes, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=yes, width=750, height=700") }
+         </script>
+
+
+
+        <div ex:role="exhibit-collection" ex:itemTypes="Publication"></div>
+         Search:
+      <div ex:role="facet" ex:facetClass="TextSearch"> </div> <br/>
+              <div ex:role="viewPanel">
+              <div ex:role="exhibit-view"
+                                   ex:viewClass="Exhibit.TileView"
+                                   ex:showAll="true"
+                                   ex:grouped="true"
+                                   ex:orders=".pub-type, .year"
+                                   ex:fixedOrder="article;conference;incollection;hdrthesis;phdthesis;masterthesis;techreport"
+                                   ex:directions="ascending, descending"
+                                   ex:possibleOrders=".pub-type, .year"
+                                   style="display:none">
+              </div>
+
+                <div ex:role="exhibit-lens" ex:itemTypes="Publication" class="publication" style="display: none; text-align:none">
+                <p>
+                    <span ex:if-exists=".author">
+                        <span class="authors" ex:content=".author"></span>,
+                    </span>
+                    "<span class="pubtlTitle" ex:content=".label"></span>,"
+                    <span ex:if-exists=".booktitle">
+                        in <i><span ex:content=".booktitle" class="booktitle"></span></i>,
+                        <span ex:if-exists=".volume">
+                            vol. <span ex:content=".volume" class="volume"></span>,
+                        </span>
+                        <span ex:if-exists=".editor">
+                            <span ex:content=".editor"></span>, Eds.
+                        </span>
+                        <span ex:if-exists=".publisher">
+                            <span ex:content=".publisher"></span>:
+                        </span>
+                        <span ex:if-exists=".address">
+                            <span ex:content=".address"></span>,
+                        </span>
+                    </span>
+                    <span ex:if-exists=".journal">
+                        <i><span ex:content=".journal" class="journal"></span></i>,
+                        <span ex:if-exists=".volume">
+                            vol. <span ex:content=".volume" class="volume"></span>,
+                        </span>
+                        <span ex:if-exists=".number">
+                            no. <span ex:content=".number"></span>,
+                        </span>
+                        <span ex:if-exists=".pages">
+                            pp. <span ex:content=".pages"></span>,
+                        </span>
+                    </span>
+                    <span ex:if-exists=".institution">
+                        <i>Technical Report</i>, <span ex:content=".institution" class="institution"></span>,
+                    </span>
+                    <span ex:if-exists=".school">
+                        <span ex:content="if(contains(.key, 'Dobigeon_PhD_2007'), 'Ph.D. thesis,', '')"></span>
+                        <span ex:content="if(contains(.key, 'Dobigeon_HDR_2012'), 'Habilitation &agrave; Diriger des Recherches,', '')"></span>
+                        <span ex:content="if(contains(.key, 'Dobigeon_MSc_2004'), 'M.Sc. thesis,', '')"></span>
+                        <span ex:content=".school"></span>,
+                    </span>
+                    <span ex:if-exists=".series">
+                        <span ex:content=".series"></span>,
+                    </span>
+                    <span ex:if-exists=".month">
+                        <span ex:content=".month"></span>
+                    </span>
+                    <span ex:content=".year"></span><span ex:if-exists=".booktitle"><span ex:if-exists=".paper">, paper <span ex:content=".paper"></span></span><span ex:if-exists=".pages">, pp. <span ex:content=".pages"></span></span></span><span ex:if-exists=".note">, <span ex:content=".note"></span></span>.
+                    </p>
+                </div>
+
+                 <div ex:role="exhibit-lens" ex:itemTypes="Author" style="display: none; font-size: 93%;" class="author">
+                        <div class="title"><span ex:content=".label"></span> co-authored the following publications with N. Dobigeon:</div>
+                           <ol class="publications" ex:content="!author">
+                               <li ex:content="value"></li>
+                           </ol>
+
+                </div>
+
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

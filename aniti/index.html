@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>AI Research Chair @ ANITI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/icon_ANITI.jpg" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">					
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-home-content').show();" href="#home">Home</a>
+                        </li>
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-applications-content').show();" href="#applications">Open positions</a>
+                        </li>							
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-summary-content').show();" href="#summary">Summary</a>
+                        </li>	
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-team-content').show();" href="#team">Team</a>
+                        </li>					
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+						<li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-publi-content').show();" href="#publi">Publications</a>
+                        </li>						
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+
+       <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container lead">
+
+
+
+				
+                <div align="left" class="col-md-9" style="text-align: left"> 
+                    <a target="_blank" href="https://aniti.univ-toulouse.fr/">
+                        <img id="mobile-img" src="img/logo_ANITI.png" height="90" border="0" alt=""></a>
+                </div>					
+				<div align="right" class="col-md-3" style="text-align: right">
+                    <a target="_blank" href="img/logo_ANR.jpg">
+                        <img id="mobile-img" src="img/logo_ANR.jpg" height="60" border="0" alt=""></a>
+                </div>
+				
+				
+				<div style="text-align: left; margin-top:10px" class="col-md-12">
+					<h1>Fusion-based inference from heterogeneous data</h1> 
+					<p class="h3">This AI Research Chair is coordinated by <a href="http://dobigeon.perso.enseeiht.fr/">Nicolas Dobigeon</a> (Toulouse INP &amp; IRIT, France)
+					and funded by the <a href="https://aniti.univ-toulouse.fr/" target="_blank">Artificial and Natural Intelligence Toulouse Institute</a> (ANITI)
+					under the project ANR-19-P3IA-0004.
+					</p>
+				</div>		
+				                            
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section name="applications" id="applications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-applications-content').toggle();">Open positions <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+					<div class="allshow" style="display:none;"  id="tab-applications-content">
+						<hr class="star-primary">
+						<p class="lead">
+						<h2>Open positions</h2>
+						</p>
+						<p>
+						<h3>Informations for M.Sc., Ph.D. and post-doc applicants</h3>
+						If you are interest in joining our group, please read these <a href="http://dobigeon.perso.enseeiht.fr/note_students.html">guidelines</a> carefully before applying.
+						</p>
+						
+						<p><h3>Current openings</h3></p>
+						<ul>
+																			
+							<li><span class="strike">(M.Sc.) <a href="../proposals/proposal_MSc_2022_IRAP.pdf">Data fusion methods for astrophysics</a></span></li>
+							<li>(Ph.D.) <a href="../proposals/proposal_MSc_2022_IMAGIN.pdf">Sparse unmixing for active molecular imaging</a> (with LASIRE)</li>
+							<li><span class="strike">(M.Sc.) <a href="../proposals/proposal_MSc_2022_SMARTKARST.pdf">Smart and sustainable management of karst aquifers</a></span></li>
+							<li><span class="strike">(M.Sc.) <a href="../proposals/proposal_MSc_2022_CESBIO.pdf">Spectro-temporal feature extraction for the classification on satellite image time series with variational Gaussian processes</a></span></li>
+							<li>(M.Sc. + Ph.D.) <span class="strike"><a href="proposals/proposal_MSc_2022_ISAE.pdf">Regularization with generative neural networks for satellite imaging</a></span> (with CNES)</li>
+							<li><span class="strike">(M.Sc.) <a href="../proposals/proposal_MSc_2022_BIOT.pdf">Bayesian inference and optimal transport for change detection between heterogeneous images</a></span></li>
+							<li>(Ph.D.) <a href="../proposals/proposal_MSc_2022_AIiO.pdf">Bayesian inversion with deep learning-driven priors - Application to spectral imaging problems</a></li>							
+<!--							
+						    <li>(Ph.D.) <span class="strike">Hybrid AI for interference mitigation in SKA data</span></li>
+							<li>(M.Sc.) <span class="strike">Data fusion methods for astrophysics - Application to observations of galaxies and interstellar medium</span></li>
+							<li>(M.Sc.) <span class="strike">Optimal transport for unsupervised change detection between heterogeneous images</span></li>
+							<li>(M.Sc. + Ph.D.) <span class="strike">AI for automate wellbore interpretation</span> (with Schlumberger)</li>
+							<li>(M.Sc.) <span class="strike">Estimation of large-dimensional tensor models and applications in machine learning</span> (with <a href="https://miai.univ-grenoble-alpes.fr/">MIAI</a>)</li>
+-->						</ul>
+					</div>					
+				
+                    
+                </div>
+            </div>
+        </section>
+        
+		<!-- objective Section -->
+        <section name="summary" id="summary">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-summary-content').toggle();">Summary<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-summary-content">
+					
+                        <hr class="star-primary">
+                        <p class="lead">
+						<h2>Summary</h2>
+						</p>
+						<p>
+						Exploitation and analysis of heterogeneous data are usually conducted thanks to specific methods, generally dedicated to each kind of data, which account for the measurement process and the very nature of the data itself. Within advanced scenarii of concomitant availability of several yet distinct measurements, fully analyzing these extended datasets requires a unifying framework overcoming a crude and marginal description of a single measurement.  
+						</p>
+						<p>
+						The main objective of this research program is to develop learning algorithms able to extract meaningful information from multi-source, multi-scale and multi-temporal data. Particular applicative contexts deal with remote sensing for Earth observation and automotive systems.
+						</p>
+						<p>
+						This project is part of the ANITI Integrative Program "<a href="https://aniti.univ-toulouse.fr/ia-acceptable-2/" target="_blank">Acceptable AI</a>" (IP-A)
+						and contributes to the themes "<a href="https://aniti.univ-toulouse.fr/les-themes-2/" target="_blank">Learning with little or complex data</a>" 
+						and "<a href="https://aniti.univ-toulouse.fr/les-themes-2/" target="_blank">AI and physical models</a>".
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
+
+        
+		<!-- team Section -->
+        <section name="team" id="team">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-team-content').toggle();">Team [<a target="_blank" href="img/Picture_2021-01.png">Picture (2021)</a>]<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-team-content">
+					
+                        <hr class="star-primary">
+                        <p class="lead">
+							<h2>Team [<a target="_blank" href="img/Picture_2021-01.png">Picture (2021)</a>]</h2>
+							<h3 id="chair">Chair holder</h3>
+							<ul>
+								<li><a href="http://dobigeon.perso.enseeiht.fr/">Nicolas Dobigeon</a>, <span class="emph">Professor (IRIT/Toulouse INP)</span></li>
+							</ul>
+							<h3 id="co-chairs">Co-chair holders</h3>
+							<ul>
+								<li><a href="https://scholar.google.com/citations?user=rzznG2UAAAAJ&hl=en" target="_blank">Mathieu Fauvel</a>, <span class="emph">INRAe Researcher (CESBIO)</span></li>
+								<li><a href="https://www.irit.fr/~Cedric.Fevotte" target="_blank">Cédric Févotte</a>, <span class="emph">CNRS Senior Researcher (IRIT)</span></li>
+								<li><a href="https://www.cesbio.cnrs.fr/author/jordi-inglada/" target="_blank">Jordi Inglada</a>, <span class="emph">CNES Research Engineer (CESBIO)</span></li>
+								<li><a href="https://personnel.isae-supaero.fr/thomas-oberlin/" target="_blank">Thomas Oberlin</a>, <span class="emph">Associate Professor (ISAE-Supaero)</span></li>
+							</ul>
+							<h3 id="associates">Associate members</h3>
+							<ul>
+								<li><a href="https://www.irit.fr/~Elsa.Cazelles/" target="_blank">Elsa Cazelles</a>, <span class="emph">CNRS Researcher (IRIT)</span></li>
+								<li><a href="https://sites.google.com/site/jhgoulart/" target="_blank">Henrique Goulart</a>, <span class="emph">Associate Professor (IRIT/Toulouse INP)</span></li>
+								<li><a href="https://www.linkedin.com/in/julien-michel-otb/" target="_blank">Julien Michel</a>, <span class="emph">CNES Research Engineer (CESBIO)</span></li>
+								<li><a href="https://www.linkedin.com/in/msavinaud/" target="_blank">Mickaël Savinaud</a>, <span class="emph">Research Engineer (CS Communication &amp; Systèmes)</span></li>
+								<li><a href="https://scholar.google.fr/citations?user=8AB1bHkAAAAJ&hl=fr" target="_blank">Silvia Valero</a>, <span class="emph">Associate Professor (CESBIO/UT3)</span></li>
+							</ul>	
+							<h3 id="phd">Ph.D. Students</h3>
+							<ul>
+								<li><a href="#">Valentine Bellet</a> <span class="emph">(CESBIO/UT3, 2020-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: AI for ecosystem monitoring using remote sensing and digital agriculture data</li>
+										<li>Supervisors: Mathieu Fauvel and Jordi Inglada</li>
+										<li>Funding: CNES &amp; CS</li>
+									</ul>
+								</li>
+								<li><a href="#">Maud Biquard</a> <span class="emph">(ISAE-SUPAERO &amp; IRIT, 2022-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: Regularization with deep generative networks</li>
+										<li>Supervisors: Thomas Oberlin and <a href="http://chabert.perso.enseeiht.fr/">Marie Chabert</a> (IRIT)</li>
+										<li>Funding: CNES &amp; ISAE-SUPAERO</li>
+									</ul>
+								</li>								
+								<li><a href="#">Florentin Coeurdoux</a> <span class="emph">(IRIT/Toulouse INP, 2020-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: Generative models for Monte Carlo sampling</li>
+										<li>Supervisors: Nicolas Dobigeon and <a href="http://pierrechainais.ec-lille.fr/"target="_blank">Pierre Chainais</a> (CRIStAL/Centrale Lille)</li>
+										<li>Funding: ANITI</li>
+									</ul>						
+								</li>						
+								<li><a href="#">Colin Decourt</a> <span class="emph">(ISAE-SUPAERO &amp; CerCo, 2020-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: Multiple target extraction identification and tracking for automotive radar with AI</li>
+										<li>Supervisors: Thomas Oberlin and <a href="http://cerco.cnrs.fr/pagesp/rufin/" target="_blank">Ruffin VanRullen</a> (CerCo)</li>
+										<li>Funding: NXP</li>
+									</ul>
+								</li>	
+								<li><a href="#">Iris Dumeur</a> <span class="emph">(CESBIO/UT3, 2021-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: Self-supervised representation learning from multi-domain data for land cover change detection</li>
+										<li>Supervisors: Jordi Inglada and Silvia Valero</li>
+										<li>Funding: ANR DeepChange</li>
+									</ul>
+								</li>
+								<li><a href="#">Yoël Zerah</a> <span class="emph">(CESBIO/UT3, 2020-...)</span>
+									<ul class="h4">
+										<li>Ph.D. thesis: Deep generative models for detecting land cover changes from satellite image times series</li>
+										<li>Supervisors: Jordi Inglada and Silvia Valero</li>
+										<li>Funding: CNES &amp; Occitanie Région</li>
+									</ul>						
+								</li>						
+							</ul>
+
+						<h3 id="MembersBSc">B.Sc./M.Sc. Students</h3>
+						<ul>
+						 <li>El Mehdi AKKOUCHE (2022, M.Sc., University of Toulouse, advisors: Th. Oberlin, N. Dobigeon)</li>
+						 <li>Maud BIQUARD (2022, M.Sc., ENS Paris-Saclay, advisors: Th. Oberlin, M. Chabert)</li>
+						 <li>Jean MALLEJAC (2022, M.Sc., ENSEA, advisors: E. Cazelles, N. Dobigeon, M. Chabert)</li>
+						 <li>Marien RENAUD (2022, M.Sc., Ecole Polytechnique, advisors: E. Cazelles, C. Févotte)</li>
+						 <li>Alessandro GOLDWURM (2021, M.Sc., University of Toulouse, advisors: E. Cazelles, N. Dobigeon)</li>
+						 <li>Lorinda HUBACHER (2021, B.Sc., Toulouse INP, advisor: N. Dobigeon)</li>
+						 <li>Florian MORIOUSEF (2021, B.Sc., ISAE, advisors: C. Guilloteau, Th. Oberlin, O. Bern&eacute;, Th. Contini, N. Dobigeon)</li>	
+						 <li>Adrien POUJON (2021, M.Sc., advisors: H. Goulart)</li>	
+						 <li>Juan VINESCOS (2021, M.Sc., advisors: J. Inglada, J. Michel)</li>							 
+						</ul>		
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
+  
+
+
+	<!-- news Section -->
+        <section name="news" id="news">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News and events <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;"  id="tab-news-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+							<p class="lead">
+								<h2>News and events</h2>
+							</p>
+							<ul>
+								<li><span class="label label-danger">Sep. 2022</span> Plenary speaker at <a href="https://sites.google.com/view/lrma21/">Workshop on Low-Rank Models and Applications</a> (Mons, Belgium)</li>
+								<li><span class="label label-warning">Jun. 2022</span> Afterwork ANITI  #8 : <a href="https://aniti.univ-toulouse.fr/2022/06/14/afterwork-apprendre-avec-peu-de-donnees-ou-a-partir-de-donnees-complexes/">Apprendre avec peu de données ou à partir de données complexes</a></li>															
+								<li><span class="label label-success">Jun. 2022</span> Accepted paper on <a href="https://arxiv.org/">sliced Wasserstein normalizing flows</a> @ ESANN</li>								
+								<li><span class="label label-success">Jun. 2022</span> Accepted paper on <a href="papers/Guilloteau_IEEE_ICIP_2022.pdf">informed regularizations for multiband image fusion</a> @ IEEE ICIP</li>
+								<li><span class="label label-success">Jun. 2022</span> Accepted paper on <a href="https://arxiv.org/">normalizing flows for approximating optimal transport</a> @ ECML-PKDD</li>
+								<li><span class="label label-success">Jun. 2022</span> Accepted paper on <a href="papers/Ince_IEEE_GRS_Letters_2022.pdf">weighted residual NMF for hyperspectral unmixing</a> @ IEEE GRSL</li>																
+								<li><span class="label label-danger">Jun. 2022</span> Plenary speaker at <a href="https://chimiobrest2022.sciencesconf.org/">Chimiom&eacute;trie</a> (Brest, France)</li>
+								<li><span class="label label-success">Jun. 2022</span> Accepted paper on <a href="papers/Coeurdoux_GRETSI_2022.pdf">normalizing flows for approximating optimal transport</a> @ GRETSI</li>																
+								<li><span class="label label-success">May 2022</span> Accepted paper on <a href="papers/Fall_EUSIPCO_2022.pdf">Bayesian voxel-based lesion-symptom mapping</a> @ EUSIPCO</li>															
+								<li><span class="label label-default">Apr. 2022</span> New preprint on <a href="https://arxiv.org/">multiscale sparse regularization for hyperspectral unmixing</a></li>								
+								<li><span class="label label-danger">Apr. 2022</span> After a 2-y. term as an Associate Editor, appointed Senior Area Editor of <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing">IEEE Trans. Signal Processing</a></li>							
+								<li><span class="label label-danger">Mar. 2022</span> Interview for CNRS INS2I, "<a href="https://www.ins2i.cnrs.fr/fr/cnrsinfo/comment-fusionner-les-images-des-telescopes-spatiaux">Comment fusionner les images des télescopes spatiaux</a>"</li>							
+								<li><span class="label label-danger">Mar. 2022</span> Invited speaker at <a href="https://www.siam.org/conferences/cm/conference/is22">SIAM Conf. on Imaging Science</a> (online)</li>
+								<li><span class="label label-default">Feb. 2022</span> New preprint on <a href="https://arxiv.org/abs/2203.00948">generative adversarial network for change detection</a></li>																
+								<li><span class="label label-success">Dec. 2021</span> Accepted paper on <a href="http://dobigeon.perso.enseeiht.fr/papers/Zhao_IEEE_Trans_GRS_2022.pdf">hyperspectral unmixing with spectral variability using CNN</a> @ IEEE TGRS</li>
+								<li><span class="label label-danger">Nov. 2021</span> <a href="https://exploreur.univ-toulouse.fr/lia-une-simple-affaire-de-donnees">L’IA, une simple affaire de données ?</a> (interview by N. Dobigeon)</li>
+							    <li><span class="label label-warning">Sep. 2021</span> <a href="https://indico.math.cnrs.fr/event/6637/">CIMI-ANITI School on Optimisation</a>, Toulouse, France (co-organized by C. F&eacute;votte &amp; E. Cazelles)</li>
+								<li><span class="label label-danger">Jun. 2021</span> <a href="https://futureintelligence.tech/">Future Intelligence</a>, Toulouse, France (talk by N. Dobigeon)</li>
+								<li><span class="label label-danger">Mar. 2021</span> <a href="https://iesf-lr.org/">Journée Nationale de l'Ingénieur 2021 - Intelligence Artificielle</a>, IESF Occitanie-Méditerranée (talk by C. Févotte)</li>								
+								<li><span class="label label-danger">Feb. 2021</span> <a href="https://www.echosciences-sud.fr/communautes/exploreur-l-agenda/evenements/comment-l-intelligence-artificielle-peut-nous-permettre-de-surveiller-nos-ecosystemes">Rencontre Exploreur : "comment l'intelligence artificielle peut nous permettre de surveiller nos écosystèmes ?</a>" (talk by V. Bellet)</li>
+								<li><span class="label label-warning">Jan. 2020</span> <a href="https://dsg2020.wordpress.com/">Data Sciences for Geosciences 2020</a>, Toulouse, France (co-organized by M. Fauvel &amp; N. Dobigeon)</li>
+								<li><span class="label label-warning">Sep. 2019</span> Mini-workshop on "<a href="http://dobigeon.perso.enseeiht.fr/doc/Event_2019-09_OptimStat_ANITI.txt">Optimization and Statistics</a>", Toulouse, France (co-organized by N. Dobigeon)</li></li>
+								<li><span class="label label-warning">July 2019</span> <a href="https://www.irit.fr/pfia2019/cap/">CAp 2019</a>, as part of <a href="https://www.irit.fr/pfia2019/">PFIA</a>, Toulouse, France</li>
+								<li><span class="label label-warning">July 2019</span> <a href="http://www.spars-workshop.org">SPARS workshop</a>, Toulouse, France (co-organized by C. Févotte &amp; N. Dobigeon)</li>							
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </section>
+         
+		<!-- publi Section -->
+        <section name="publi" id="publi">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publi-content').toggle();">Publications <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-publi-content">
+					
+                        <hr class="star-primary">
+                        <p class="lead">
+						<h2>Publications</h2>
+						<iframe src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Nicolas%2C+Dobigeon%3BMathieu%2C+Fauvel%3B+Cédric%2C+Févotte%3B+Jordi%2C+Inglada%3B+Thomas%2C+Oberlin%3B+Elsa%2C+Cazelles%3B+Goulart&projet_anr=ANR-19-P3IA-0004&CB_auteur=oui&CB_titre=oui&CB_article=oui&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css" width = "100%" height = "500px"></iframe>
+						
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
+
+
+        <section name="contact" id="contact">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+					<div class="allshow" style="display:none;"   id="tab-contact-content">
+					<hr class="star-primary">
+					<p class="lead">
+					<h2>Contact</h2>
+					</p>						
+						        
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						  <td  valign="top" >
+							INP - ENSEEIHT Toulouse<br/>
+									2, rue Charles Camichel<br/>
+									B.P. 7122<br/>
+									31071 Toulouse Cedex 7<br/>
+									FRANCE<br/>
+									<a href="https://goo.gl/maps/ViheA">Google map</a> / <a href="http://www.enseeiht.fr/fr/contacts.html">Access map</a>
+						  </td>
+						  <td  valign="top" >
+							Office : F420 - 4th floor<br/>
+							Tel. : (+33) 05 34 32 22 40<br/>
+							Fax : (+33) 05 34 32 21 57<br/>
+							E-mail : dobigeon [at] n7 [dot] fr<br/>
+							www : <a href="http://www.enseeiht.fr/~dobigeon/" >www.enseeiht.fr/~dobigeon/</a><br/>
+						   <a href="https://twitter.com/NicolasDobigeon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @NicolasDobigeon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+						  </td>
+						</tr>
+					   </table>
+					</div>					
+                    
+                </div>
+            </div>
+        </section>  
+
+        <hr class="star-danger">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>

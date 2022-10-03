@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Multi-band image fusion</h1>
+		<p class="emph">(see also <a href="app_fusion_astro.html">here</a>)</p>
+		
+        <p>Over the last decades, an increasing number of airborne sensors have been acquiring remotely sensed images characterized by various spatial and spectral resolutions. Due to inherent physical constraints, a tradeoff between both resolutions must be found. However, current and upcoming Earth observation missions include several sensors that are able to jointly provide hyperspectral images and highly resolved multispectral or panchromatic images. Coupling both acquired images to obtain a unique high-resolution hyperspectral image is a challenging problem. We consider the problem of fusing multiple images for resolution enhancement. The fusion problem is formulated within a Bayesian estimation framework, and various priors are proposed as regularization. The maximum likelihood and Bayesian estimators are computed closed-form (solving the underlying Sylvester equation), or approximated using simulation-based (MCMC) or optimization (ADMM, block coordinate descent) algorithms.</p>
+
+               <img alt="Multi-band image fusion" src="../demos/result_image_new.png" class="img_app_bis"/><br/>
+        <span class="caption">Fig. 1. Hyperspectral pansharpening.</span><br/><br/>
+
+        <p>A particular scenario of the addressed problem, known as hyperspectral pansharpening, consists of fusing a (highly) spatially resolved panchromatic image with a (highly) spectral resolved hyperspectral image. An overview paper on this problem has been published in IEEE Geosci. Remote Sens. Magazine:</p>
+        <ul>
+        <li><a href="../papers/Loncan_IEEE_GRS_Mag_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>
+        </li>
+        </ul>
+        <p>Supporting materials (toolbox for the compared algorithms and supplementary documents) are available on the <a href="http://openremotesensing.net/knowledgebase/hyperspectral-pansharpening-a-review/">OpenRemoteSensing.net</a> website.</p>
+
+        <p>The problem of blind model-based fusion of multi-band and panchromatic images has been also considered in the paper presented at the IEEE Int. Conf. Multisensor Fusion Integration Intell. Syst. (MFI) in 2016:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_IEEE_MFI_2016.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>
+        </li>
+        </ul>
+        <p>
+            The corresponding Matlab code for this blind approach is available below.
+        </p>
+        <ul>
+        <li><a href="https://github.com/qw245/BlindFuse">matlab codes <img src="../img/matlab_icon.png" alt="Download the software" class="icon" /></a> [ GitHub].
+        </li>
+        </ul>
+
+    <h3>Fast fusion schemes based on the Sylvester matrix equation</h3>
+    <p>
+    This work proposes a fast multi-band image fusion algorithm, which combines a high-spatial low-spectral resolution image and a low-spatial high-spectral resolution image. By exploiting the properties of the circulant and downsampling matrices associated with the fusion problem, a closed-form solution for the corresponding Sylvester equation is obtained explicitly, getting rid of any iterative update step. Coupled with the alternating direction method of multipliers and the block coordinate descent method, the proposed algorithm can be easily generalized to incorporate prior information for the fusion problem, allowing a Bayesian estimator. Simulation results show that the proposed algorithm achieves the same performance as existing algorithms with the advantage of significantly decreasing the computational complexity of these algorithms.</p>
+        <p>
+            The proposed Sylvester equation-based fusion algorithms are described in the following paper published in IEEE Trans. Image Processing:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_IEEE_Trans_IP_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+        <p>
+            An extended version of this paper (with additional proofs and simulations) is available as a technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_TechReport_2015b.pdf">technical report <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab code for a demo is available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Fast_Bayesian_fusion.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> (with dataset) [ .zip - 53.4Mo].
+        </li>
+        </ul>
+        <p>An enhanced and much more robust resolution scheme has been proposed in the             paper published in IEEE Signal Processing Letters:
+        </p>
+        <ul>
+        <li><a href="http://arxiv.org/abs/1604.01818/">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            The corresponding Matlab code for this robust fusion algorithm will be available below.
+        </p>
+        <ul>
+        <li><a href="#">matlab codes <img src="../img/matlab_icon.png" alt="Download the software" class="icon" /></a> [ GitHub].
+        </li>
+        </ul>
+
+
+    <h3>Prior based on sparse representation over a dictionary</h3>
+    <p>
+    A sparse regularization term is carefully designed, relying on a decomposition of the scene on a set of dictionaries. The dictionary atoms and the supports of the corresponding active coding coefficients are learned from the observed images. Then, conditionally on these dictionaries and supports, the fusion problem is solved via alternating optimization with respect to the target image (using the alternating direction method of multipliers) and the coding coefficients. Simulation results demonstrate the efficiency of the proposed algorithm when compared with state-of-the-art fusion methods.
+    </p>
+        <p>
+            The sparse representation-based fusion algorithm in the following paper published in IEEE Trans. Geosci. Remote Sensing:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_IEEE_Trans_GRS_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            Additional results are available in the related technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_TechReport_2014.pdf">technical report <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+            The corresponding Matlab code for a demo is available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Fusion_Sparse_Representation.zip">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> (with dataset) [ .zip - 32.5Mo ].
+        </li>
+        </ul>
+
+
+
+    <h3>Prior based on a Gaussian distribution</h3>
+    <p>
+     The fusion problem is formulated within a Bayesian estimation framework. An appropriate prior distribution exploiting geometrical consideration is introduced. To compute the Bayesian estimator of the scene of interest from its posterior distribution, a Markov chain Monte Carlo algorithm is designed to generate samples asymptotically distributed according to the target distribution. To efficiently sample from this high-dimension distribution, a Hamiltonian Monte Carlo step is introduced in the Gibbs sampling strategy
+    </p>
+        <p>
+            The Gaussian prior-based fusion algorithm in the following paper published in IEEE J. Sel. Topics Signal Process.:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_IEEE_JSTSP_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+        <p>
+            Additional results are available in the related technical report:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_TechReport_2015a.pdf">technical report <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            The corresponding Matlab code for a demo is available below.
+        </p>
+        <ul>
+        <li><a href="../soft/Fusion_Gaussian.7z">matlab codes <img src="../img/zip_icon.png" alt="Download the software" class="icon" /></a> (with dataset) [ .7z - 27.9Mo ].
+        </li>
+        </ul>
+
+        <p>
+            An alternative algorithm, based on a block coordinate gradient algorithm, is described in this IEEE WHISPERS 2015 paper:
+        </p>
+        <ul>
+        <li><a href="../papers/Wei_IEEE_WHISPERS_2015.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+
+
+    <h3>Joint fusion and unmixing of multi-band images</h3>
+
+    The problem of jointly fusing and unmixing multi-band images is specifically addressed in this paper:
+        </p>
+        <ul>
+        <li><a href="http://arxiv.org/abs/1603.08720/">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        <p>
+            The corresponding Matlab code is available below.
+        </p>
+        <ul>
+        <li><a href="https://github.com/qw245/FUMI/">matlab codes <img src="../img/matlab_icon.png" alt="Download the software" class="icon" /></a> [ GitHub ].
+        </li>
+        </ul>
+
+    <p><br/></p>
+
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>

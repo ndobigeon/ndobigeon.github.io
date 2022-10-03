@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Nicolas Dobigeon's professional web page" />
+    <meta name="keywords" content="Nicolas Dobigeon, signal processing, bayesian inference, MCMC methods, monte carlo, markov chain" />
+    <meta name="author" content="Nicolas Dobigeon" />
+    <link rel="shortcut icon" href="../img/favicon_IRIT.ico" />
+    <link rel="stylesheet" type="text/css" href="style_app.css" media="screen,projection" title="style_sc"/>
+    <title>Nicolas Dobigeon @ University of Toulouse</title>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="contentwide">
+
+        <a href="../index.html">Home</a> / <a href="../research.html">Research</a> /
+        <br/>
+        <h1>Hierarchical Bayesian image analysis</h1>
+		<h2>From low-level modeling to robust supervised learning</h2>
+        <p>
+        Within a supervised classification framework, labeled data are used to learn classifier parameters. Prior to that, it is generally required to perform dimensionality reduction via 
+		feature extraction. These pre- processing steps have motivated numerous research works aiming at recovering latent variables in an unsupervised context. 
+		This paper proposes a unified framework to perform classification and low-level modeling jointly. 
+		The main objective is to use the estimated latent variables as features for classification and to incorporate simultaneously supervised information to help 
+		latent variable extraction. 
+		The proposed hierarchical Bayesian model is divided into three stages: a first low-level modeling stage to estimate la- tent variables, 
+		a second stage clustering these features into statistically homogeneous groups and a last classification stage exploiting the (possibly badly) labeled data. 
+		The resulting directed acyclic graph is depicted in Fig. 1.
+        <br/>
+        <img alt="The democratic pdf" src="../demos/fig_HBA_DAG.png" class="img_app"/><br/>
+        Fig. 1. Directed acyclic graph of the proposed hierarchical Bayesian model (user-defined parameters appear in dotted circles and external data in squares).<br/>
+		
+		</p>
+		<p>
+		Performance of the model is assessed in the specific context of hyperspectral image interpretation, unifying two standard analysis techniques, namely unmixing and classification. Some classification
+		results are depicted in Fig. 2.		
+		<br/>
+        <img alt="The democratic pdf" src="../demos/fig_HBA_results.png" class="img_app"/><br/>
+		Fig. 2. Real MUESLI image. Colored composition of the hyperspectral image (a), expert ground-truth (b), estimated clustering (c), training data (d), estimated clas- sification with proposed model (e) and estimated classification with random forest (f).<br/>
+        </p>
+
+        <p>
+        The model and the algorithms are detailed in the paper published in Pattern recognition:
+        </p>
+        <ul>
+        <li><a href="../papers/Lagrange_ELSEVIER_PR_2019.pdf">article <img src="../img/pdf_icon.png" alt="Download the document" class="icon" /></a>.
+        </li>
+        </ul>
+        
+        <p>
+            The corresponding Python codes are available on Adrian Lagrange's GitHub.
+        </p>
+        <ul>
+        <li>Python codes <a href="https://github.com/Laadr/BayesJointClassifUnmix"><img src="../img/github_icon.png" alt="Download the software" class="icon" /></a>.
+        </li>
+        </ul>
+		<br/><br/>
+    </div>
+    <img class="hide" src="http://s20.sitemeter.com/meter.asp?site=s20dobigeon" alt="sitemeter stats"/><a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+</div>
+</body>
+</html>
