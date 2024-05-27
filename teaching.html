@@ -85,7 +85,9 @@
                             <ul class="dropdown-menu">
                                 <li><a onclick="javascript:reset_menus();$('#tab-complexe-content').show();" href="#complexe">Complex variable</a></li>								
 								<li><a onclick="javascript:reset_menus();$('#tab-probabilites-content').show();" href="#probabilites">Probability</a></li>
-								<li><a onclick="javascript:reset_menus();$('#tab-statistique-content').show();" href="#statistique">Statistics</a></li>							
+								<li><a onclick="javascript:reset_menus();$('#tab-statistique-content').show();" href="#statistique">Statistics - Basics</a></li>							
+								<li><a onclick="javascript:reset_menus();$('#tab-stat_avancees-content').show();" href="#stat_avancees">Statistics - Advanced methods</a></li>							
+								<li><a onclick="javascript:reset_menus();$('#tab-stat_comput-content').show();" href="#stat_comput">Computational statistics</a></li>	
 								<li><a onclick="javascript:reset_menus();$('#tab-signal-content').show();" href="#signal">Signal Processing</a></li>
 								<li><a onclick="javascript:reset_menus();$('#tab-tns-content').show();" href="#tns">Digital signal processing - Basics</a></li>
 								<li><a onclick="javascript:reset_menus();$('#tab-tns2-content').show();" href="#tns2">Digital signal processing - Advanced</a></li>
@@ -211,7 +213,7 @@
 						
 						<!-- <div align="left" class="col-md-7"> -->
 						<p class="lead">
-							<h2>Statistics</h2>
+							<h2>Statistics - Basics</h2>
 						</p>
 						<ul>
 						  <li>Estimation theory (maximum likelihood, moment and Bayesian estimators)
@@ -226,6 +228,56 @@
 				</div>
            </div>
         </section>
+
+		<section name="stat_avancees" id="stat_avancees">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-pb_inverses-content').toggle();">Inverse problems<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-pb_inverses-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Statistics - Advanced methods</h2>
+						</p>
+						<ul>
+						  <li> Bayesian estimation</li>
+						  <li> Generalized linear models</li>
+						  <li> Penalized regression (ridge, lasso, elastic-net)</li>
+						</ul>
+						<a href="teaching/stat_avancees.html" class="btn-sm btn-primary">More info&raquo;</a>
+					</div>
+				</div>
+           </div>
+        </section>	
+
+		<section name="stat_comput" id="stat_comput">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-pb_inverses-content').toggle();">Inverse problems<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-pb_inverses-content">					
+                        <hr class="star-primary">
+						
+						<!-- <div align="left" class="col-md-7"> -->
+						<p class="lead">
+							<h2>Computational statistics</h2>
+						</p>
+						<ul>
+						  <li> Monte Carlo methods</li>
+						  <li> Expectation-maximization algorithm</li>
+						  <li> Variational (Bayesian) inference</li>
+						</ul>
+						<a href="teaching/stat_comput.html" class="btn-sm btn-primary">More info&raquo;</a>
+					</div>
+				</div>
+           </div>
+        </section>			
 		
 		<!-- signal Section -->
         <section name="signal" id="signal">
@@ -334,7 +386,6 @@
            </div>
         </section>
 		
-
 		
 
 
