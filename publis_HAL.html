@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nicolas Dobigeon @ University of Toulouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+		<!-- Personalized style -->
+        <link rel="stylesheet" href="css/add_classes.css"/>
+		
+		<link rel="shortcut icon" href="img/favicon_IRIT.ico" />
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<span class="h5"><img border="0" height="50" width="0" src="" /><a href="index.html">Nicolas Dobigeon @ Univ. of Toulouse</a>
+						<!--<a href="#"><img border="0" height="50" src="img/logo_uftmip.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_aniti.jpg"/></a>
+						<a href="#"><img border="0" height="50" src="img/logo_irit.jpg"/></a>-->
+					</span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+                            <a href="index.html">Home</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="research.html">Research</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="group.html">Research group</a>
+                        </li>						
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <b>Publications</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-Preprints-content').show();" href="#Preprints">Submitted papers</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Journal-content').show();" href="#Journal">International journals</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-JournalN-content').show();" href="#JournalN">National journals</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Chapters-content').show();" href="#Chapters">Book chapters</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Conference-content').show();" href="#Conference">International conferences</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-ConferenceN-content').show();" href="#ConferenceN">National conferences</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Patents-content').show();" href="#Patents">Patents</a></li>
+								<li><a onclick="javascript:reset_menus();$('#tab-Theses-content').show();" href="#Theses">Theses</a></li>									
+								<li><a onclick="javascript:reset_menus();$('#tab-Reports-content').show();" href="#Reports">Technical reports</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Industrial-content').show();" href="#Industrial">Industrial reports</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Reject-content').show();" href="#Reject">Rejected papers</a></li>								
+								<li><a onclick="javascript:reset_menus();$('#tab-Talks-content').show();" href="#Talks">Talks/Seminars</a></li>	
+                            </ul>
+                        </li>
+						<li class="page-scroll">
+                            <a href="activities.html">Activities</a>
+                        </li>						
+						<li class="page-scroll">
+                            <a href="teaching.html">Teaching</a>
+                        </li>
+						<li class="page-scroll">
+                            <a href="curriculum.html">Curriculum</a>
+                        </li>                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('index.html#tab-contact-content').show();" href="index.html#tab-contact-content">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+               
+		<!-- Intro Section -->
+        <section>
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+					<h1>Full list of publications and communications</h1>
+                     Other lists: <a href="publis.html">static list</a>, <a href="publis_query.html">interactive list</a>, <a href="publis_HAL.html">HAL-based list</a>, <a href="https://www.irit.fr/productions-scientifiques/publications/?code=3770&nom=Dobigeon">IRIT database</a>, 
+					 <a href="http://scholar.google.com/citations?user=YPQFwDYAAAAJ&amp;hl=en">Google Scholar profile</a>, 
+					 <a href="https://cv.archives-ouvertes.fr/nicolas-dobigeon">HAL profile</a>, 
+					 <a href="http://bibbase.org/show?bib=http%3A%2F%2Fndobigeon.github.io%2Fpapers%2Fbibtex_entry_bot.htm">BibBase</a>.
+					 <h6>Note: my Erd&otilde;s number is 3. To find a pathway: <a href="http://www.ams.org/mathscinet/collaborationDistance.html?AuthorSourceName=Dobigeon,+Nicolas&amp;group_target=189017">MathSciNet</a>.</h6>
+					 <h6>For more details (simulation results, Matlab codes...), click on the "related webpage" or "reproducible research materials" links when available.</h6>
+					 <h6>All (not arXived) papers are available online at the url <a href="">http://dobigeon.perso.enseeiht.fr/papers/<i>bibtex_key</i>.pdf</a> (please replace <i>bibtex_key</i> with the B<small>IB</small>T<sub>E</sub>X key of the targeted paper)</h6>
+				</div>
+				
+				<b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>	
+            </div>
+        </section>
+        
+        <section name="publi" id="publi">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publi-content').toggle();">Publications <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-publi-content">
+					
+                        <hr class="star-primary">
+                        <p class="lead">
+						<h2>Publications</h2>
+						<iframe src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Nicolas%2C+Dobigeon&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=typdoc&tri_exp2=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css" width = "100%" height = "2500px"></iframe>
+						
+						</p>
+					</div>
+				</div>
+            </div>
+        </section>
+        
+	    <!-- Reports Section -->
+        <section name="Reports" id="Reports">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Reports-content').toggle();">Technical reports<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Reports-content">					
+                        <hr class="star-primary">
+						
+						<p class="lead">
+							<h2>Technical reports</h2>
+						</p>
+						<ol reversed="reversed">
+							  <li>
+								<p>T. Ince and N. Dobigeon, "<a href="papers/Ince_TechReport_2022.pdf">Weighted Residual NMF with Spatial Regularization for Hyperspectral Unmixing -- Complementary results and supplementary materials</a>," 
+								<span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, May 2022. [<a href="papers/bibtex_entry_bot.htm#Ince_TechReport_2022" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+								</p>
+							 </li>						
+							  <li>
+								<p>T. Uezato, M. Fauvel and N. Dobigeon, "<a href="papers/Uezato_TechReport_2020.pdf">Supplementary materials: Hierarchical sparse nonnegative matrix factorization for hyperspectral 
+								unmixing with spectral variability</a>," 
+								<span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, July 2020. [<a href="papers/bibtex_entry_bot.htm#Uezato_TechReport_2020" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+								</p>
+							 </li>		
+							<li>
+								<p>V. Ferraris, N. Dobigeon and M. Chabert, <a href="papers/Ferraris_TechReport_2020.pdf">Robust fusion algorithms for unsupervised change detection between multi-band optical images - A comprehensive case study 
+								- Complementary results</a>," 
+								<span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, June 2020. [<a href="papers/bibtex_entry_bot.htm#Ferraris_TechReport_2020" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+								</p>
+							 </li>
+							<li>
+								<p>E. Monier, Th. Oberlin, N. Brun, X. Li, M. Tenc&eacute; and N. Dobigeon, "<a href="papers/Monier_TechReport_2020.pdf">Fast reconstruction of partially sampled STEM-EELS images at atomic-scale - 
+								Complementary results</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Feb. 2020. [<a href="papers/bibtex_entry_bot.htm#Monier_TechReport_2020" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							   </p>
+							 </li>	
+							<li>
+								<p>A. Lagrange, M. Fauvel, S. May, J. M. Bioucas-Dias and N. Dobigeon, "<a href="papers/Lagrange_TechReport_2019.pdf">Matrix cofactorization for joint representation learning and supervised classification - 
+								Application to hyperspectral image analysis - Complementary results</a>," 
+								<span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2019. [<a href="papers/bibtex_entry_bot.htm#Lagrange_TechReport_2019" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+								</p>
+							 </li>	
+							 
+							<li>
+								<p>Y. Cruz Cavalcanti, Th. Oberlin, N. Dobigeon, S. Stute, M. Ribeiro and C. Tauber, "<a href="papers/Cavalcanti_TechReport_2018.pdf">Factor analysis of dynamic PET images: beyond Gaussian noise - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2018. [<a href="papers/bibtex_entry_bot.htm#Cavalcanti_TechReport_2018" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							   </p>
+							 </li>
+
+							<li>
+								<p>T. Uezato, M. Fauvel and N. Dobigeon, "<a href="papers/Uezato_TechReport_2018b.pdf">Hyperspectral unmixing with spectral variability using adaptive bundles and double sparsity - Complementary results</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, April 2018. [<a href="papers/bibtex_entry_bot.htm#Uezato_TechReport_2018b" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							<li>
+								<p>T. Uezato, M. Fauvel and N. Dobigeon, "<a href="papers/Uezato_TechReport_2017.pdf">Hyperspectral image unmixing with LiDAR data-aided spatial regularization - Complementary results</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2017. [<a href="papers/bibtex_entry_bot.htm#Uezato_TechReport_2017" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							<li>
+								<p>Y. Cruz Cavalcanti, Th. Oberlin, N. Dobigeon, S. Stute, M. Ribeiro and C. Tauber, "<a href="papers/Cavalcanti_TechReport_2017.pdf">Unmixing dynamic PET images with variable specific binding kinetics - Supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2017. [<a href="papers/bibtex_entry_bot.htm#Cavalcanti_TechReport_2017" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							 </li>
+							<li>
+								<p>V. Ferraris, N. Dobigeon, Q. Wei and M. Chabert, "<a href="papers/Ferraris_TechReport_2016.pdf">Detecting changes between optical images of different spatial and spectral resolutions: a fusion-based approach -  Complementary results</a>,"  <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2016. [<a href="papers/bibtex_entry_bot.htm#Ferraris_TechReport_2016" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							 </li>
+							 <li>
+								<p>P.-A. Thouvenin, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Thouvenin_TechReport_2017.pdf">A hierarchical Bayesian model accounting for endmember variability and abrupt spectral changes to unmix multitemporal hyperspectral images - Complementary results and supporting materials</a>,"  <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, May 2017. [<a href="papers/bibtex_entry_bot.htm#Thouvenin_TechReport_2017" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							<li><p>
+								Q. Wei, N. Dobigeon, J.-Y. Tourneret, J. M. Bioucas-Dias and S. Godsill, "<a href="papers/Wei_TechReport_2016.pdf">R-FUSE: robust fast fusion of multi-band images based on solving a Sylvester equation - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, Department of Engineering, University of Cambridge, July 2016. [<a href="papers/bibtex_entry_bot.htm#Wei_TechReport_2016" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+							</p></li>
+							 <li>
+								<p>C. Elvira and P. Chainais and N. Dobigeon, "<a href="papers/Elvira_TechReport_2016.pdf">Bayesian anti-sparse coding - Complementary results and supporting materials</a>,"  <span class="emph">Technical Report</span>, University of Lille, CNRS, CRIStAL and University of Toulouse, IRIT/INP-ENSEEIHT, July 2016. [<a href="papers/bibtex_entry_bot.htm#Elvira_TechReport_2016" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							 <li>
+								<p>P.-A. Thouvenin, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Thouvenin_TechReport_2015.pdf">Online unmixing of multitemporal hyperspectral images accounting for spectral variability - Complementary results</a>,"  <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2015. [<a href="papers/bibtex_entry_bot.htm#Thouvenin_TechReport_2015" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							<li>
+								<p>H. Wendt, N. Dobigeon, J.-Y. Tourneret, M. Albinet, C. Goldstein and N. Karouche, "<a href="papers/Wendt_TechReport_2015.pdf">Detection and Correction of Glitches in a Multiplexed Multi-channel Data Stream - Application to the MADRAS Instrument - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2015. [<a href="papers/bibtex_entry_bot.htm#Wendt_TechReport_2015" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+								</p>
+							</li>
+							<li><p>
+								Q. Wei, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Wei_TechReport_2015c.pdf">Bayesian fusion of multispectral and hyperspectral images using a block coordinate descent method - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, March 2015. [<a href="papers/bibtex_entry_bot.htm#Wei_TechReport_2015c" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+							</p></li>
+							<li><p>
+								Q. Wei, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Wei_TechReport_2015b.pdf">Fast fusion of multi-band images based on solving a Sylvester equation - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Feb. 2015. [<a href="papers/bibtex_entry_bot.htm#Wei_TechReport_2015b" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+							</p></li>
+							<li><p>
+								Q. Wei, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Wei_TechReport_2015a.pdf">Bayesian fusion of multi-band images - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Feb. 2015. [<a href="papers/bibtex_entry_bot.htm#Wei_TechReport_2015a" >B<small>IB</small>T<sub>E</sub>X</a>]<br/>
+							</p></li>
+							<li><p>
+								A. Halimi, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Halimi_TechReport_2014.pdf" >Unsupervised unmixing of hyperspectral images accounting for endmember variability - Complementary results and supporting materials</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2014. [<a href="papers/bibtex_entry_bot.htm#Halimi_TechReport_2014" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								Q. Wei, J. M. Bioucas Dias, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Wei_TechReport_2014.pdf" >Hyperspectral and multispectral image fusion based on a sparse representation</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2014. [<a href="papers/bibtex_entry_bot.htm#Wei_TechReport_2014" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								Y. Altmann, N. Dobigeon, S. McLaughlin and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2013c.pdf" >Residual component analysis of hyperspectral images - Application to joint nonlinear unmixing and nonlinearity detection</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Nov. 2013.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2013c" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							</p></li>
+							<li><p>
+								Y. Altmann, N. Dobigeon, and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2013b.pdf" >Unsupervised Post-Nonlinear Unmixing of Hyperspectral Images Using a Hamiltonian Monte Carlo Algorithm</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2013.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2013b" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							</p></li>
+							<li><p>
+								Y. Altmann, N. Dobigeon, and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2013.pdf" >Bayesian algorithm for unsupervised unmixing of hyperspectral images using a post-nonlinear model</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, March 2013.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2013" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							</p></li>
+							<li><p>
+								Y. Altmann, N. Dobigeon, S. McLaughlin and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2012.pdf" >Nonlinear spectral unmixing of hyperspectral images using Gaussian processes</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Jul. 2012.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2012" >B<small>IB</small>T<sub>E</sub>X</a>] <br/>
+							</p></li>
+							<li><p>
+								M. Pereyra, N. Dobigeon, H. Batatia and J.-Y. Tourneret, "<a href="papers/Pereyra_TechReport_2012.pdf" >Estimating the Granularity Parameter of a Potts-Markov Random field within an MCMC algorithm</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Apr. 2012.
+								 [<a href="papers/bibtex_entry_bot.htm#Pereyra_TechReport_2012" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								O. Besson, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Besson_TechReport_2012.pdf" >CS decomposition based Bayesian subspace estimation</a>," <span class="emph">Technical Report</span>, University of Toulouse, ISAE &amp; IRIT/INP-ENSEEIHT, Feb. 2012.
+								[<a href="papers/bibtex_entry_bot.htm#Besson_TechReport_2012" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								M. Pereyra, N. Dobigeon, H. Batatia and J.-Y. Tourneret, "<a href="papers/Pereyra_TechReport_2011.pdf" >Segmentation of skin lesions in 2D and 3D ultrasound images using a spatially coherent generalized Rayleigh mixture model</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2011.
+								 [<a href="papers/bibtex_entry_bot.htm#Pereyra_TechReport_2011" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								Y. Altmann, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2011b.pdf" >Nonlinearity detection in hyperspectral images using a polynomial post-nonlinear mixing model</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Nov. 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2011b" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								Y. Altmann, A. Halimi, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Altmann_TechReport_2011.pdf" >Supervised nonlinear spectral unmixing using a post-nonlinear mixing model for hyperspectral imagery</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Nov. 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Altmann_TechReport_2011" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								O. Besson, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Besson_TechReport_2011.pdf" >Minimum mean square distance estimation of a subspace</a>," <span class="emph">Technical Report</span>, University of Toulouse, ISAE &amp; IRIT/INP-ENSEEIHT, June 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Besson_TechReport_2011" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								O. Eches, N. Dobigeon, J.-Y. Tourneret and Hichem Snoussi, "<a href="papers/Eches_TechReport_2011b.pdf" >Variational methods for spectral unmixing of hyperspectral images</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, May 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Eches_TechReport_2011b" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								O. Eches, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Eches_TechReport_2011.pdf" >Enhancing hyperspectral image unmixing with spatial correlations</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Jan. 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Eches_TechReport_2011" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								A. Halimi, Y. Altmann, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Halimi_TechReport_2010.pdf" >Nonlinear unmixing of hyperspectral images using a generalized bilinear model</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2010. Update: Dec. 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Halimi_TechReport_2010" >B<small>IB</small>T<sub>E</sub>X</a>] <br/> </p>
+							</li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Dobigeon_TechReport_2009.pdf" >Bayesian orthogonal component analysis for sparse representation. Extension to non-homogeneous sparsity level over times</a>,"  <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Nov. 2009.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2009" >B<small>IB</small>T<sub>E</sub>X</a>]</p>
+							</li>
+							<li><p>
+								O. Eches, N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Eches_TechReport_2009b.pdf" >Estimating the number of endmembers in hyperspectral images using the normal compositional model and a hierarchical Bayesian algorithm</a>,"  <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Oct. 2009.
+								[<a href="papers/bibtex_entry_bot.htm#Eches_TechReport_2009b" >B<small>IB</small>T<sub>E</sub>X</a>]</p>
+							</li>
+							<li><p>
+								O. Eches, N. Dobigeon, C. Mailhes and J.-Y. Tourneret, "<a href="papers/Eches_TechReport_2009a.pdf" >Unmixing hyperspectral images using a Normal Compositional Model and MCMC methods</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Mar. 2009.
+								[<a href="papers/bibtex_entry_bot.htm#Eches_TechReport_2009a">B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Dobigeon_TechReport_2008b.pdf" >Bayesian sampling of structured noise covariance matrix for hyperspectral imagery</a>," <span class="emph">Technical Report</span>, University of Toulouse, IRIT/INP-ENSEEIHT, Dec. 2008.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2008b" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon, "<a href="papers/Dobigeon_TechReport_2008a.pdf" >Recursive computation of the normalization constant of a multivariate Gaussian distribution truncated on a simplex</a>," <span class="emph">Technical Report</span>, University of Michigan, Jan. 2008.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2008a" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon, J.-Y. Tourneret and C.-I Chang, "<a href="papers/Dobigeon_TechReport_2007c.pdf" >Semi-supervised linear spectral unmixing using a hierarchical Bayesian model for hyperspectral imagery</a>," <span class="emph">Technical Report</span>, IRIT/ENSEEIHT/TeSA and University of Maryland, March 2007.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2007c" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Dobigeon_TechReport_2007b.pdf" >Efficient sampling according to a multivariate Gaussian distribution truncated on a simplex</a>," <span class="emph">Technical Report</span>, IRIT/ENSEEIHT/TeSA, March 2007.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2007b" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "<a href="papers/Dobigeon_TechReport_2007a.pdf" >Truncated multivariate Gaussian distribution on a simplex</a>," <span class="emph">Technical Report</span>, IRIT/ENSEEIHT/TeSA, Jan. 2007.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2007a" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+							<li><p>
+								N. Dobigeon, J.-Y. Tourneret and M. Davy, "<a href="papers/Dobigeon_TechReport_2006.pdf" >Joint segmentation of piecewise constant autoregressive processes by using a hierarchical model and a Bayesian sampling approach</a>," <span class="emph">Technical Report</span>, IRIT/ENSEEIHT/TeSA and LAGIS, March 2006.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_TechReport_2006" >B<small>IB</small>T<sub>E</sub>X</a>] <br/></p>
+							</li>
+						</ol>
+					</div>								
+				</div>
+			</div>
+        </section>	 
+        
+	    <!-- Industrial Section -->
+        <section name="Industrial" id="Industrial">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Industrial-content').toggle();">Industrial reports<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Industrial-content">					
+                        <hr class="star-primary">
+						
+						<p class="lead">
+							<h2>Industrial reports</h2>
+						</p>
+						<ol reversed="reversed">
+							<li><p>
+								Th. Oberlin and N. Dobigeon, "Approches probl&egrave;mes inverses pour la fusion d'images multi-bandes," Industrial Report, CNES, Toulouse, France, June 2020.
+								[<a href="papers/bibtex_entry_bot.htm#Oberlin_IndReport_CNES_2020" >B<small>IB</small>T<sub>E</sub>X</a>]
+
+							</p></li>		
+							<li><p>
+								Th. Oberlin, N. Dobigeon and M. Chabert, "D&eacute;bruitage d'images hyperspectrales," Industrial Report R&amp;T16/OT-0006-037, CNES, Toulouse, France, Avril 2018.
+								[<a href="papers/bibtex_entry_bot.htm#Oberlin_IndReport_CNES_2018" >B<small>IB</small>T<sub>E</sub>X</a>]
+
+							</p></li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "D&eacute;tection de m&eacute;langes non-lin&eacute;aires dans les images hyperspectrales," Industrial Report R-S13/OT-0004-071, CNES, Toulouse, France, December 2013.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_IndReport_CNES_2014" >B<small>IB</small>T<sub>E</sub>X</a>]
+
+							</p></li>
+							<li><p>
+								N. Dobigeon and J.-Y. Tourneret, "Apprentissage de dictionnaire pour la repr&eacute;sentation parcimonieuse d'images de t&eacute;l&eacute;d&eacute;tection," Industrial Report R-S11/OT-0004-057, CNES, Toulouse, France, April 2013.
+								[<a href="papers/bibtex_entry_bot.htm#Dobigeon_IndReport_CNES_2013" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								H. Wendt, N. Dobigeon, and J.-Y. Tourneret, "Algorithmes compl&eacute;mentaires de reconstruction de donn&eacute;es de l'instrument MADRAS," Industrial Report, CNES/CLS, Toulouse, France, June 2012.
+								[<a href="papers/bibtex_entry_bot.htm#Wendt_IndReport_CNES_2012b" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								H. Wendt, N. Dobigeon, and J.-Y. Tourneret, "Algorithmes de reconstruction de donn&eacute;es de l'instrument MADRAS,"
+								Industrial Report, CNES/CLS, Toulouse, France, June 2012.
+								[<a href="papers/bibtex_entry_bot.htm#Wendt_IndReport_CNES_2012a" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								J.-Y. Tourneret, N. Dobigeon, and A. Ferrari, "D&eacute;sentrelacement des mesures TDOA et FDOA," Industrial Report R-S09/RE-0001-011, CNES, Toulouse, France, March 2011.
+								[<a href="papers/bibtex_entry_bot.htm#Tourneret_IndReport_CNES_2011" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+						</ol>
+					</div>								
+				</div>
+			</div>
+        </section>	 
+        
+	    <!-- Reject Section -->
+        <section name="Reject" id="Reject">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Reject-content').toggle();">Rejected papers<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Reject-content">					
+                        <hr class="star-primary">
+						
+						<p class="lead">
+							<h2>Rejected papers</h2>
+						</p>
+						<ol reversed="reversed">
+							<li>
+								<p>Q. Wei, J. M. Bioucas-Dias, N. Dobigeon and J.-Y. Tourneret, "<a href="http://arxiv.org/abs/1505.01740/">Fast spectral unmixing based on Dykstra's alternating projection</a>," <span class="emph">ArXiv deposit</span>, May 2015. [<a href="papers/bibtex_entry_bot.htm#Wei_arXiv_2015" >B<small>IB</small>T<sub>E</sub>X</a>].
+								</p>
+							 </li>
+							<li><p>
+								C. Theys, H. Lant&eacute;ri, C. Richard, N. Dobigeon, J.-Y. Tourneret and A. Ferrari, "<a href="http://arxiv.org/abs/1310.0676/">A normalized scaled gradient method to solve non-negativity and equality constrained linear inverse problem --  Application to spectral mixture analysis</a>," <span class="emph">ArXiv deposit</span>, Oct. 2013. [<a href="papers/bibtex_entry_bot.htm#Theys_arXiv_2013" >B<small>IB</small>T<sub>E</sub>X</a>]
+							</p></li>
+							<li><p>
+								N. Dobigeon, A. O. Hero, D. Rugar and J.-Y. Tourneret, "<a href="papers/Dobigeon_IEEE_SP_Mag_2009.pdf">Sparse reconstruction of molecular images: the MRFM challenge</a>," submitted as a white paper to <span class="emph">IEEE Signal Processing Mag. - Special Issue on Medical Imaging</span>, 2009. [<a href="papers/bibtex_entry_bot.htm#Dobigeon_IEEE_SP_Mag_2009" >B<small>IB</small>T<sub>E</sub>X</a>]</p>
+							</li>
+						</ol>
+					</div>								
+				</div>
+			</div>
+        </section>	 
+        
+	    <!-- Talks Section -->
+        <section name="Talks" id="Talks">
+		   <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                                        
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-Talks-content').toggle();">Talks/seminars<span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>                    
+                    <div class="allshow" style="display:none;"  id="tab-Talks-content">					
+                        <hr class="star-primary">
+						
+						<p class="lead">
+							<h2>Invited/plenary talks &amp; seminars</h2>
+						</p>
+						<table width="100%">
+						  <tr>
+							<td>2023/03: </td>
+							<td>Invited talk, <a href="https://gdr-ondes.cnrs.fr/2023/01/27/18emes-journees-imagerie-optique-non-conventionnelle-30-et-31-mars-2023-institut-langevin-paris/">Journ&eacute;es Imagerie Optique Non-Conventionnelle (JIONC)</a>, Paris, France<br/>
+							<span class="h4">"Multiband image fusion under spectrally varying spatial blurs - Application to astronomical imaging".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2022/09: </td>
+							<td>Seminar, <a href="https://cia-oceanix.github.io/webinar">AI Chair OceaniX webinar</a>, online<br/>
+							<span class="h4">"Multi-band optical imaging: from fusion to change detection".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2022/09: </td>
+							<td>Plenary talk, <a href="https://sites.google.com/view/lrma21/">Workshop on Low-Rank Models and Applications</a>, Mons, Belgium<br/>
+							<span class="h4">"Multiband image fusion under spectrally varying spatial blurs - Application to astronomical imaging ".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2022/06: </td>
+							<td>Plenary talk, <a href="https://chimiobrest2022.sciencesconf.org/">Chimiométrie 2022</a>, Brest, France<br/>
+							<span class="h4">"Factor models for multivariate imaging ".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2022/03: </td>
+							<td>Invited talk, <a href="https://www.siam.org/conferences/cm/conference/is22">SIAM Conf. on Imaging Science</a>, virtual<br/> Mini-symposium on "Mathematical Methods for Computational Sensing and Imaging"<br/>
+							<span class="h4">"Multiband image fusion under spectrally varying spatial blurs - Application to astronomical imaging ".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2021/09: </td>
+							<td>Plenary talk, <a href="https://orasis2021.sciencesconf.org/">ORASIS 2021</a>, Revel, France<br/>
+							<span class="h4">"Multi-band optical imaging: from fusion to change detection".</span></td>
+						  </tr>						
+						  <tr>
+							<td>2021/07: </td>
+							<td>Invited talk, &Eacute;tudes de spectroscopie infrarouge en préparation aux observations avec le JWST, Toulouse, France<br/>
+							<span class="h4">"Fusion of hyperspectral and multispectral infrared astronomical images".</span></td>
+						  </tr>						
+						  <tr>						  
+							<td>2021/06: </td>
+							<td>Invited talk, <a href="https://futureintelligence.tech/">Future in Intelligence</a>, Toulouse, France<br/>
+							<span class="h4">"Towards a trusted AI: optimizing or simulating?"</td>
+						  </tr>
+						  <tr>	
+							<td>2020/12: </td>
+							<td>Plenary talk, <a href="https://ipas.ieee.tn/">IEEE IPAS 2020</a>, Genoa, Italy<br/>
+							<span class="h4">"Fusion-based change detection for remote sensing images of different resolutions and modalities".</span></td>
+						  </tr>	
+						  <tr>
+							<td>2020/09: </td>
+							<td>Seminar, <a href="http://seminaire.univ-lille1.fr/node/484">S&eacute;minaire SigMA</a>, CRIStAL, Lille, France<br/>
+							<span class="h4">"Fusion-based change detection for remote sensing images of different resolutions and modalities".</span></td>
+						  </tr>						  
+						  <tr>
+							<td>2019/12: </td>
+							<td>Plenary talk, <a href="http://www.ieee-bordeaux.org/bee-week-2019.html">Bee Week 2019</a>, Bordeaux, France<br/>
+							<span class="h4">"Fusion-based change detection for remote sensing images of different resolutions and modalities".</span></td>
+						  </tr>		
+						  <tr>
+							<td>2018/12: </td>
+							<td>Invited talk,  Image and Signal Analysis Days, Sfax, Tunisia<br/>
+							<span class="h4">"Bayesian fusion of multi-band images - Beyond pansharpening".</span></td>
+						  </tr>		
+						  <tr>
+							<td>2018/10: </td>
+							<td>Invited talk, Journ&eacute;e GdR-ISIS_OG "<span class="emph"><a href="https://indico.in2p3.fr/event/17622/">Questions ouvertes en analyse du signal pour l'astronomie gravitationnelle</a></span>," Univ. Paris-Diderot, Paris, France (<span class="emph">by Pierre Chainais</span>)<br/>
+							<span class="h4">"Inf&eacute;rence bay&eacute;sienne et m&eacute;thodes de Monte Carlo - Une introduction".</span></td>
+						  </tr>		
+						  <tr>
+							<td>2017/10: </td>
+							<td>Invited talks, <a href="http://www.dagstuhl.de/de/programm/kalender/semhp/?semnr=17411">Dagstuhl Seminar 17411</a>, Leibniz Center for Informatics, Germany<br/>
+							<span class="h4">"Trends, issues &amp; opportunities in fusion-related problems".<br/>
+							"Trends, issues &amp; opportunities in unmixing-related problems"
+							</span><br/>
+							</td>
+						  </tr>
+						  <tr>
+							<td>2017/05: </td>
+							<td>Seminar, <a href="https://mia.toulouse.inra.fr/S%C3%A9minaires">S&eacute;minaires de l'Unit&eacute; MIAT</a>, Toulouse, France<br/>
+							<span class="h4">"Spectral Mixture Analysis - Beyond the Linear Mixing Model".</span></td>
+						  </tr>
+						  <tr>
+							<td>2016/11: </td>
+							<td>Invited talk, <a href="https://chemima.sciencesconf.org/">Chemometrics and Statistics in Image Analysis</a>, Institut Henri Poincar&eacute; (IHP), Paris, France<br/>
+							<span class="h4">"Spectral Mixture Analysis - Beyond the Linear Mixing Model".</span></td>
+						  </tr>
+						  <tr>
+							<td>2015/11: </td>
+							<td>Invited talk, <a href="http://cct.cnes.fr/content/cct-tsi-201511116-ag-tutoriel-m%C3%A9thodes-bay%C3%A9siennes">CCT CNES TSI</a>, IAS, Toulouse, France (<span class="emph">with Charly Poulliat)</span><br/>
+							<span class="h4">"A short tutorial on Bayesian methods".</span></td>
+						  </tr>
+						  <tr>
+							<td>2014/12: </td>
+							<td>Seminar, <a href="http://lagis.cnrs.fr/SeminarList">S&eacute;minaires Signal &amp; Image</a>, LAGIS, Lille, France<br/>
+							<span class="h4">"Bayesian fusion of multiple images - Beyond pansharpening".</span></td>
+						  </tr>
+<!--						  <tr>
+							<td>2014/05: </td>
+							<td>Talk, <a href="http://www.sfpt.fr/hyperspectral/?page_id=589">3i&egrave;me Colloque Scientifique de la Soci&eacute;t&eacute; Fran&ccedil;aise de Photogramm&eacute;trie et T&eacute;l&eacute;d&eacute;tection - Groupe Hyperspectral</a> (SFPT-GH 2014), Porquerolles, France (<span class="emph">by Jean-Yves Tourneret, joint work of the ANR HYPANEMA consortium</span>)<br/>
+							<span class="h4">"D&eacute;m&eacute;lange non-lin&eacute;aire d'images hyperspectrales : mythe ou r&eacute;alit&eacute; ?".</span></td>
+						  </tr>
+-->						  
+						  <tr>
+							<td>2014/04: </td>
+							<td>Invited talk, <a href="https://www.sheffield.ac.uk/polopoly_fs/1.369499!/file/SHIREprogramme.pdf">Symposium on Hyperspectral Imaging in Research and Engineering</a> (SHIRE 2014), Univ. Sheffield, UK,<br/>
+							<span class="h4">"<a href="papers/Dobigeon_Talk_SHIRE_2014.pdf">Bayesian linear unmixing for spectral mixture analysis - Application to hyperspectral imagery</a>".</span></td>
+						  </tr>
+<!--						  
+						  <tr>
+							<td>2014/03: </td>
+							<td>Talk, <a href="http://hjnet.math.cnrs.fr/MODE-Rennes.html">Journ&eacute;es SMAI-MODE</a>, Rennes, France (<span class="emph">by Olivier Chabiron</span>)<br/>
+							<span class="h4">"<a href="http://chabiron.perso.enseeiht.fr/slides/FTL_MODE.pdf">Toward fast transform learning</a>".</span></td>
+						  </tr>
+-->						  
+<!--
+						  <tr>
+							<td>2014/01: </td>
+							<td>Invited talk, Journ&eacute;e scientifique : m&eacute;lange et d&eacute;m&eacute;lange non lin&eacute;aires en hyperspectral, Grenoble, France (<span class="emph">by Jean-Yves Tourneret</span>)<br/>
+							<span class="h4">"Nonlinear spectral unmixing of hyperspectral images".</span></td>
+						  </tr>
+-->						  
+						  <tr>
+							<td>2013/04: </td>
+							<td>Seminar, <a href="https://cct.cnes.fr/content/tsi-ag-pr%C3%A9sentation-imagerie-hyperspectrale">CCT CNES TSI</a>, IAS, Toulouse, France<br/>
+							<span class="h4">"D&eacute;m&eacute;lange (non-)lin&eacute;aire d'images hyperspectrales".</span></td>
+						  </tr>
+						  <tr>
+							<td>2012/12: </td>
+							<td>Seminar, <a href="http://spi.labri.fr/">S&eacute;minaires Probl&egrave;mes Inverses</a>, Bordeaux, France<br/>
+							<span class="h4">"Bayesian approaches for subspace estimation".</span></td>
+						  </tr>
+						  <tr>
+							<td>2012/12: </td>
+							<td>Invited talk, International PICS 2012 Workshop on <a href="http://lasir.univ-lille1.fr/?page_id=2503">Chemometrics in time-resolved and imaging spectroscopy - Instrumental measurements and data analysis</a>, Lille, France<br/>
+							<span class="h4">"Bayesian linear unmixing for spectral mixture analysis".</span></td>
+						  </tr>
+<!--
+						  <tr>
+							<td>2012/07: </td>
+							<td>Talk, Journ&eacute;e GdR-ISIS "<span class="emph"><a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=169">Imagerie multi/hyperspectrale : probl&eacute;matiques et nouveaux domaines d'applications</a></span>," TelecomParisTech, Paris, France (<span class="emph">by Yoann Altmann</span>)<br/>
+							<span class="h4">"D&eacute;tection de m&eacute;langes non-lin&eacute;aires pour l'analyse d'images hyperspectrales".</span></td>
+						  </tr>
+-->						  
+						  <tr>
+							<td>2012/01: </td>
+							<td>Seminar, <a href="http://www.math.univ-toulouse.fr/1-17720-Detail-d-un-seminaire.php?id=49">Groupe de Travail Image</a>, IMT, University of Toulouse, France<br/>
+							<span class="h4">"(Non-)linear unmixing of hyperspectral images".</span></td>
+						  </tr>
+						  <tr>
+							<td>2011/12: </td>
+							<td>Invited talk, Atelier "<span class="emph"><a href="http://astrostat.sciencesconf.org/">Astrostatistique en France</a></span><span class="emph"></span>," Grenoble, France<br/>
+							<span class="h4">"MCMC algorithms for spectral unmixing".</span></td>
+						  </tr>
+<!--
+						  <tr>
+							<td>2011/07: </td>
+							<td>Talk, Journ&eacute;e GdR-ISIS "<span class="emph"><a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=143">Inversion et Assimilation d'Images</a></span>," TelecomParisTech, Paris, France (<span class="emph">by Yoann Altmann</span>)<br/>
+							<span class="h4">"D&eacute;m&eacute;lange non lin&eacute;aires d'images hyperspectrales".</span></td>
+						  </tr>
+-->						  
+						  <tr>
+							<td>2011/03: </td>
+							<td>Seminar, LPS Laboratory, University of Paris-Sud 11, France<br/>
+							<span class="h4">"Bayesian linear unmixing for spectral mixture analysis".</span></td>
+						  </tr>
+						  <tr>
+							<td>2011/02: </td>
+							<td>Talk, Journ&eacute;e GdR-ISIS "<span class="emph"><a href="http://gdr-isis.fr/index.php?page=reunion&amp;idreunion=109">Contraintes de non-n&eacute;gativit&eacute; en traitement du signal et des images</a></span>," TelecomParisTech, Paris, France (<span class="emph">by Said Moussaoui</span>)<br/>
+							<span class="h4">"Simulation bay&eacute;sienne pour la s&eacute;paration de sources non-n&eacute;gatives".</span></td>
+						  </tr>
+						  <tr>
+							<td>2010/12: </td>
+							<td>Seminar, S&eacute;minaires de Statistiques, University of Pau, France<br/>
+							<span class="h4">"Algorithmes bay&eacute;siens pour le d&eacute;m&eacute;lange supervis&eacute;, semi-supervis&eacute; et non-supervis&eacute; d'images hyperspectrales".</span></td>
+						  </tr>
+						  <tr>
+							<td>2010/03: </td>
+							<td>Talk, Journ&eacute;e "<span class="emph"><a href="http://messine.perso.enseeiht.fr/math_inpt/">Math&eacute;matiques pour l'Ing&eacute;nierie : de la Mod&eacute;lisation &agrave; la R&eacute;solution de Probl&egrave;mes Concrets</a></span>," Toulouse, France<br/>
+							<span class="h4">"Reconstruction bay&eacute;sienne d'images parcimonieuses. Application &agrave; l'imagerie MRFM".</span></td>
+						  </tr>
+						  <tr>
+							<td>2009/06: </td>
+							<td>Seminar, Supelec, Gif-sur-Yvette, France<br/>
+							<span class="h4">"M&eacute;thodes MCMC pour l'analyse d'images hyperspectrales".</span></td>
+						  </tr>
+						  <tr>
+							<td>2009/05: </td>
+							<td>Talk, Assembl&eacute;e G&eacute;n&eacute;rale du GdR ISIS, Batz-sur-mer, France<br/>
+							<span class="h4">"M&eacute;thodes MCMC pour l'analyse d'images hyperspectrales".</span></td>
+						  </tr>
+						  <tr>
+							<td>2009/03: </td>
+							<td>Talk, Journ&eacute;e GdR-ISIS "<span class="emph"><a href="http://giovannelli.free.fr/InverseGdR/Reunion260309/">Probl&egrave;mes inverses - Estimation des hyperparam&egrave;tres</a></span>," TelecomParisTech, Paris, France<br/>
+							<span class="h4">"Reconstruction bay&eacute;sienne d'images MRFM parcimonieuses".</span></td>
+						  </tr>
+						  <tr>
+							<td>2009/03: </td>
+							<td>Talk, Journ&eacute;e GdR-ISIS "<span class="emph"><a href="http://uuu.enseirb.fr/~berthoum/gdr/gdr_03_2009.html">Mod&egrave;le stochastique multivari&eacute; en traitement des images</a></span>," TelecomParisTech, Paris, France<br/>
+							<span class="h4">"Extraction de composants purs et d&eacute;m&eacute;lange lin&eacute;aire bay&eacute;siens en imagerie hyperspectrale".</span></td>
+						  </tr>
+						  <tr>
+							<td>2008/07: </td>
+							<td>Invited talk, <a href="http://www.agroparistech.fr/mmip/segmentation/index.html">Workshop on change-point detection methods and applications</a>, AgroParisTech, Paris, France<br/>
+							<span class="h4">"Joint segmentation of wind speed and direction using a hierarchical model".</span></td>
+						  </tr>
+<!--
+						  <tr>
+							<td>2008/07: </td>
+							<td>Invited talk, <a href="http://depts.washington.edu/uwmrfm/aro-muri/index.html">ARO-MURI MRFM Program Progress Review</a>, Cornell University, Ithaca, USA  (<span class="emph">by Alfred O. Hero</span>)<br/>
+							<span class="h4">"Sparsity constrained image reconstruction for MRFM".</span></td>
+						  </tr>
+-->						  
+						  <tr>
+							<td>2008/04: </td>
+							<td>Seminar, <a href="http://www.gipsa-lab.inpg.fr/fileadmin/script/seminaires/sem-detail.php?nosem=91">GIPSA-lab</a>, Grenoble, France<br/>
+							<span class="h4">"Segmentation conjointe de signaux multi-capteurs par &eacute;chantillonnage bay&eacute;sien".</span></td>
+						  </tr>
+						  <tr>
+							<td>2006/12: </td>
+							<td>Seminar, IRCCyN Lab., Nantes, France<br/>
+							<span class="h4">"Un mod&egrave;le bay&eacute;sien hi&eacute;rarchique pour la segmentation conjointe de s&eacute;ries astronomiques".</span></td>
+						  </tr>
+						  <tr>
+							<td>2005/04: </td>
+							<td>Talk, Colloque EDIT, Toulouse, France<br/>
+							<span class="h4">"Segmentation conjointe de donn&eacute;es astrophysiques".</span></td>
+						  </tr>
+						</table>
+
+
+					</div>								
+				</div>
+			</div>
+        </section>	 
+        
+		
+		
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2020 | N. Dobigeon. Credits: D. Zeinalipour &amp; AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+					<a class="hide" href="https://clustrmaps.com/site/19myh" title="Visit tracker"><img src="http://www.clustrmaps.com/map_v2.png?d=2eSX2TNFigOKEPj6Hx2qnt-gHV_ag30YNJldkXzQFlM&cl=ffffff"></a>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
